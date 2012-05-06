@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	android:background="@drawable/bg_tan" android:orientation="vertical">
+	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		android:layout_width="fill_parent" android:layout_height="wrap_content"
+		android:orientation="vertical" android:gravity="center">
+		<TextView android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:padding="4dip"
+			android:textColor="#000000" android:textSize="18dp" android:text="Current Time is:"
+			android:gravity="center">
+		</TextView>
+		<TextView android:id="@+id/current_time"
+			android:layout_width="fill_parent" android:layout_height="wrap_content"
+			android:padding="4dip" android:textColor="#660000" android:textSize="30dp"
+			android:gravity="center">
+		</TextView>
+	</LinearLayout>
+	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		android:layout_width="fill_parent" android:layout_height="wrap_content"
+		android:orientation="vertical" android:gravity="center">
+		<TextView android:layout_width="wrap_content" android:id="@+id/lib_curr"
+			android:layout_height="wrap_content" android:padding="4dip"
+			android:gravity="center" android:textColor="#000000"
+			android:textSize="18dp" android:text="Newman Library is currently:">
+		</TextView>
+
+		<TextView android:id="@+id/lib_status" android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:padding="4dip"
+			android:textSize="30dp" android:gravity="center" android:textColor="#000000">
+		</TextView>
+	</LinearLayout>
+	<TextView android:id="@+id/lib_info" android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:padding="4dip"
+		android:gravity="center" android:textColor="#000000" android:textSize="18dp">
+	</TextView>
+</LinearLayout>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/layout_dialog" android:orientation="vertical"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	android:background="@drawable/maps_background">
+	<TextView android:id="@+id/from_title" android:layout_height="wrap_content"
+		android:layout_width="fill_parent" android:text="Select Starting Location:"
+		android:textColor="#FFFFFF" android:textSize="18sp" />
+	<Spinner android:id="@+id/spinner_from" android:layout_height="wrap_content"
+		android:layout_width="fill_parent" android:drawSelectorOnTop="true" />
+
+	<TextView android:id="@+id/to_title" android:layout_height="wrap_content"
+		android:layout_width="fill_parent" android:text="Select Destination:"
+		android:textColor="#FFFFFF" android:textSize="18sp" />
+	<Spinner android:id="@+id/spinner_to" android:layout_height="wrap_content"
+		android:layout_width="fill_parent" android:drawSelectorOnTop="true" />
+	<Button android:id="@+id/routeme_button" android:layout_height="wrap_content"
+		android:layout_width="fill_parent" style="@android:style/TextAppearance.Medium"
+		android:textColor="#000000" android:text="Route Me" />
+</LinearLayout>

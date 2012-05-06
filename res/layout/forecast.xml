@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="fill_parent">
+
+	<LinearLayout android:layout_width="fill_parent"
+		android:layout_height="fill_parent" android:background="@drawable/bg_tan"
+		android:orientation="vertical">
+
+		<TextView android:id="@+id/forecastInfo"
+			android:layout_width="fill_parent" android:layout_height="wrap_content"
+			android:text="@string/forecast" android:textColor="#000000" android:gravity="center"
+			android:textSize="20sp" />
+
+		<LinearLayout android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:orientation="horizontal">
+			<LinearLayout android:layout_width="wrap_content"
+				android:gravity="center" android:paddingLeft="2sp"
+				android:layout_height="fill_parent" android:orientation="vertical">
+				<TextView android:id="@+id/day_1" android:layout_width="129dp"
+					android:layout_height="wrap_content" android:paddingTop="12sp"
+					android:textColor="#000000" android:textSize="22sp"
+					android:gravity="center" />
+				<TextView android:id="@+id/cond_1" android:layout_width="129dp"
+					android:layout_height="wrap_content" android:paddingTop="1sp"
+					android:textColor="#000000" android:textSize="20sp"
+					android:gravity="center" />
+			</LinearLayout>
+
+			<ImageView android:id="@+id/day_1_icon"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:padding="2sp">
+			</ImageView>
+			<LinearLayout android:layout_width="fill_parent"
+				android:gravity="center|right" android:layout_height="wrap_content"
+				android:orientation="horizontal">
+				<TextView android:id="@+id/day_1_high"
+					android:layout_width="wrap_content" android:layout_height="wrap_content"
+					android:paddingTop="12sp" android:textColor="#000000" 
+					android:textSize="22sp" />
+
+				<TextView android:id="@+id/day_1_low" android:layout_width="wrap_content"
+					android:layout_height="wrap_content" android:paddingTop="12sp"
+					android:paddingLeft="2sp" android:textColor="#8E8E8E"
+					android:textSize="16sp" />
+			</LinearLayout>
+		</LinearLayout>
+
+		<LinearLayout android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:orientation="horizontal">
+			<LinearLayout android:layout_width="wrap_content"
+				android:gravity="center" android:paddingLeft="2sp"
+				android:layout_height="fill_parent" android:orientation="vertical">
+				<TextView android:id="@+id/day_2" android:layout_width="129dp"
+					android:layout_height="wrap_content" android:paddingTop="12sp"
+					android:textColor="#000000" android:textSize="22sp"
+					android:gravity="center" />
+				<TextView android:id="@+id/cond_2" android:layout_width="129dp"
+					android:layout_height="wrap_content" android:paddingTop="1sp"
+					android:textColor="#000000" android:textSize="20sp"
+					android:gravity="center" />
+			</LinearLayout>
+
+			<ImageView android:id="@+id/day_2_icon"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:padding="2sp">
+			</ImageView>
+			<LinearLayout android:layout_width="fill_parent"
+				android:gravity="center|right" android:layout_height="wrap_content"
+				android:orientation="horizontal">
+				<TextView android:id="@+id/day_2_high"
+					android:layout_width="wrap_content" android:layout_height="wrap_content"
+					android:paddingTop="12sp" android:textColor="#000000"
+					android:textSize="22sp" />
+
+				<TextView android:id="@+id/day_2_low" android:layout_width="wrap_content"
+					android:layout_height="wrap_content" android:paddingTop="12sp"
+					android:paddingLeft="1sp" android:textColor="#8E8E8E"
+					android:textSize="16sp" />
+			</LinearLayout>
+		</LinearLayout>
+
+		<LinearLayout android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:orientation="horizontal">
+			<LinearLayout android:layout_width="wrap_content"
+				android:gravity="center" android:paddingLeft="2sp"
+				android:layout_height="fill_parent" android:orientation="vertical">
+				<TextView android:id="@+id/day_3" android:layout_width="129dp"
+					android:layout_height="wrap_content" android:paddingTop="12sp"
+					android:textColor="#000000" android:textSize="22sp"
+					android:gravity="center" />
+				<TextView android:id="@+id/cond_3" android:layout_width="129dp"
+					android:layout_height="wrap_content" android:paddingTop="1sp"
+					android:textColor="#000000" android:textSize="20sp"
+					android:gravity="center" />
+			</LinearLayout>
+
+			<ImageView android:id="@+id/day_3_icon"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:padding="2sp">
+			</ImageView>
+			<LinearLayout android:layout_width="fill_parent"
+				android:gravity="center|right" android:layout_height="wrap_content"
+				android:orientation="horizontal">
+				<TextView android:id="@+id/day_3_high"
+					android:layout_width="wrap_content" android:layout_height="wrap_content"
+					android:paddingTop="12sp" android:textColor="#000000" 
+					android:textSize="22sp" />
+
+				<TextView android:id="@+id/day_3_low" android:layout_width="wrap_content"
+					android:layout_height="wrap_content" android:paddingTop="12sp"
+					android:paddingLeft="1sp" android:textColor="#8E8E8E"
+					android:textSize="16sp" />
+			</LinearLayout>
+		</LinearLayout>
+
+		<LinearLayout android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:orientation="horizontal">
+			<LinearLayout android:layout_width="wrap_content"
+				android:gravity="center" android:paddingLeft="2sp"
+				android:layout_height="fill_parent" android:orientation="vertical">
+				<TextView android:id="@+id/day_4" android:layout_width="129dp"
+					android:layout_height="wrap_content" android:paddingTop="12sp"
+					android:textColor="#000000" android:textSize="22sp"
+					android:gravity="center" />
+				<TextView android:id="@+id/cond_4" android:layout_width="129dp"
+					android:layout_height="wrap_content" android:paddingTop="1sp"
+					android:textColor="#000000" android:textSize="20sp"
+					android:gravity="center" />
+			</LinearLayout>
+
+			<ImageView android:id="@+id/day_4_icon"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:padding="2sp">
+			</ImageView>
+			<LinearLayout android:layout_width="fill_parent"
+				android:gravity="center|right" android:layout_height="wrap_content"
+				android:orientation="horizontal">
+				<TextView android:id="@+id/day_4_high"
+					android:layout_width="wrap_content" android:layout_height="wrap_content"
+					android:paddingTop="12sp" android:textColor="#000000"
+					android:textSize="22sp" />
+
+				<TextView android:id="@+id/day_4_low" android:layout_width="wrap_content"
+					android:layout_height="wrap_content" android:paddingTop="12sp"
+					android:paddingLeft="1sp" android:textColor="#8E8E8E"
+					android:textSize="16sp" />
+			</LinearLayout>
+		</LinearLayout>
+		<LinearLayout android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:orientation="horizontal">
+			<LinearLayout android:layout_width="wrap_content"
+				android:gravity="center" android:paddingLeft="2sp"
+				android:layout_height="fill_parent" android:orientation="vertical">
+				<TextView android:id="@+id/day_5" android:layout_width="129dp"
+					android:layout_height="wrap_content" android:paddingTop="12sp"
+					android:textColor="#000000" android:textSize="22sp"
+					android:gravity="center" />
+				<TextView android:id="@+id/cond_5" android:layout_width="129dp"
+					android:layout_height="wrap_content" android:paddingTop="1sp"
+					android:textColor="#000000" android:textSize="20sp"
+					android:gravity="center" />
+			</LinearLayout>
+
+			<ImageView android:id="@+id/day_5_icon"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:padding="2sp">
+			</ImageView>
+			<LinearLayout android:layout_width="fill_parent"
+				android:gravity="center|right" android:layout_height="wrap_content"
+				android:orientation="horizontal">
+				<TextView android:id="@+id/day_5_high"
+					android:layout_width="wrap_content" android:layout_height="wrap_content"
+					android:paddingTop="12sp" android:textColor="#000000" 
+					android:textSize="22sp" />
+
+				<TextView android:id="@+id/day_5_low" android:layout_width="wrap_content"
+					android:layout_height="wrap_content" android:paddingTop="12sp"
+					android:paddingLeft="1sp" android:textColor="#8E8E8E"
+					android:textSize="16sp" />
+			</LinearLayout>
+		</LinearLayout>
+
+		<LinearLayout android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:orientation="horizontal">
+			<LinearLayout android:layout_width="wrap_content"
+				android:gravity="center" android:paddingLeft="2sp"
+				android:layout_height="fill_parent" android:orientation="vertical">
+				<TextView android:id="@+id/day_6" android:layout_width="129dp"
+					android:layout_height="wrap_content" android:paddingTop="12sp"
+					android:textColor="#000000" android:textSize="22sp"
+					android:gravity="center" />
+				<TextView android:id="@+id/cond_6" android:layout_width="129dp"
+					android:layout_height="wrap_content" android:paddingTop="1sp"
+					android:textColor="#000000" android:textSize="20sp"
+					android:gravity="center" />
+			</LinearLayout>
+
+			<ImageView android:id="@+id/day_6_icon"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:padding="2sp">
+			</ImageView>
+			<LinearLayout android:layout_width="fill_parent"
+				android:gravity="center|right" android:layout_height="wrap_content"
+				android:orientation="horizontal">
+				<TextView android:id="@+id/day_6_high"
+					android:layout_width="wrap_content" android:layout_height="wrap_content"
+					android:paddingTop="12sp" android:textColor="#000000"
+					android:textSize="22sp" />
+
+				<TextView android:id="@+id/day_6_low" android:layout_width="wrap_content"
+					android:layout_height="wrap_content" android:paddingTop="12sp"
+					android:paddingLeft="1sp" android:textColor="#8E8E8E"
+					android:textSize="16sp" />
+			</LinearLayout>
+		</LinearLayout>
+		<LinearLayout android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:orientation="horizontal">
+			<LinearLayout android:layout_width="wrap_content"
+				android:gravity="center" android:paddingLeft="2sp"
+				android:layout_height="fill_parent" android:orientation="vertical">
+				<TextView android:id="@+id/day_7" android:layout_width="129dp"
+					android:layout_height="wrap_content" android:paddingTop="12sp"
+					android:textColor="#000000" android:textSize="22sp"
+					android:gravity="center" />
+				<TextView android:id="@+id/cond_7" android:layout_width="129dp"
+					android:layout_height="wrap_content" android:paddingTop="1sp"
+					android:textColor="#000000" android:textSize="20sp"
+					android:gravity="center" />
+			</LinearLayout>
+
+			<ImageView android:id="@+id/day_7_icon"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:padding="2sp">
+			</ImageView>
+			<LinearLayout android:layout_width="wrap_content"
+				android:gravity="center|right" android:layout_height="wrap_content"
+				android:orientation="horizontal">
+				<TextView android:id="@+id/day_7_high"
+					android:layout_width="wrap_content" android:layout_height="wrap_content"
+					android:paddingTop="12sp" android:textColor="#000000"
+					android:textSize="22sp" />
+
+				<TextView android:id="@+id/day_7_low" android:layout_width="wrap_content"
+					android:layout_height="wrap_content" android:paddingTop="12sp"
+					android:paddingLeft="1sp" android:textColor="#8E8E8E"
+					android:textSize="16sp" />
+			</LinearLayout>
+		</LinearLayout>
+
+		<TextView android:id="@+id/weather_info"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:paddingTop="12sp" android:textColor="#000000"
+			android:textSize="16sp">
+		</TextView>
+	</LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+				
+	<PreferenceCategory android:title="SMS Permissions"
+		android:key="sms_category">
+
+		<CheckBoxPreference android:key="toggle_sms_notifications"
+			android:summary="Enable notifications for application requests to send sms messages"
+			android:title="Notifications" android:defaultValue="false" />
+		<CheckBoxPreference android:key="toggle_sms_logger"
+			android:summary="Enable logging of application requests to send sms messages"
+			android:title="Logging" android:defaultValue="false" />
+		<ListPreference android:title="Route Mode Options"
+	        android:key="route_mode_key" 
+	        android:defaultValue="1"
+	        android:summary="Select Route Mode" 
+	        android:entries="@array/route_mode_options"
+	        android:entryValues="@array/route_mode_values" />
+		
+	</PreferenceCategory>
+	<PreferenceCategory android:title="Internet Permissions"
+		android:key="internet_category">
+
+		<CheckBoxPreference android:key="toggle_internet_notifications"
+			android:summary="Enable notifications for application requests to access the internet"
+			android:title="Notifications" android:defaultValue="false" />
+		<CheckBoxPreference android:key="toggle_internet_logger"
+			android:summary="Enable logging of application requests to access the internet"
+			android:title="Logger" android:defaultValue="false" />
+
+		<PreferenceScreen android:key="internet_trusted_apps_screen"
+			android:title="Trusted Apps" android:summary="Choose applications trusted to access the internet">
+<!--			<intent android:action="android.intent.action.MAIN"-->
+<!--				android:targetPackage="com.android.pref.vt" android:targetClass="com.android.pref.vt.ManageApplications" />-->
+		</PreferenceScreen>
+	</PreferenceCategory>
+	<PreferenceCategory android:title="GPS Permissions"
+		android:key="gps_category">
+
+		<CheckBoxPreference android:key="toggle_gps_notifications"
+			android:summary="Enable notifications for application requests to GPS location"
+			android:title="Notifications" android:defaultValue="false" />
+		<CheckBoxPreference android:key="toggle_gps_logger"
+			android:summary="Enable logging of application requests to GPS location"
+			android:title="Logger" android:defaultValue="false" />
+
+		<PreferenceScreen android:key="gps_trusted_apps_screen"
+			android:title="Trusted Apps"
+			android:summary="Choose applications trusted to request user GPS location">
+
+		</PreferenceScreen>
+
+	</PreferenceCategory>
+</PreferenceScreen>

@@ -1,0 +1,26 @@
+T	Mar. 22	Opening of Web Course Request for Fall Semester 2011
+T	Mar. 29	Closing of Web Course Request for Fall Semester 2011
+Sa	Apr. 23	Web Drop/Add begins for Fall Semester 2011
+F	May 13	Web Drop/Add closes for Fall Semester 2011
+Sa	Aug. 6	Web Drop/Add reopens for Fall Semester 2011
+M	Aug. 22	Last day for students to withdraw from Fall Semester to avoid tuition and fee charges.
+M	Aug. 22	Classes begin
+F	Aug. 26	Last day for students to add classes and to add or drop audit option.
+M	Sept. 5	Labor day. Classes WILL meet
+F	Sept. 30	Last day for students to drop Fall 2011 classes without grade penalty. Last day to change grade option from A-F to P/F, 5:00 p.m. 
+F	Oct. 7	Fall Break. Classes will not meet. University offices open.
+M	Oct. 10	Last day to apply for Fall 2011 graduation in order to be included in the Fall Commencement bulletin.
+M	Oct. 17	Last day for students to resign without grade penalty. 
+T	Oct. 18	Opening of Web Course Request for Spring 2012
+T	Oct. 25	Close of Web Course Request for Spring 2012
+F	Nov. 18	Deadline for undergraduates to request rescheduling of final examinations that conflict or constitute a third exam in 24 hours. (See your Academic Dean)
+Sa	Nov. 19	Thanksgiving holiday begins
+Sa	Nov. 26	Web Drop/Add begins for Spring Semester 2012
+Su	Nov. 27	Thanksgiving holiday ends
+F	Dec. 2	Last day to apply for W grade policy
+W	Dec. 7	Classes End
+R	Dec. 8	Reading Day
+F	Dec. 9	Beginning of Fall Semester final examinations
+F	Dec. 9	Opening of Web Course Request for Summer 2012 (closes Feb. 10, 2012)
+R	Dec. 15	Close of Fall Semester final examinations
+F	Dec. 16	Fall Commencement Ceremonies (University and Graduate)

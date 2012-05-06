@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent" android:layout_height="fill_parent"
+    android:background="@drawable/bg_tan" android:orientation="vertical">
+    
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="50dp"
+        android:orientation="horizontal">
+        
+        <Button android:layout_height="fill_parent" android:layout_width="wrap_content"
+            android:text="Today" android:textSize="20dp" android:id="@+id/dailyButton"/>
+        <Button android:layout_height="fill_parent" android:layout_width="wrap_content"
+            android:text="Week" android:textSize="20dp" android:id="@+id/weeklyButton"/>
+        <Button android:layout_height="fill_parent" android:layout_width="wrap_content"
+            android:text="Month" android:textSize="20dp" android:id="@+id/monthlyButton"/>        
+    </LinearLayout>
+    
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="40dp"
+        android:orientation="horizontal">
+        
+    	<TextView android:layout_width="wrap_content" android:layout_height="40dp" android:paddingLeft="20dp"
+        	android:textColor="#000000" android:textSize="25dp" android:id="@+id/label"/>
+    	
+    	<Button android:id="@+id/info_button" android:background="@drawable/info_icon" android:layout_height="30dp" 
+    	    android:layout_width="30dp"/>
+    </LinearLayout>
+    
+    <LinearLayout android:layout_height="wrap_content" android:layout_width="wrap_content"
+        android:id="@+id/layout"/>
+
+</LinearLayout>

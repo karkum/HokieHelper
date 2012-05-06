@@ -1,0 +1,819 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="buildings">Hello World, buildingStrings!</string>
+    <string name="buildingNames">VTMaps</string>
+    <string-array name="directory_array">
+	    <item>  Agnew Hall	</item>
+	    <item>  37.224737	</item>
+	    <item>  -80.424246	</item>
+	    <item>  Address: West Campus Drive
+                Originally Built: 1940 </item>
+		
+		<item>	Air Conditioning Facility  </item>
+		<item> 	37.232165  				   </item>
+		<item>  -80.421789  			   </item>
+		<item>  Conditions of air</item>
+
+		<item> 	Ambler Johnston Hall  </item>
+		<item>  37.223118  			  </item>
+		<item>  -80.420989  		  </item>
+		<item> 	Address: Washington Street (Lower Quad) 
+				Originally Built: 1969 </item>
+
+		<item>  Architecture Annex  </item>
+		<item>  37.228628  			</item>
+		<item>  -80.416279  		</item>
+		<item>  Address: Otey Street
+			    Originally Built: 1916 </item>
+
+		<item>  Armory  			</item>
+		<item>  37.229295  			</item>
+		<item>  -80.415931  		</item>
+		<item>  Address: 201 Draper Road
+			    Originally Built: 1936</item>
+
+		<item> 	Art and Design Learning Center  </item>
+		<item>  37.231704  						</item>
+		<item>  -80.4207  						</item>
+		<item> 	Address: Turner Street (Upper Quad) </item>
+
+		<item>	Au Bon Pain Squires  </item>
+		<item>  37.229628  			 </item>
+		<item>  -80.418141  		 </item>
+		<item>  Info goes here </item>
+
+		<item>  Au Bon Pain GLC 	 </item>
+		<item>  37.22827  			 </item>
+		<item>  -80.417529  		 </item>
+		<item>  Info goes here </item>
+
+		<item>  Barringer Hall  	 </item>
+		<item>  37.226219  			 </item>
+		<item>  -80.416821  		 </item>
+		<item>  Address: Kent Street (President\'s Quad) 
+				Originally Built: 1962  </item>
+
+		<item> 	Basketball Practice Facility  </item>
+		<item>  37.223486 					  </item>
+		<item>  -80.418431 					  </item>
+		<item>  Address: Washington Street
+				Originally Built: 2009</item>
+
+		<item>  Bioinformatics Phase I  </item>
+		<item>  37.220829 			    </item>
+		<item>  -80.426252              </item>
+		<item>  Info goes here </item>
+
+		<item>  Bioinformatics Phase II  </item>
+		<item>  37.221213  				 </item>
+		<item>  -80.426627   			 </item>
+		<item>  Info goes here  </item>
+
+		<item>  Bishop-Favrao Hall  	 </item>
+		<item>  37.230055  				 </item>
+		<item>  -80.425544  			 </item>
+		<item>  Address: Perry Street
+				Originally Built: 2007 </item>
+
+		<item>  Brodie Hall  			 </item>
+		<item>  37.23026  				 </item>
+		<item>  -80.420094  			 </item>
+		<item>  Address: Mall Entrance / Main Street
+				Originally Built: 1957 </item>
+
+
+		<item> Burchard Hall  </item>
+		<item>  37.229654  </item>
+		<item>  -80.424289  </item>
+		<item>	Address: Turner Street  
+				Originally Built: 1998 </item>
+
+		<item> Burke Johnston Student Center  </item>
+		<item>  37.229303  </item>
+		<item>  -80.424685  </item>
+		<item>	Info goes here  </item>
+
+		<item> Burrows/Burleson Tennis Center  </item>
+		<item>  37.214754  </item>
+		<item>  -80.419643  </item>
+		<item>	Address: Tech Center Drive 
+				Originally Built: 1975 </item>
+
+		<item> Burruss Hall  </item>
+		<item>  37.228859  </item>
+		<item>  -80.423505  </item>
+		<item>	Address: Drillfield Drive 
+				Originally Built: 1936 
+				Latitude: 37.228859  Longitude: -80.423505 </item>
+
+
+		<item> Campbell Hall  </item>
+		<item>  37.226288  </item>
+		<item>  -80.421606  </item>
+		<item>	Address: Drillfield Drive (Lower Quad)
+				Originally Built: 1940
+				Latitude: 37.226288  Longitude: -80.421606 </item>
+
+		<item> Cassell Coliseum  </item>
+		<item>  37.222836  </item>
+		<item>  -80.419332  </item>
+		<item>	Address: Washington Street 
+				Originally Built: 1961
+				Latitude: 37.222836  Longitude: -80.419332 </item>
+
+		<item> Cheatham Hall  </item>
+		<item>  37.223853  </item>
+		<item>  -80.422604  </item>
+		<item> 	Rawr?
+				Latitude: 37.223853  Longitude: -80.422604 </item>
+
+		<item> Cochrane Hall  </item>
+		<item>  37.22264  </item>
+		<item>  -80.421939  </item>
+		<item>	Address: Washington Street (Lower Quad)
+				Originally Built: 1982 
+				Latitude: 37.22264  Longitude: -80.421939 </item>
+
+		<item> College of Science Admin. Bldg.  </item>
+		<item>  37.23108  </item>
+		<item>  -80.420126  </item>
+		<item>	Address: Stanger Street
+				Originally Built: 1996
+				Latitude: 37.23108  Longitude: -80.420126 </item>
+
+		<item> Cowgill Hall  </item>
+		<item>  37.22997  </item>
+		<item>  -80.424836  </item>
+		<item>	Address: Turner Street
+				Originally Built: 1969 
+				Latitude: 37.22997  Longitude: -80.424836 </item>
+
+		<item> Cranwell International Center  </item>
+		<item>  37.223417  </item>
+		<item>  -80.415748  </item>
+		<item>	Address: 406 Ingles Court
+				Latitude: 37.223417  Longitude: -80.415748 </item>
+
+		<item> D2  </item>
+		<item>  37.224536  </item>
+		<item>  -80.420963  </item>
+		<item> 
+				Latitude: 37.224536  Longitude: -80.420963 </item>
+
+		<item> Davidson Hall  </item>
+		<item>  37.226928  </item>
+		<item>  -80.425007  </item>
+		<item>	Address: Drillfield Drive
+				Originally Built: 1928
+				Latitude: 37.226928  Longitude: -80.425007 </item>
+
+		<item> Deets  </item>
+		<item>  37.224237  </item>
+		<item>  -80.421327  </item>
+		<item>	Icecreammmm!
+				Latitude: 37.224237  Longitude: -80.421327 </item>
+
+		<item> Derring Hall  </item>
+		<item>  37.229047  </item>
+		<item>  -80.425544  </item>
+		<item>	Address: West Campus Drive
+				Originally Built: 1969 
+				Latitude: 37.229047  Longitude: -80.425544 </item>
+
+		<item> Dietrick General  </item>
+		<item>  37.224417  </item>
+		<item>  -80.421124  </item>
+		<item>	OverPriced Crap
+				Latitude: 37.224417  Longitude: -80.421124 </item>
+
+		<item> Dietrick Hall  </item>
+		<item>  37.224571  </item>
+		<item>  -80.421263  </item>
+		<item>	Address: West Campus Drive (Lower Quad) 
+				Originally Built: 1970 
+				Latitude: 37.224571  Longitude: -80.421263 </item>
+
+		<item> Dietrick Mailroom  </item>
+		<item>  37.224853  </item>
+		<item>  -80.420941  </item>
+		<item>	Mail Room
+				Latitude: 37.224853  Longitude: -80.420941 </item>
+
+		<item> Durham Hall   </item>
+		<item>  37.231627  </item>
+		<item>  -80.42372  </item>
+		<item>	Address: Stanger Street 
+				Originally Built: 1997
+				Latitude: 37.231627  Longitude: -80.42372 </item>
+
+		<item> DX  </item>
+		<item>  37.224605  </item>
+		<item>  -80.420769  </item>
+		<item>	Late Night Munchies Latitude: 37.224605  Longitude: -80.420769 </item>
+
+		<item> Eggleston Hall  </item>
+		<item>  37.227074  </item>
+		<item>  -80.420458  </item>
+		<item>Address: Drillfield Drive (Lower Quad)
+			  Originally Built: 1935
+		      Latitude: 37.227074  Longitude: -80.420458</item>
+
+		<item> Engel Hall  </item>
+		<item>  37.223656  </item>
+		<item>  -80.423688  </item>
+		<item>Address: West Campus Drive
+		      Originally Built: 1961
+		      Latitude: 37.223656  Longitude: -80.423688 </item>
+
+		<item> English Field  </item>
+		<item>  37.218428  </item>
+		<item>  -80.42416  </item>
+		<item>No Info
+		      Latitude: 37.218428  Longitude: -80.42416 </item>
+
+		<item> Femoyer Hall  </item>
+		<item>  37.231311  </item>
+		<item>  -80.421263  </item>
+		<item>Address: Stanger Street (Upper Quad)
+		      Originally Built: 1949
+		      Latitude: 37.231311  Longitude: -80.421263 </item>
+
+		<item> Food Science and Technology  </item>
+		<item>  37.219803  </item>
+		<item>  -80.42549  </item>
+		<item>Address: Washington Street
+			  Originally Built: 1952
+		      Latitude: 37.219803  Longitude: -80.42549 </item>
+
+		<item> Fralin Life Science Institute  </item>
+		<item>  37.224161  </item>
+		<item>  -80.42357  </item>
+		<item>Address: West Campus Drive
+			  Originally Built: 1995
+		      Latitude: 37.224161  Longitude: -80.42357 </item>
+
+		<item> Golf Course Clubhouse  </item>
+		<item>  37.226834  </item>
+		<item>  -80.428623  </item>
+		<item>The Golf Course
+			  Latitude: 37.226834  Longitude: -80.428623 </item>
+
+		<item> Graduate Life Center at Donaldson Brown  </item>
+		<item>  37.228142  </item>
+		<item>  -80.417444  </item>
+		<item>Address: Otey Street
+		      Originally Built: 1935
+		      Latitude: 37.228142  Longitude: -80.417444 </item>
+
+
+		<item> The Grove  </item>
+		<item>  37.22434  </item>
+		<item>  -80.427325  </item>
+		<item>Residence of the President of the University
+		      Latitude: 37.22434  Longitude: -80.427325 </item>
+
+		<item> Hahn Hall - North Wing  </item>
+		<item>  37.228329  </item>
+		<item>  -80.426306  </item>
+		<item>Address: West Campus Drive
+			  Originally Built: 2004
+		      Latitude: 37.228329  Longitude: -80.426306 </item>
+
+		<item> Hahn Hall - South Wing  </item>
+		<item>  37.227928  </item>
+		<item>  -80.425705  </item>
+		<item>Address: West Campus Drive
+			  Originally Built: 1988  
+		      Latitude: 37.227928  Longitude: -80.425705 </item>
+
+		<item> Hahn Horticulture Gardens  </item>
+		<item>  37.220265  </item>
+		<item>  -80.424557  </item>
+		<item>Place for growing diverse plants
+		      Latitude: 37.220265  Longitude: -80.424557 </item>
+
+		<item> Hancock Hall  </item>
+		<item>  37.23014  </item>
+		<item>  -80.424106  </item>
+		<item>No Info
+		      Latitude: 37.23014  Longitude: -80.424106 </item>
+
+		<item> Harper Hall  </item>
+		<item>  37.222759  </item>
+		<item>  -80.423183  </item>
+		<item>Address: West Campus Drive
+			  Originally Built: 1999
+		      Latitude: 37.222759  Longitude: -80.423183 </item>
+
+		<item> Harry T. Peters Large Animal Clinic  </item>
+		<item>  37.218257  </item>
+		<item>  -80.428891  </item>
+		<item>Address: Duck Pond Drive, Blacksburg
+			  Originally Built: 1987
+		      Latitude: 37.218257  Longitude: -80.428891 </item>
+
+		<item> Health and Safety Building  </item>
+		<item>  37.215036  </item>
+		<item>  -80.417615  </item>
+		<item>Address: Tech Center Drive
+		      Originally Built: 1970
+		      Latitude: 37.215036  Longitude: -80.417615 </item>
+
+		<item> Henderson Hall  </item>
+		<item>  37.230457  </item>
+		<item>  -80.416864  </item>
+		<item>Address: College Avenue
+              Originally Built: 1876
+		      Latitude: 37.230457  Longitude: -80.416864 </item>
+
+		<item> Hillcrest Hall  </item>
+		<item>  37.223887  </item>
+		<item>  -80.424771  </item>
+		<item>Address: West Campus Drive
+			  Originally Built: 1940
+		      Latitude: 37.223887  Longitude: -80.424771 </item>
+
+		<item> Hokie Grill  </item>
+		<item>  37.226937  </item>
+		<item>  -80.418624  </item>
+		<item>Quick fast food
+		      Latitude: 37.226937  Longitude: -80.418624 </item>
+
+		<item> Holden Hall  </item>
+		<item>  37.230328  </item>
+		<item>  -80.422293  </item>
+		<item>Address: Turner Street
+			  Originally Built: 1940
+		      Latitude: 37.230328  Longitude: -80.422293 </item>
+
+		<item> Holtzman Alumni Center  </item>
+		<item>  37.229141  </item>
+		<item>  -80.429621  </item>
+		<item>Address: West Campus Drive
+	          Originally Built: 2005
+		      Latitude: 37.229141  Longitude: -80.429621 </item>
+
+		<item> Hutcheson Hall  </item>
+		<item>  37.225724  </item>
+		<item>  -80.42313  </item>
+		<item>Address: Drillfield Drive (Ag Quad)
+			  Originally Built: 1940
+			  Latitude: 37.225724  Longitude: -80.42313 </item>
+
+
+		<item> Johnson Hall  </item>
+		<item>  37.225527  </item>
+		<item>  -80.417701  </item>
+		<item> Address: Washington Street (Lower Quad)
+			   Originally Built: 1965
+			   Latitude: 37.225527  Longitude: -80.417701 </item>
+
+		<item> Lane Hall  </item>
+		<item>  37.230884  </item>
+		<item>  -80.419825  </item>
+		<item> Address: Mall Entrance / Main Street (Upper Quad)
+			   Originally Built: 1888
+			   Latitude: 37.230884  Longitude: -80.419825 </item>
+
+		<item> Lane Stadium/Worsham Field  </item>
+		<item>  37.220504  </item>
+		<item>  -80.418334  </item>
+		<item> Address: Spring Road
+			   Originally Built: 1965
+			   Latitude: 37.220504  Longitude: -80.418334 </item>
+
+		<item> Latham Hall  </item>
+		<item>  37.224554  </item>
+		<item>  -80.422561  </item>
+		<item> Address: West Campus Drive 
+			   Originally Built: 2006
+			   Latitude: 37.224554  Longitude: -80.422561 </item>
+
+		<item> Lee Hall  </item>
+		<item>  37.224519  </item>
+		<item>  -80.418506  </item>
+		<item> Address: Washington Street (Lower Quad)
+			   Originally Built: 1966
+			   Latitude: 37.224519  Longitude: -80.418506 </item>
+
+
+		<item> Litton-Reaves Hall  </item>
+		<item>  37.221563  </item>
+		<item>  -80.42372  </item>
+		<item> Address: West Campus Drive
+			   Originally Built: 1981
+			   Latitude: 37.221563  Longitude: -80.42372 </item>
+
+		<item> Major Williams Hall  </item>
+		<item>  37.230961  </item>
+		<item>  -80.420759  </item>
+		<item> 	Address: Stanger Street (Upper Quad) 
+				Originally Built: 1957
+				Latitude: 37.230961  Longitude: -80.420759 </item>
+
+		<item> McBryde Hall  </item>
+		<item>  37.23024  </item>
+		<item>  -80.421773  </item>
+		<item> 	Address: Stanger Street 
+				Originally Built: 1972 
+				Latitude: 37.23024  Longitude: -80.421773 </item>
+
+		<item> McComas Hall  </item>
+		<item>  37.220513  </item>
+		<item>  -80.422679  </item>
+		<item>	 Address: Washington Street 
+				Originally Built: 1998
+				Latitude: 37.220513  Longitude: -80.422679 </item>
+
+		<item> Media Annex  </item>
+		<item>  37.228808  </item>
+		<item>  -80.415952  </item>
+		<item> 	Address: Roanoke Street 
+				Originally Built: 1921
+				Latitude: 37.228808  Longitude: -80.415952 </item>
+
+		<item> Media Building  </item>
+		<item>  37.228808  </item>
+		<item>  -80.415952  </item>
+		<item> 	Address: Draper Road 
+				Originally Built: 1934 
+				Latitude: 37.228808  Longitude: -80.415952 </item>
+
+		<item> Merryman Athletic Center  </item>
+		<item>  37.221572  </item>
+		<item>  -80.419085  </item>
+		<item> 	Address: Spring Road 
+				Originally Built: 1998
+				Latitude: 37.221572  Longitude: -80.419085 </item>
+
+		<item> Miles Hall  </item>
+		<item>  37.225519  </item>
+		<item>  -80.416971  </item>
+		<item> 	Address: Kent Street (Lower Quad) 
+				Originally Built: 1964
+				Latitude: 37.225519  Longitude: -80.416971 </item>
+
+		<item> Military Building  </item>
+		<item>  37.231763  </item>
+		<item>  -80.421596  </item>
+		<item> 	Address: Turner Street 
+				Originally Built: 1936
+				Latitude: 37.231763  Longitude: -80.421596 </item>
+
+		<item> Monteith Hall  </item>
+		<item>  37.231934  </item>
+		<item>  -80.419385  </item>
+		<item> 	Originally Built: 1949
+				Latitude: 37.231934  Longitude: -80.419385 </item>
+
+		<item> New Hall West  </item>
+		<item>  37.222136  </item>
+		<item>  -80.422733  </item>
+		<item>	Address: West Campus Drive 
+				Originally Built: 2009
+				Latitude: 37.222136  Longitude: -80.422733 </item>
+
+		<item> New Residence Hall (East)  </item>
+		<item>  37.225587  </item>
+		<item>  -80.419182  </item>
+		<item> 	Originally Built: 1998
+				Latitude: 37.225587  Longitude: -80.419182 </item>
+
+		<item> Newman Hall  </item>
+		<item>  37.226236  </item>
+		<item>  -80.41784  </item>
+		<item>  Originally Built: 1964 
+				Latitude: 37.226236  Longitude: -80.41784 </item>
+
+		<item> Newman Library  </item>
+		<item>  37.228654  </item>
+		<item>  -80.419332  </item>
+		<item> 	Address: Drillfield Drive 
+				Originally Built: 1955
+				Latitude: 37.228654  Longitude: -80.419332 </item>
+
+
+		<item> Norris Hall  </item>
+		<item>  37.229517  </item>
+		<item>  -80.423205  </item>
+		<item> 	Address: Turner Street
+				Originally Built: 1962
+				Latitude: 37.229517  Longitude: -80.423205 </item>
+
+
+		<item> O’Shaughnessy Hall  </item>
+		<item>  37.225339  </item>
+		<item>  -80.418366  </item>
+		<item> 	Originally Built: 1969
+				Latitude: 37.225339  Longitude: -80.418366 </item>
+
+		<item> Outreach and International Affairs  </item>
+		<item>  37.233853  </item>
+		<item>  -80.431663  </item>
+		<item> Latitude: 37.233853  Longitude: -80.431663 </item>
+
+		<item> Owens Hall  </item>
+		<item>  37.226487  </item>
+		<item>  -80.41914  </item>
+		<item> 	Address: Kent Street (Lower Quad)
+				Originally Built: 1939
+				Latitude: 37.226487  Longitude: -80.41914 </item>
+
+		<item> Owens Mailroom  </item>
+		<item>  37.226828  </item>
+		<item>  -80.419076  </item>
+		<item> Latitude: 37.226828  Longitude: -80.419076 </item>
+
+		<item> Pamplin Hall  </item>
+		<item>  37.228622  </item>
+		<item>  -80.424258  </item>
+		<item> 	Address: West Campus Drive 
+				Originally Built: 1957
+				Latitude: 37.228622  Longitude: -80.424258 </item>
+
+		<item> Parking Services  </item>
+		<item>  37.216047  </item>
+		<item>  -80.418465  </item>
+		<item> 	Address: Tech Center Drive
+				Originally Built: 1957
+			Latitude: 37.216047  Longitude: -80.418465 </item>
+
+		<item> Patton Hall	 </item>
+		<item>  37.229255  </item>
+		<item>  -80.42222  </item>
+		<item> 	Address: Drillfield Drive
+				Originally Built: 1929
+				Latitude: 37.229255  Longitude: -80.42222 </item>
+
+		<item> Payne Hall	 </item>
+		<item>  37.225803  </item>
+		<item>  -80.420042  </item>
+		<item> 	Address: Washington Street (Lower Quad)
+				Originally Built: 1993
+				Latitude: 37.225803  Longitude: -80.420042 </item>
+
+		<item> Peddrew-Yates Residence Hall  </item>
+		<item>  37.225086  </item>
+		<item>  -80.419934  </item>
+		<item> 	Address: Washington Street (Lower Quad)
+				Originally Built: 1998
+				Latitude: 37.225086  Longitude: -80.419934 </item>
+
+		<item> Peddrew-Yates Mailroom	 </item>
+		<item>  37.225265  </item>
+		<item>  -80.41959  </item>
+		<item> 	Latitude: 37.225265  Longitude: -80.41959 </item>
+
+		<item> Performing Arts Building  </item>
+		<item>  37.230596  </item>
+		<item>  -80.420889  </item>
+		<item> 	Address: Stanger Street 
+				Originally Built: 1899
+				Latitude: 37.230596  Longitude: -80.420889 </item>
+
+		<item> Price Hall  </item>
+		<item>  37.225778  </item>
+		<item>  -80.424129  </item>
+		<item> 	Address: Drillfield Drive (Ag Quad)
+				Originally Built: 1907
+				Latitude: 37.225778  Longitude: -80.424129 </item>
+
+		<item> Pritchard Gym  </item>
+		<item>  37.224231  </item>
+		<item>  -80.41943  </item>
+		<item> 	Latitude: 37.224231  Longitude: -80.41943 </item>
+
+		<item> Pritchard Hall  </item>
+		<item>  37.224351  </item>
+		<item>  -80.419731  </item>
+		<item> 	Orginally Built: 1969
+				Latitude: 37.224351  Longitude: -80.419731 </item>
+
+		<item> Pritchard Mailroom  </item>
+		<item>  37.224257  </item>
+		<item>  -80.420117  </item>
+		<item> 	Latitude: 37.224257  Longitude: -80.420117 </item>
+
+		<item> Randolph Hall  </item>
+		<item>  37.230392  </item>
+		<item>  -80.423307  </item>
+		<item>  Address: Turner Street
+				Origionally Built:1959
+				Latitude: 37.230392  Longitude: -80.423307 </item>
+
+		<item> Rasche Hall	 </item>
+		<item>  37.231049  </item>
+		<item>  -80.419001  </item>
+		<item>  Origionally Built: 1894
+				Latitude: 37.231049  Longitude: -80.419001 </item>
+
+		<item> Rector Field House  </item>
+		<item> 37.218986  </item>
+		<item>  -80.421726  </item>
+		<item>  Address: Spring Road 
+				Origionally Built: 1971
+				Latitude: 37.218986  Longitude: -80.421726 </item>
+
+		<item> Richard B. Talbot Educational Resources Center  </item>
+		<item>  37.217721  </item>
+		<item>  -80.428399  </item>
+		<item>  Address: Duck Pond Drive
+				Origionally Built: 1996
+				Latitude: 37.217721  Longitude: -80.428399 </item>
+
+		<item> Robeson Hall  </item>
+		<item>  37.228247  </item>
+		<item>  -80.42517  </item>
+		<item>  Address: West Campus Drive
+				Origionally Built: 1960
+				Latitude: 37.228247  Longitude: -80.42517 </item>
+
+		<item> Sandy Hall  </item>
+		<item>  37.225838  </item>
+		<item>  -80.423529  </item>
+		<item> Address: Drillfield Drive (Ag Quad)
+		       Originally Built: 1924
+			   Latitude: 37.225838  Longitude: -80.423529 </item>
+
+		<item> Saunders Hall  </item>
+		<item>  37.224941  </item>
+		<item>  -80.424398  </item>
+		<item> Address: West Campus Drive (Ag Quad)
+			   Originally Built: 1931 
+			   Latitude: 37.224941  Longitude: -80.424398</item>
+
+
+		<item> Seitz Hall  </item>
+		<item>  37.224633  </item>
+		<item>  -80.423679  </item>
+		<item> Address: West Campus Drive (Ag Quad)
+			   Originally Built: 1940
+			   Latitude: 37.224633  Longitude: -80.423679 </item>
+
+		<item> Shanks Hall  </item>
+		<item>  37.231715  </item>
+		<item>  -80.419967  </item>
+		<item> Address: Turner Street (Upper Quad)
+			   Originally Built: 1957
+		       Latitude: 37.231715  Longitude: -80.419967 </item>
+
+		<item> Shultz Hall  </item>
+		<item>  37.231817  </item>
+		<item>  -80.4184  </item>
+		<item> Address: Turner Street (Upper Quad)
+			   Originally Built: 1962
+		       Latitude: 37.231817  Longitude: -80.4184 </item>
+
+
+		<item> Slusher Hall  </item>
+		<item>  37.225368  </item>
+		<item>  -80.421512  </item>
+		<item> Address: Drillfield Drive (Lower Quad)
+			   Originally Built: 1972
+			   Latitude: 37.225368  Longitude: -80.421512 </item>
+
+		<item> Smith Career Center  </item>
+		<item>  37.221592  </item>
+		<item>  -80.422563  </item>
+		<item> It\'s full of careers!
+		       Latitude: 37.221592  Longitude: -80.422563 </item>
+
+		<item> Smyth Hall  </item>
+		<item>  37.224941  </item>
+		<item>  -80.423056  </item>
+		<item> Address: Drillfield Drive (Ag Quad)
+			   Originally Built: 1950
+		       Latitude: 37.224941  Longitude: -80.423056 </item>
+
+		<item> Southgate Center  </item>
+		<item>  37.218849  </item>
+		<item>  -80.416072  </item>
+		<item> Address: Southgate Drive
+			   Originally Built: 1987 
+			   Latitude: 37.218849  Longitude: -80.416072 </item>
+
+		<item> Squires Student Center  </item>
+		<item>  37.229673  </item>
+		<item>  -80.418025  </item>
+		<item> Address: College Avenue
+			   Originally Built: 1937
+			   Most useful ATM\'s located here
+			   BreakZone also here
+			   Latitude: 37.229673  Longitude: -80.418025 </item>
+
+		<item> Student Services Building  </item>
+		<item>  37.222079  </item>
+		<item>  -80.421844  </item>
+		<item> Address: Washington Street 
+			   Originally Built: 2003
+			   Latitude: 37.222079  Longitude: -80.421844 </item>
+
+		<item> Surge Space Building  </item>
+		<item>  37.232979  </item>
+		<item>  -80.423099  </item>
+		<item>	Address: Turner Street
+				Originally Built: 2007 
+				Latitude: 37.232979  Longitude: -80.423099 </item>
+
+		<item> Tennis Center  </item>
+		<item>  37.214842  </item>
+		<item>  -80.419334  </item>
+		<item>	Latitude: 37.214842  Longitude: -80.419334 </item>
+
+
+		<item> Theatre 101  </item>
+		<item>  37.230185  </item>
+		<item>  -80.416344  </item>
+		<item>	Address: College Avenue
+				Originally Built: 2009
+				Latitude: 37.230185  Longitude: -80.416344 </item>
+
+		<item> Thomas Hall  </item>
+		<item>  37.232161  </item>
+		<item>  -80.420051  </item>
+		<item>	Address: Turner Street (Upper Quad) 
+				Originally Built: 1949 
+				Latitude: 37.232161  Longitude: -80.420051 </item>
+
+		<item> Torgersen Hall  </item>
+		<item> 37.229812  </item>
+		<item>  -80.420362  </item>
+		<item>	Address: Drillfield Drive
+				Originally Built: 2000
+				Latitude: 37.229812  Longitude: -80.420362 </item>
+
+		<item> University Bookstore  </item>
+		<item>  37.228129  </item>
+		<item>  -80.418618  </item>
+		<item>	Address: Kent Street
+				Originally Built: 1975
+				Latitude: 37.228129  Longitude: -80.418618 </item>
+
+
+		<item> Vawter Hall  </item>
+		<item>  37.227065  </item>
+		<item>  -80.417572  </item>
+		<item>	Latitude: 37.227065  Longitude: -80.417572 </item>
+
+
+		<item> Visitor Information Center  </item>
+		<item>  37.215805  </item>
+		<item>  -80.423988  </item>
+		<item>	Latitude: 37.215805  Longitude: -80.423988 </item>
+
+		<item> Wallace Annex  </item>
+		<item>  37.22396  </item>
+		<item>  -80.425844  </item>
+		<item>	Latitude: 37.22396  Longitude: -80.425844 </item>
+
+		<item> Wallace Hall  </item>
+		<item>  37.222947  </item>
+		<item>  -80.424278  </item>
+		<item>	Address: West Campus Drive
+				Originally Built: 1696
+				Latitude: 37.222947  Longitude: -80.424278 </item>
+
+		<item> War Memorial Chapel  </item>
+		<item>  37.228825  </item>
+		<item>  -80.420458  </item>
+		<item>	Address: Drillfield Drive
+				Originally Built: 1960
+				Latitude: 37.228825  Longitude: -80.420458 </item>
+
+		<item> War Memorial Hall  </item>
+		<item>  37.226706  </item>
+		<item>  -80.421016  </item>
+		<item>	Address: Drillfield Drive
+				Originally Built: 1926
+				Latitude: 37.226706  Longitude: -80.421016 </item>
+
+		<item> Whittemore Hall  </item>
+		<item>  37.23102  </item>
+		<item>  -80.424546  </item>
+		<item>	Address: Perry Street
+				Originally Built: 1971
+				Latitude: 37.23102  Longitude: -80.424546 </item>
+
+		<item> William E. Lavery Health Research Center </item>
+		<item>  37.21724  </item>
+		<item>  -80.42681  </item>
+		<item>	Address: Duck Pond Drive, Blacksburg
+				Originally Built: 1995
+				Latitude: 37.21724  Longitude: -80.42681 </item>
+
+		<item> Williams Hall  </item>
+		<item>  37.22786  </item>
+		<item>  -80.424321  </item>
+		<item>	Address: Drillfield Drive
+				Originally Built: 1953
+				Latitude: 37.22786  Longitude: -80.424321 </item>
+
+		<item> Women’s Softball Field  </item>
+		<item>  37.218941  </item>
+		<item>  -80.420072  </item>
+		<item>	Latitude: 37.218941  Longitude: -80.420072 </item>
+
+	
+			  
+    </string-array>  
+</resources>

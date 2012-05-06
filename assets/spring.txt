@@ -1,0 +1,23 @@
+M	Jan. 16	MLK Day. Holiday. No classes. University Offices Closed.
+T	Jan. 17	Classes begin
+T	Jan. 17	Last day for students to withdrawal from Spring Semester to avoid tuition and fee charges. 
+M	Jan. 23	Last day for students to add classes and to add or drop audit option.
+F	Feb. 10	Closing of Web Course Request for Summer 2012
+M	Feb. 27	Last day for students to drop Spring 2012 classes without grade penalty. 
+F	Mar. 2	Last day to apply for Spring 2012 graduation in order to receive a diploma at Spring Commencement in May and have your name appear in the Commencement Bulletin.
+Sa	Mar. 3	Spring Break begins.
+Su	Mar. 11	Spring Break ends.
+M	Mar. 19	Last day for students to resign without grade penalty. 
+T	Mar. 20	Opening of Web Course Request for Fall Semester 2012
+T	Mar. 27	Close of Web Course Request for Fall Semester 2012
+F	Apr. 13	Deadline for requesting rescheduling of final examinations that conflict or constitute a third exam in 24 hours. (See your Academic Dean)
+Sa	Apr. 21	Web Drop/Add begins for Fall Semester 2012
+W	Apr. 25	Tentative grades must be entered by 12:00 midnight
+F	Apr. 27	Last day to apply for W grade policy
+W	May 2	Classes End
+R	May 3	Reading Day
+F	May 4	Beginning of Spring Semester 2012 final examinations. **Saturday Exams
+W	May 9	Close of Spring Semester 2012 final examinations
+F	May 11	University Commencement Ceremonies (Graduate and Undergraduate) (Lower than tentative grades must be entered by 12:00 noon.  Final grades due by 5:00 p.m.)
+F	May 11	Web Drop/Add closes for Fall Semester 2012
+Sa	May 12	Spring Commencement (College Ceremonies)

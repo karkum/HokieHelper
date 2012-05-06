@@ -1,0 +1,602 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:scrollbars="vertical" >
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="40sp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/amountLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:text="Number of servings   "
+                android:textColor="#000000"
+                android:textSize="20sp" />
+
+            <Spinner
+                android:id="@+id/spinner"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/servSize"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:text="Serving size "
+            android:textColor="#000000"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/ate_button"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="I had this"
+            android:textSize="20sp" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="10sp"
+            android:background="#000000" >
+        </LinearLayout>
+
+
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:background="#FFFFFF"
+            android:stretchColumns="1" >
+
+            <TableRow android:gravity="center" >
+
+                <TextView
+                    android:layout_marginLeft="25dip"
+                    android:padding="1dip"
+                    android:text="Nutritional Facts"
+                    android:textColor="#000000"
+                    android:textSize="25sp"
+                    android:textStyle="bold"
+                    android:typeface="normal" />
+            </TableRow>
+
+            <TableRow android:gravity="left" >
+
+                <TextView
+                    android:id="@+id/serving_size"
+                    android:padding="3dip"
+                    android:text="Serving Size"
+                    android:textColor="#000000"
+                    android:textSize="18sp"
+                    android:typeface="normal" />
+            </TableRow>
+
+            <View
+                android:layout_height="6dip"
+                android:layout_marginLeft="3dip"
+                android:layout_marginRight="3dip"
+                android:background="#000000" />
+
+            <TableRow android:gravity="left" >
+
+                <TextView
+                    android:padding="3dip"
+                    android:text="Amount per serving"
+                    android:textColor="#000000"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:typeface="normal" />
+            </TableRow>
+
+            <View
+                android:layout_height="1dip"
+                android:layout_marginLeft="3dip"
+                android:layout_marginRight="3dip"
+                android:background="#000000" />
+
+
+
+
+            <TableRow>
+
+                <TextView
+                    android:id="@+id/calories"
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:padding="3dip"
+                    android:text="Calories"
+                    android:textColor="#000000"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:typeface="normal" />
+
+                <!--
+                 <View
+                android:layout_height="1dip"
+                android:layout_marginLeft="3dip"
+                android:layout_marginRight="3dip"
+                android:background="#000000" />
+
+
+
+
+
+
+
+
+
+
+                -->
+                <!--
+                <TableRow
+                android:layout_width="match_parent"
+                android:gravity="left" >
+
+
+
+
+
+
+
+
+
+
+                -->
+
+                <TextView
+                    android:id="@+id/calories_from_fat"
+                    android:layout_height="match_parent"
+                    android:paddingRight="25dip"
+                    android:text="Calories From Fat"
+                    android:textColor="#000000"
+                    android:textSize="14sp"
+                    android:padding="3dip"
+                    android:typeface="normal" />
+            </TableRow>
+
+            <View
+                android:layout_height="6dip"
+                android:layout_marginLeft="3dip"
+                android:layout_marginRight="3dip"
+                android:background="#000000" />
+            <!--
+                 <View android:layout_height="2dip" android:layout_marginLeft="3dip" 
+				android:layout_marginRight="3dip" android:background="#000000" />
+
+
+
+
+
+
+
+
+
+            -->
+
+            <TableRow android:gravity="right" >
+
+                <!--
+                <TextView
+                    android:textColor="#000000"
+                    android:textSize="11sp"
+                    android:textStyle="bold"
+                    android:typeface="normal" >
+                </TextView>
+
+
+
+                -->
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:paddingLeft="130dip"
+                    android:text="% Daily Value*"
+                    android:textColor="#000000"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:typeface="normal" />
+            </TableRow>
+
+            <View
+                android:layout_height="1dip"
+                android:layout_marginLeft="3dip"
+                android:layout_marginRight="3dip"
+                android:background="#000000" />
+
+            <TableRow android:gravity="left" >
+
+                <TextView
+                    android:id="@+id/total_fat"
+                    android:layout_column="0"
+                    android:padding="3dip"
+                    android:text="Total Fat"
+                    android:textColor="#000000"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:typeface="normal" />
+
+                <TextView
+                    android:id="@+id/total_fat_DV "
+                    android:gravity="right"
+                    android:layout_column="1"
+                    android:paddingRight="80dip"
+                    android:text="3%"
+                    android:textColor="#000000"
+                    android:textSize="14sp"
+                    android:typeface="normal" />
+            </TableRow>
+
+            <View
+                android:layout_height="1dip"
+                android:layout_marginLeft="16dip"
+                android:layout_marginRight="3dip"
+                android:background="#000000" />
+
+            <TableRow
+                android:layout_marginLeft="16dip"
+                android:gravity="left" >
+
+                <TextView
+                    android:id="@+id/sat_fat"
+                    android:layout_width="wrap_content"
+                    android:padding="3dip"
+                    android:text="Saturated Fat"
+                    android:textColor="#000000"
+                    android:textSize="14sp"
+                    android:typeface="normal" />
+
+                <TextView
+                    android:id="@+id/sat_fat_DV"
+                    android:layout_width="wrap_content"
+                    android:gravity="right"
+                    android:paddingRight="96dip"
+                    android:text="3%"
+                    android:textColor="#000000"
+                    android:textSize="14sp"
+                    android:typeface="normal" >
+                </TextView>
+            </TableRow>
+
+            <View
+                android:layout_height="1dip"
+                android:layout_marginLeft="16dip"
+                android:layout_marginRight="3dip"
+                android:background="#000000" />
+
+            <TableRow
+                android:layout_marginLeft="16dip"
+                android:gravity="left" >
+
+                <TextView
+                    android:id="@+id/trans_fat"
+                    android:padding="3dip"
+                    android:text="Trans Fat"
+                    android:textColor="#000000"
+                    android:textSize="14sp"
+                    android:typeface="normal" />
+            </TableRow>
+
+            <View
+                android:layout_height="1dip"
+                android:layout_marginLeft="3dip"
+                android:layout_marginRight="3dip"
+                android:background="#000000" />
+
+            <TableRow android:gravity="left" >
+
+                <TextView
+                    android:id="@+id/cholesterol"
+                    android:padding="3dip"
+                    android:text="Cholesterol"
+                    android:textColor="#000000"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:typeface="normal" />
+
+                <TextView
+                    android:id="@+id/cholesterol_DV"
+                    android:gravity="right"
+                    android:paddingRight="80dip"
+                    android:text="3%"
+                    android:textColor="#000000"
+                    android:textSize="14sp"
+                    android:typeface="normal" />
+            </TableRow>
+
+            <View
+                android:layout_height="1dip"
+                android:layout_marginLeft="3dip"
+                android:layout_marginRight="3dip"
+                android:background="#000000" />
+
+            <TableRow android:gravity="left" >
+
+                <TextView
+                    android:id="@+id/sodium"
+                    android:padding="3dip"
+                    android:text="Sodium"
+                    android:textColor="#000000"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:typeface="normal" />
+
+                <TextView
+                    android:id="@+id/sodium_DV"
+                    android:gravity="right"
+                    android:paddingRight="80dip"
+                    android:text="3%"
+                    android:textColor="#000000"
+                    android:textSize="14sp"
+                    android:typeface="normal" />
+            </TableRow>
+
+            <View
+                android:layout_height="1dip"
+                android:layout_marginLeft="3dip"
+                android:layout_marginRight="3dip"
+                android:background="#000000" />
+
+            <TableRow android:gravity="left" >
+
+                <TextView
+                    android:id="@+id/carbs"
+                    android:padding="3dip"
+                    android:text="Total Carbohydrate"
+                    android:textColor="#000000"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:typeface="normal" />
+
+                <TextView
+                    android:id="@+id/carbs_DV"
+                    android:gravity="right"
+                    android:paddingRight="80dip"
+                    android:text="3%"
+                    android:textColor="#000000"
+                    android:textSize="14sp"
+                    android:typeface="normal" />
+            </TableRow>
+
+            <View
+                android:layout_height="1dip"
+                android:layout_marginLeft="3dip"
+                android:layout_marginRight="3dip"
+                android:background="#000000" />
+
+            <TableRow
+                android:layout_marginLeft="16dip"
+                android:gravity="left" >
+
+                <TextView
+                    android:id="@+id/dietary_fiber"
+                    android:layout_width="23dip"
+                    android:padding="3dip"
+                    android:text="Dietary Fiber"
+                    android:textColor="#000000"
+                    android:textSize="14sp"
+                    android:typeface="normal" />
+
+                <TextView
+                    android:id="@+id/dietary_fiber_DV"
+                    android:gravity="right"
+                    android:paddingRight="96dip"
+                    android:text="3%"
+                    android:textColor="#000000"
+                    android:textSize="14sp"
+                    android:typeface="normal" >
+                </TextView>
+            </TableRow>
+
+            <View
+                android:layout_height="1dip"
+                android:layout_marginLeft="16dip"
+                android:layout_marginRight="3dip"
+                android:background="#000000" />
+
+            <TableRow
+                android:layout_marginLeft="16dip"
+                android:gravity="left" >
+
+                <TextView
+                    android:id="@+id/sugars"
+                    android:padding="3dip"
+                    android:text="Sugars"
+                    android:textColor="#000000"
+                    android:textSize="14sp"
+                    android:typeface="normal" />
+            </TableRow>
+
+            <View
+                android:layout_height="1dip"
+                android:layout_marginRight="3dip"
+                android:background="#000000" />
+
+            <TableRow android:gravity="left" >
+
+                <TextView
+                    android:id="@+id/protein"
+                    android:padding="3dip"
+                    android:text="Protein"
+                    android:textColor="#000000"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:typeface="normal" />
+            </TableRow>
+
+            <View
+                android:layout_height="6dip"
+                android:layout_marginLeft="3dip"
+                android:layout_marginRight="3dip"
+                android:background="#000000" />
+
+            <TableRow android:gravity="left" >
+
+                <TextView
+                    android:id="@+id/vitamin_a"
+                    android:padding="3dip"
+                    android:text="Vitamin A"
+                    android:textColor="#000000"
+                    android:textSize="14sp"
+                    android:typeface="normal" />
+            </TableRow>
+
+            <View
+                android:layout_height="1dip"
+                android:layout_marginRight="3dip"
+                android:background="#000000" />
+
+            <TableRow android:gravity="left" >
+
+                <TextView
+                    android:id="@+id/vitamin_c"
+                    android:padding="3dip"
+                    android:text="Vitamin C"
+                    android:textColor="#000000"
+                    android:textSize="14sp"
+                    android:typeface="normal" />
+            </TableRow>
+
+            <View
+                android:layout_height="1dip"
+                android:layout_marginRight="3dip"
+                android:background="#000000" />
+
+            <TableRow android:gravity="left" >
+
+                <TextView
+                    android:id="@+id/calcium"
+                    android:padding="3dip"
+                    android:text="Calcium"
+                    android:textColor="#000000"
+                    android:textSize="14sp"
+                    android:typeface="normal" />
+            </TableRow>
+
+            <View
+                android:layout_height="1dip"
+                android:layout_marginRight="3dip"
+                android:background="#000000" />
+
+            <TableRow android:gravity="left" >
+
+                <TextView
+                    android:id="@+id/iron"
+                    android:padding="3dip"
+                    android:text="Iron"
+                    android:textColor="#000000"
+                    android:textSize="14sp"
+                    android:typeface="normal" />
+            </TableRow>
+
+            <!--
+                 <TableRow> <TextView android:text="@string/daily_value_warning" android:textSize="8sp" 
+				android:padding="3dip" android:textColor="#000000" android:typeface="normal" 
+				/> </TableRow>
+
+
+
+
+
+
+
+
+
+            -->
+
+            <View
+                android:layout_height="2dip"
+                android:layout_marginRight="3dip"
+                android:background="#000000" />
+        </TableLayout>
+
+        <RelativeLayout
+            android:id="@+id/allergenHeading"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="5dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:text="Allergens"
+                android:textColor="#000000"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/toggleAllergensButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:adjustViewBounds="true"
+                android:maxHeight="30dp"
+                android:maxWidth="30dp"
+                android:src="@drawable/toggle_plus" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/allergensTextView"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:padding="5dp"
+            android:text=""
+            android:textColor="#000000"
+            android:visibility="gone" />
+<View
+     android:layout_width="match_parent"
+                android:layout_height="1dip"
+                android:layout_marginRight="3dip"
+                android:background="#000000" />
+        <RelativeLayout
+            android:id="@+id/ingredientsHeading"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="5dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:text="Ingredients"
+                android:textColor="#000000"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/toggleIngredientsButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:adjustViewBounds="true"
+                android:maxHeight="30dp"
+                android:maxWidth="30dp"
+                android:src="@drawable/toggle_plus" />
+        </RelativeLayout>
+ 
+        <TextView
+            android:id="@+id/ingredientsTextView"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:padding="5dp"
+            android:text=""
+            android:textColor="#000000"
+            android:visibility="gone" />
+    </LinearLayout>
+
+</ScrollView>

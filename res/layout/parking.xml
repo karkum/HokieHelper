@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" android:layout_height="fill_parent"
+	android:layout_width="fill_parent" android:scrollbars="vertical" android:background="@drawable/bg_tan">
+
+	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		android:layout_width="fill_parent" android:layout_height="fill_parent"
+		android:orientation="vertical" android:gravity="center">
+		<TextView android:layout_width="wrap_content" android:id="@+id/chosen"
+			android:layout_height="wrap_content" android:padding="4dip"
+			android:textColor="#000000" android:textSize="18dp" android:text="Parking information for:"
+			android:gravity="center">
+		</TextView>
+		<TextView android:id="@+id/current_selection"
+			android:layout_width="fill_parent" android:layout_height="wrap_content"
+			android:padding="4dip" android:textColor="#660000" android:textSize="20dp"
+			android:gravity="center">
+		</TextView>
+	</LinearLayout>
+</ScrollView>

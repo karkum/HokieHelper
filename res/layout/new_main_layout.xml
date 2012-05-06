@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content">
+ <com.google.android.maps.MapView 
+        android:id="@+id/mapView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:enabled="true"
+        android:clickable="true"
+        android:apiKey="0M9spGBqOZ9XhRkIkfPklXyuVqyCtc5KTILu-0Q"
+        />
+
+
+
+  <SlidingDrawer
+  android:layout_width="fill_parent"
+  android:layout_height="wrap_content"
+   android:id="@+id/bottom_drawer"
+  android:handle="@+id/handle"
+  android:content="@+id/content"
+  android:topOffset="359dp">
+  <ImageView
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  android:id="@+id/handle"
+  android:src="@drawable/tray_handle_normal"
+  />
+  <LinearLayout
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:orientation="vertical"
+  android:id="@+id/content"
+  android:background="@drawable/slide_back"
+  >
+   <ListView
+        android:id="@+id/bottom_slider_listview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+  </LinearLayout>
+  
+  </SlidingDrawer>
+</FrameLayout>
+
