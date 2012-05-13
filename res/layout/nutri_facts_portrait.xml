@@ -4,7 +4,6 @@
     android:layout_height="fill_parent"
     android:scrollbars="vertical" >
 
-
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -51,7 +50,6 @@
             android:layout_height="10sp"
             android:background="#000000" >
         </LinearLayout>
-
 
         <TableLayout
             android:layout_width="wrap_content"
@@ -105,63 +103,41 @@
                 android:layout_marginRight="3dip"
                 android:background="#000000" />
 
-
-
-
-            <TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:gravity="left" >
 
                 <TextView
                     android:id="@+id/calories"
-                    android:layout_width="match_parent"
-                    android:layout_weight="1"
+                    android:layout_width="250dp"
+                    android:layout_height="match_parent"
                     android:padding="3dip"
                     android:text="Calories"
                     android:textColor="#000000"
                     android:textSize="14sp"
                     android:textStyle="bold"
                     android:typeface="normal" />
+            </TableRow>
 
-                <!--
-                 <View
+            <View
                 android:layout_height="1dip"
                 android:layout_marginLeft="3dip"
                 android:layout_marginRight="3dip"
                 android:background="#000000" />
 
-
-
-
-
-
-
-
-
-
-                -->
-                <!--
-                <TableRow
+            <TableRow
                 android:layout_width="match_parent"
                 android:gravity="left" >
 
-
-
-
-
-
-
-
-
-
-                -->
-
                 <TextView
                     android:id="@+id/calories_from_fat"
+                    android:layout_width="250dp"
                     android:layout_height="match_parent"
-                    android:paddingRight="25dip"
+                    android:layout_marginLeft="16dip"
+                    android:padding="3dip"
                     android:text="Calories From Fat"
                     android:textColor="#000000"
                     android:textSize="14sp"
-                    android:padding="3dip"
                     android:typeface="normal" />
             </TableRow>
 
@@ -184,9 +160,8 @@
 
             -->
 
-            <TableRow android:gravity="right" >
+            <TableRow>
 
-                <!--
                 <TextView
                     android:textColor="#000000"
                     android:textSize="11sp"
@@ -194,25 +169,21 @@
                     android:typeface="normal" >
                 </TextView>
 
-
-
-                -->
-
                 <TextView
-                    android:layout_width="wrap_content"
-                    android:paddingLeft="130dip"
+                    android:gravity="right"
+                    android:paddingRight="45dip"
                     android:text="% Daily Value*"
                     android:textColor="#000000"
-                    android:textSize="14sp"
+                    android:textSize="11sp"
                     android:textStyle="bold"
                     android:typeface="normal" />
             </TableRow>
 
-            <View
-                android:layout_height="1dip"
-                android:layout_marginLeft="3dip"
-                android:layout_marginRight="3dip"
-                android:background="#000000" />
+            <!--
+                 <View android:layout_height="1dip" android:layout_marginLeft="3dip" 
+				android:layout_marginRight="3dip" android:background="#000000" />
+
+            -->
 
             <TableRow android:gravity="left" >
 
@@ -228,9 +199,9 @@
 
                 <TextView
                     android:id="@+id/total_fat_DV "
-                    android:gravity="right"
                     android:layout_column="1"
-                    android:paddingRight="80dip"
+                    android:gravity="right"
+                    android:paddingRight="45dip"
                     android:text="3%"
                     android:textColor="#000000"
                     android:textSize="14sp"
@@ -259,8 +230,8 @@
                 <TextView
                     android:id="@+id/sat_fat_DV"
                     android:layout_width="wrap_content"
-                    android:gravity="right"
-                    android:paddingRight="96dip"
+                    android:gravity="center"
+                    android:paddingLeft="12dip"
                     android:text="3%"
                     android:textColor="#000000"
                     android:textSize="14sp"
@@ -307,7 +278,7 @@
                 <TextView
                     android:id="@+id/cholesterol_DV"
                     android:gravity="right"
-                    android:paddingRight="80dip"
+                    android:paddingRight="45dip"
                     android:text="3%"
                     android:textColor="#000000"
                     android:textSize="14sp"
@@ -334,7 +305,7 @@
                 <TextView
                     android:id="@+id/sodium_DV"
                     android:gravity="right"
-                    android:paddingRight="80dip"
+                    android:paddingRight="45dip"
                     android:text="3%"
                     android:textColor="#000000"
                     android:textSize="14sp"
@@ -361,7 +332,7 @@
                 <TextView
                     android:id="@+id/carbs_DV"
                     android:gravity="right"
-                    android:paddingRight="80dip"
+                    android:paddingRight="45dip"
                     android:text="3%"
                     android:textColor="#000000"
                     android:textSize="14sp"
@@ -389,8 +360,9 @@
 
                 <TextView
                     android:id="@+id/dietary_fiber_DV"
+                    android:layout_gravity="center_horizontal"
                     android:gravity="right"
-                    android:paddingRight="96dip"
+                    android:paddingLeft="12dip"
                     android:text="3%"
                     android:textColor="#000000"
                     android:textSize="14sp"
@@ -507,18 +479,15 @@
 
 
 
-
-
-
-
-
             -->
-
-            <View
-                android:layout_height="2dip"
-                android:layout_marginRight="3dip"
-                android:background="#000000" />
         </TableLayout>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="6dip"
+            android:layout_marginLeft="3dip"
+            android:layout_marginRight="3dip"
+            android:background="#000000" />
 
         <RelativeLayout
             android:id="@+id/allergenHeading"
@@ -548,6 +517,13 @@
         </RelativeLayout>
 
         <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:layout_marginLeft="3dip"
+            android:layout_marginRight="3dip"
+            android:background="#000000" />
+
+        <TextView
             android:id="@+id/allergensTextView"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
@@ -556,11 +532,7 @@
             android:text=""
             android:textColor="#000000"
             android:visibility="gone" />
-<View
-     android:layout_width="match_parent"
-                android:layout_height="1dip"
-                android:layout_marginRight="3dip"
-                android:background="#000000" />
+
         <RelativeLayout
             android:id="@+id/ingredientsHeading"
             android:layout_width="fill_parent"
@@ -587,7 +559,14 @@
                 android:maxWidth="30dp"
                 android:src="@drawable/toggle_plus" />
         </RelativeLayout>
- 
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:layout_marginLeft="3dip"
+            android:layout_marginRight="3dip"
+            android:background="#000000" />
+
         <TextView
             android:id="@+id/ingredientsTextView"
             android:layout_width="fill_parent"
