@@ -8,8 +8,8 @@ public class Dining_Handler
 {
     private HashMap<String, Integer> halls;
 
-    public static final String[] allHalls = { "d2", "deets", "dx",
-        "hokie_grill", "owens", "shultz", "shultz_express", "west_end", "abp_glc", "abp_cafe", "abp_kiosk", "sbarro" };
+    public static final String[] allHalls = { "abp_cafe", "abp_glc", "abp_kiosk", "d2", "deets", "dx",
+        "hokie_grill", "owens", "sbarro", "turner_place", "west_end" };
     public static final int CLOSED = 0;
     public static final int OPEN = 1;
     public static final int OPEN_EX = 2;
@@ -23,18 +23,17 @@ public class Dining_Handler
 
     public void resetMap()
     {
+        halls.put("abp_cafe", CLOSED);
+        halls.put("abp_glc", CLOSED);
+        halls.put("abp_kiosk", CLOSED);
         halls.put("d2", CLOSED);
         halls.put("deets", CLOSED);
         halls.put("dx", CLOSED);
         halls.put("hokie_grill", CLOSED);
         halls.put("owens", CLOSED);
-        halls.put("shultz", CLOSED);
-        halls.put("shultz_express", CLOSED);
-        halls.put("west_end", CLOSED);
-        halls.put("abp_glc", CLOSED);
-        halls.put("abp_cafe", CLOSED);
-        halls.put("abp_kiosk", CLOSED);
         halls.put("sbarro", CLOSED);
+        halls.put("turner_place", CLOSED);
+        halls.put("west_end", CLOSED);
     }
 
     public ArrayList<String> getHallsForState(String state)
@@ -176,17 +175,6 @@ public class Dining_Handler
         {
             returnValue = getState(10, 20, current, minutes, true);
         }
-        else if (hall.equals("shultz"))
-        {
-            returnValue = CLOSED;
-        }
-        else if (hall.equals("shultz_express"))
-        {
-            if (str[0].charAt(0) == 'F')
-                returnValue = getState(7, 16, current, -1, false);
-            else if (str[0].charAt(0) != 'S')
-                returnValue = getState(7, 14, current, -1, false);
-        }
         else if (hall.equals("west_end"))
         {
             if (str[0].equals("Sun"))
@@ -218,6 +206,10 @@ public class Dining_Handler
         {
             if (!str[0].equals("S"))
                 returnValue = getState(7, 21, current, minutes, true);
+        }
+        else if (hall.equals("turner_place"))
+        {
+        	return CLOSED;
         }
         else {
             if (!str[0].equals("S"))

@@ -676,14 +676,14 @@ public class Dining_InfoActivity extends ListActivity
 			hallName.setText("Owens Food Court");
 			img.setImageResource(R.drawable.logo_owens);
 			tableNumber = "540-231-6187"; break;
-		case 5: //shultz_express
-			hallName.setText("Shultz Express");
-			img.setImageResource(R.drawable.logo_shultz_express);
-			tableNumber = "540-231-9818"; break;
-		case 6: //shultz
-			hallName.setText("Shultz");
-			img.setImageResource(R.drawable.logo_shultz);
-			tableNumber = "540-231-6873"; break;
+//		case 5: //shultz_express
+//			hallName.setText("Shultz Express");
+//			img.setImageResource(R.drawable.logo_shultz_express);
+//			tableNumber = "540-231-9818"; break;
+//		case 6: //shultz
+//			hallName.setText("Shultz");
+//			img.setImageResource(R.drawable.logo_shultz);
+//			tableNumber = "540-231-6873"; break;
 		case 7: //west_end
 			hallName.setText("West End Market");
 			img.setImageResource(R.drawable.logo_west_end);

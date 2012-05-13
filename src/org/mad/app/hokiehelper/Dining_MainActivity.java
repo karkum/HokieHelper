@@ -319,58 +319,6 @@ public class Dining_MainActivity extends Activity
                 }
             });
         }
-        if(hall.equals("shultz"))
-        {
-            image.setImageResource(R.drawable.logo_shultz);
-            image.setVisibility(0);
-            image.setOnClickListener(new OnClickListener()
-            {
-                public void onClick(View v)
-                {
-                    restaurantChosen = 6;
-                    createInformationList();
-                }
-            });
-        }
-        if(hall.equals("shultz_ex"))
-        {
-            image.setImageResource(R.drawable.logo_shultz_ex);
-            image.setVisibility(0);
-            image.setOnClickListener(new OnClickListener()
-            {
-                public void onClick(View v)
-                {
-                    restaurantChosen = 6;
-                    createInformationList();
-                }
-            });
-        }
-        if(hall.equals("shultz_express"))
-        {
-            image.setImageResource(R.drawable.logo_shultz_express);
-            image.setVisibility(0);
-            image.setOnClickListener(new OnClickListener()
-            {
-                public void onClick(View v)
-                {
-                    restaurantChosen = 5;
-                    createInformationList();
-                }
-            });
-        }
-        if(hall.equals("shultz_express_ex"))
-        {
-            image.setImageResource(R.drawable.logo_shultz_express_ex);
-            image.setVisibility(0);
-            image.setOnClickListener(new OnClickListener()
-            {
-                public void onClick(View v)
-                {
-                    restaurantChosen = 5;
-                    createInformationList();
-                }
-            });
-        }
         if(hall.equals("west_end"))
         {
             image.setImageResource(R.drawable.logo_west_end);

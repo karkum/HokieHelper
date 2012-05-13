@@ -58,8 +58,6 @@ public class Dining_SubRestaurants extends ListActivity
 			id = R.array.deetCategory;
 		else if (subRestaurant.equals("hokieGrill"))
 			id = R.array.hokieGrillCategory;
-		else if (subRestaurant.equals("shultz"))
-			id = R.array.shultzCategory;
 		else if (subRestaurant.equals("owens"))
 			id = R.array.owensCategory;
 		else if (subRestaurant.equals("westend"))
@@ -68,8 +66,6 @@ public class Dining_SubRestaurants extends ListActivity
 			id = R.array.d2Category;
 		else if (subRestaurant.equals("dx"))
 			id = R.array.d2Category;
-		else if (subRestaurant.equals("shultzExpress"))
-			id = R.array.shultzCategory;
 		else
 			id = -1;
 		return id;
