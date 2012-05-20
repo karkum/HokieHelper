@@ -1,1 +1,12 @@
-First code commit.
+The app has been updated to use ActionBarSherlock as a way to implement 
+the ICS design guidelines and use native Android 4.x ActionBar code in projects, 
+while still maintaining a consistent look and feel across devices running 
+Android 2.x and 3.x.  To get this project to work in eclipse, you're going to 
+have to download the ActionBarSherlock library located at:
+
+http://actionbarsherlock.com
+
+As for importing it into eclipse and setting it up with the project, 
+please use the following YouTube tutorial:
+
+http://youtu.be/4GJ6yY1lNNY

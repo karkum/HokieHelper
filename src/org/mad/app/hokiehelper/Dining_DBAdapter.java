@@ -109,28 +109,6 @@ public class Dining_DBAdapter
                     "sodium text not null, sodiumDv text not null, calcium text not null, " +
                     "iron text not null, vitaminA text not null, vitaminC text not null, " +
                     "ingredients text not null, allergens text not null, subrestaurant text not null);";
-    private static final String SHULTZ_EXPRESS_CREATE =
-            "create table shultzExpress (_id integer primary key autoincrement, " +
-                    "name text not null, servingSize text not null, calories text not null, " +
-                    "caloriesFat text not null, totalFat text not null, totalFatDv text not null," + 
-                    " totalCarb text not null, totalCarbDv text not null, satFat text not null," +
-                    " satFatDv text not null, fiber text not null, fiberDv text not null," +
-                    " transFat text not null, sugars text not null, cholesterol text not null," +
-                    " cholesterolDv text not null, protein text not null, " +
-                    "sodium text not null, sodiumDv text not null, calcium text not null, " +
-                    "iron text not null, vitaminA text not null, vitaminC text not null, " +
-                    "ingredients text not null, allergens text not null, subrestaurant text not null);";
-    private static final String SHULTZ_CREATE =
-            "create table shultz (_id integer primary key autoincrement, " +
-                    "name text not null, servingSize text not null, calories text not null, " +
-                    "caloriesFat text not null, totalFat text not null," +
-                    " totalCarb text not null, satFat text not null," +
-                    " fiber text not null," +
-                    " transFat text not null, sugars text not null, cholesterol text not null," +
-                    " protein text not null, " +
-                    "sodium text not null, calcium text not null, " +
-                    "iron text not null, vitaminA text not null, vitaminC text not null, " +
-                    "subrestaurant text not null);";
     private static final String WESTEND_CREATE =
             "create table westend (_id integer primary key autoincrement, " +
                     "name text not null, servingSize text not null, calories text not null, " +
@@ -183,8 +161,6 @@ public class Dining_DBAdapter
             db.execSQL(DX_CREATE);
             db.execSQL(HOKIEGRILL_CREATE);
             db.execSQL(OWENS_CREATE);
-            db.execSQL(SHULTZ_EXPRESS_CREATE);
-            db.execSQL(SHULTZ_CREATE);
             db.execSQL(WESTEND_CREATE);
 
             try
@@ -209,8 +185,6 @@ public class Dining_DBAdapter
             db.execSQL("DROP TABLE IF EXISTS dx");
             db.execSQL("DROP TABLE IF EXISTS hokieGrill");
             db.execSQL("DROP TABLE IF EXISTS owens");
-            db.execSQL("DROP TABLE IF EXISTS shultzExpress");
-            db.execSQL("DROP TABLE IF EXISTS shultz");
             db.execSQL("DROP TABLE IF EXISTS westend");
             onCreate(db);
         }
@@ -226,8 +200,6 @@ public class Dining_DBAdapter
                 return resources.getStringArray(R.array.hokieGrillCategory);
             else if (restaurant.equals("owens"))
                 return resources.getStringArray(R.array.owensCategory);
-            else if (restaurant.equals("shultz"))
-                return resources.getStringArray(R.array.shultzCategory);
             else if (restaurant.equals("westend"))
                 return resources.getStringArray(R.array.westendCategory);
             else
