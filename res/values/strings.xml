@@ -72,25 +72,6 @@
 		<item>Pizza Hut</item>
 	</string-array>
 
-	<string-array name="shultzCategory">
-		<item>Baked Goods</item>
-		<item>Beverages</item>
-		<item>Breakfast Hot Items</item>
-		<item>Breakfast Sandwiches</item>
-		<item>Burgers, Fries and Dogs</item>
-		<item>Condiments</item>
-		<item>Desserts</item>
-		<item>Dinner Bar</item>
-		<item>Entrees</item>
-		<item>Fruits</item>
-		<item>Made To Order Sandwiches</item>
-		<item>Salad Bar</item>
-		<item>Sauces</item>
-		<item>Sides</item>
-		<item>Soups</item>
-		<item>Specialty Sandwiches</item>
-	</string-array>
-
 	<string-array name="owensCategory">
 		<item>Bowl Dynasty</item>
 		<item>Carved Meat</item>
@@ -157,7 +138,6 @@
 		<item>deets</item>
 		<item>hokieGrill</item>
 		<item>owens</item>
-		<item>shultz</item>
 		<item>westend</item>
 	</string-array>
 
@@ -707,122 +687,6 @@
 		<item>Napoleans</item>
 		<item>Parfaits</item>
 		<item>Vanilla or Chocolate Cupcake</item>
-	</string-array>
-
-	<string-array name="shultzfoodlist">
-		<item>Applesauce Raisin Bread</item>
-		<item>Assorted Bagels</item>
-		<item>Bran Muffins</item>
-		<item>Donuts</item>
-		<item>100% Orange Juice</item>
-		<item>Apple Juice</item>
-		<item>Chocolate Milk</item>
-		<item>Fruit Punch</item>
-		<item>Hot Chocolate</item>
-		<item>Orange Juice</item>
-		<item>Skim Milk</item>
-		<item>Soft Drinks - Diet</item>
-		<item>Soft Drinks - Regular</item>
-		<item>Strawberry Banana Kiwi juice</item>
-		<item>Whole Milk</item>
-		<item>Cheeseburger Half Pound</item>
-		<item>Corn Dog</item>
-		<item>French Fries</item>
-		<item>Hamburger Half Pound</item>
-		<item>Hot Dog Chili</item>
-		<item>Quarterpound Cheeseburger</item>
-		<item>Quarterpound Hamburger</item>
-		<item>Quarterpound Hot Dog</item>
-		<item>Cream Cheese</item>
-		<item>Peanut Butter</item>
-		<item>Whipped Margarine</item>
-		<item>Brownies with Nuts and Icing</item>
-		<item>Ice Milk Soft Serve Chocolate</item>
-		<item>Ice Milk Soft Serve Vanilla</item>
-		<item>Raisin Craisin Oat Bars</item>
-		<item>Yellow Cake with Chocolate Icing</item>
-		<item>Cheese Pizza</item>
-		<item>Pepperoni Pizza</item>
-		<item>Steamed Fresh Broccoli</item>
-		<item>Whole Kernel Corn</item>
-		<item>Fresh Banana</item>
-		<item>Fresh Golden Apples</item>
-		<item>Fresh Orange</item>
-		<item>Mixed Fresh Fruit Bowl</item>
-		<item>Peach Slices</item>
-		<item>Raisins</item>
-		<item>7 Inch Sub Roll</item>
-		<item>American Cheese</item>
-		<item>Cheddar Cheese</item>
-		<item>Ham</item>
-		<item>Meunster Cheese</item>
-		<item>Monterey Jack Cheese</item>
-		<item>Provolone Cheese</item>
-		<item>Red Onions</item>
-		<item>Roast Beef</item>
-		<item>Smoked Turkey</item>
-		<item>Swiss Cheese</item>
-		<item>Turkey</item>
-		<item>White Sliced Bread</item>
-		<item>Whole Wheat Sliced Bread</item>
-		<item>Caesar Salad without Dressing</item>
-		<item>Chef Salad</item>
-		<item>Chopped Hard Cooked Eggs</item>
-		<item>Cole Slaw</item>
-		<item>Cottage Cheese</item>
-		<item>Fat Free Italian Dressing</item>
-		<item>Fat Free Ranch Dressing</item>
-		<item>Garden Salad</item>
-		<item>Hummus Bowl with Pitas</item>
-		<item>Oil and Vinegar</item>
-		<item>Parmesan Pepper</item>
-		<item>Red Pepper Hummus Bowl</item>
-		<item>Salad Tossed with just Veggies</item>
-		<item>Spicy Grilled Chicken Salad</item>
-		<item>Veggie Bowl</item>
-		<item>Bacon and Egg Biscuit</item>
-		<item>Bacon Biscuit</item>
-		<item>Bacon, Egg and Cheese Biscuit</item>
-		<item>Biscuits</item>
-		<item>Egg and Cheese Biscuit</item>
-		<item>Ham and Cheese Biscuit</item>
-		<item>Ham, Egg and Cheese Biscuit</item>
-		<item>Sausage and Egg Biscuit</item>
-		<item>Sausage Biscuit</item>
-		<item>Sausage, Egg and Cheese Biscuit</item>
-		<item>Steak and Egg Biscuit</item>
-		<item>Steak Biscuit</item>
-		<item>Steak, Egg and Cheese Biscuit</item>
-		<item>Alfredo Sauce</item>
-		<item>Bolognaise Sauce</item>
-		<item>Cheese Sauce</item>
-		<item>Chicken Gravy</item>
-		<item>Marinara Sauce</item>
-		<item>Baby Carrots</item>
-		<item>Corn Pudding</item>
-		<item>Green Beans</item>
-		<item>Italian Vegetables</item>
-		<item>Onion Rings</item>
-		<item>Rosemary Roasted Red Potatoes</item>
-		<item>Seasoned Green Beans</item>
-		<item>Steamed Fresh Broccoli</item>
-		<item>Wheat Dinner Rolls</item>
-		<item>Whipped Fresh Potatoes</item>
-		<item>Whole Kernel Corn</item>
-		<item>Wild Rice</item>
-		<item>Ziti Noodles</item>
-		<item>Zucchini and Yellow Squash</item>
-		<item>Chicken Gumbo</item>
-		<item>Chili Con Carne</item>
-		<item>BBQ Pork Sandwich</item>
-		<item>Cheese Hoagie Sub 6 inches</item>
-		<item>Chicken Filet Sandwich</item>
-		<item>Chicken Patty and Cheese Sandwich</item>
-		<item>Chicken Patty Sandwich</item>
-		<item>Chicken Teriyaki Sandwich</item>
-		<item>Express BBQ Chicken Sandwich</item>
-		<item>Hoagie Sub 6 inches</item>
-		<item>Veggie Hoagie Sub 6 inches</item>
 	</string-array>
 
 	<string-array name="westendfoodlist">
