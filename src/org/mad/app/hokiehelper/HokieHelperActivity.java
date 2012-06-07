@@ -2,6 +2,8 @@ package org.mad.app.hokiehelper;
 
 import java.util.ArrayList;
 
+import com.actionbarsherlock.app.SherlockActivity;
+
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
@@ -22,7 +24,7 @@ import android.widget.Toast;
  * 
  * @author Karthik
  */
-public class HokieHelperActivity extends Activity {
+public class HokieHelperActivity extends SherlockActivity {
 
     private final String DEGREE_SYMBOL = "\u00B0";
 
@@ -43,6 +45,9 @@ public class HokieHelperActivity extends Activity {
         View l = findViewById(R.id.lin_layout);
         l.setBackgroundResource(R.drawable.mainpage_background);
         list = new ArrayList<Twitter_Tweet>();
+        
+        // Hide the action bar
+        getSupportActionBar().hide();
 
         ImageView topPic = (ImageView)findViewById(R.id.topimage);
         topPic.setVisibility(View.INVISIBLE);

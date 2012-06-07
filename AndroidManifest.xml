@@ -1,21 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="org.mad.app.hokiehelper"
+    android:installLocation="auto"
     android:versionCode="4"
-    android:versionName="1.3"  
-    android:installLocation="auto">
+    android:versionName="1.3" >
 
-    <uses-sdk android:minSdkVersion="7" android:targetSdkVersion="15" />
+    <uses-sdk
+        android:minSdkVersion="7"
+        android:targetSdkVersion="15" />
 
     <application
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
-        android:theme="@android:style/Theme.NoTitleBar" >
+        android:theme="@style/Theme.Sherlock.Light.ForceOverflow" >
         <activity
-            android:label="@string/app_name"
             android:name=".HokieHelperActivity"
+            android:label="@string/app_name"
             android:screenOrientation="portrait" >
-            <intent-filter >
+            <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
@@ -24,7 +26,7 @@
         <activity android:name=".Dining_MainActivity" >
         </activity>
         <activity android:name=".Dining_SearchActivity" >
-            <intent-filter >
+            <intent-filter>
                 <action android:name="android.intent.action.SEARCH" />
             </intent-filter>
 
@@ -36,22 +38,27 @@
         </activity>
         <activity android:name=".Info_AboutThisAppActivity" >
         </activity>
-        <activity android:name=".Maps_MainActivity" >
-        </activity>
-        <activity android:name=".Dining_InfoActivity" >
+        <activity
+            android:name=".Maps_MainActivity"
+            android:label="Maps" />
+        <activity
+            android:name=".Dining_InfoActivity"
+            android:label="Dining" >
             <meta-data
                 android:name="android.app.default_searchable"
                 android:value=".SearchActivity" />
         </activity>
         <activity android:name=".Info_ContactInfoActivity" >
-            <intent-filter >
+            <intent-filter>
                 <action android:name="android.intent.action.CALL" />
             </intent-filter>
         </activity>
-        <activity android:name=".Dining_TrackActivity" android:screenOrientation="portrait"/>
         <activity
-            android:label="Ideal Daily Diet"
+            android:name=".Dining_TrackActivity"
+            android:screenOrientation="portrait" />
+        <activity
             android:name=".CalInfoActivity"
+            android:label="Ideal Daily Diet"
             android:theme="@android:style/Theme.Dialog" />
         <activity android:name=".Dining_DatabaseActivity" >
         </activity>
@@ -62,8 +69,8 @@
         <activity android:name=".Dining_SubRestaurants" >
         </activity>
         <activity
-            android:label="@string/app_name"
             android:name=".Maps_DirectoryActivity"
+            android:label="@string/app_name"
             android:screenOrientation="portrait" >
         </activity>
         <activity
@@ -77,20 +84,25 @@
         </activity>
         <activity
             android:name=".NewMapsMainActivity"
+            android:label="newmaps"
             android:screenOrientation="portrait" >
-            <intent-filter >
+            <intent-filter>
                 <action android:name="android.intent.action.Map" />
             </intent-filter>
         </activity>
-        <activity android:name=".Weather_MainActivity" >
+        <activity
+            android:name=".Weather_MainActivity"
+            android:label="Weather" />
+        <activity android:name=".Info_ParkingListActivitiy" >
         </activity>
-        <activity android:name=".Info_ParkingListActivitiy"></activity>
-        <activity android:name=".Info_ParkingActivity"></activity>
-        <activity android:name=".Twitter_FeedActivity" >
+        <activity android:name=".Info_ParkingActivity" >
         </activity>
+        <activity android:name=".Twitter_FeedActivity"
+            android:label="Twitter Feed" />
         <activity android:name=".Info_LibraryHoursInformationActivity" >
         </activity>
-        <activity android:name=".Dining_FoodListActivity"></activity>
+        <activity android:name=".Dining_FoodListActivity" >
+        </activity>
 
         <uses-library android:name="com.google.android.maps" />
     </application>

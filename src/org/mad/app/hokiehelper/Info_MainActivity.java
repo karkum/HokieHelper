@@ -1,5 +1,8 @@
 package org.mad.app.hokiehelper;
 
+import com.actionbarsherlock.app.SherlockListActivity;
+import com.actionbarsherlock.view.MenuItem;
+
 import android.app.ListActivity;
 import android.content.Intent;
 import android.os.Bundle;
@@ -16,15 +19,20 @@ import android.widget.ListView;
  * @author karthik
  * 
  */
-public class Info_MainActivity extends ListActivity {
+public class Info_MainActivity extends SherlockListActivity {
 
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.subrestaurant);
 
+		getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+		getSupportActionBar().setHomeButtonEnabled(true);
+
+
+
 		String[] options = { "Important Contact Information",
 				"Academic Calendar", "Library Hours", "Parking Information",
-				"About HokieHelper" };
+		"About HokieHelper" };
 		ArrayAdapter<String> stringAdapter = new ArrayAdapter<String>(this,
 				R.layout.real_list_item, options);
 
@@ -66,4 +74,15 @@ public class Info_MainActivity extends ListActivity {
 		}
 
 	}
+
+	@Override
+	public boolean onOptionsItemSelected(MenuItem item) {
+		switch (item.getItemId()) {
+		case android.R.id.home:
+			finish();
+			return true;
+		}
+		return false;
+	}
+
 }
