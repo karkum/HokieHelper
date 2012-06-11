@@ -137,8 +137,8 @@ public class Dining_TrackCanvas extends View
     	int sum = 0;
     	for (int i = 0; i < 7; i++)
         {
-        	if (Dining_MainActivity.calValues[29 - i].getCal() > 0)
-        		sum += Dining_MainActivity.calValues[29 - i].getCal();
+        	if (Dining_HallInformationActivity.calValues[29 - i].getCal() > 0)
+        		sum += Dining_HallInformationActivity.calValues[29 - i].getCal();
         }
 
 		Paint paint = new Paint();
@@ -182,7 +182,7 @@ public class Dining_TrackCanvas extends View
     		//Draw the seven bars - change values of bars and display days
     		for (int i = 0, j = 20 + spacing; i < 7; i++)
     		{
-    			int cal = Dining_MainActivity.calValues[29 - i].getCal();
+    			int cal = Dining_HallInformationActivity.calValues[29 - i].getCal();
     			int temp = cal;
     			if (temp != -1 && temp < 3000)
     			{
@@ -193,7 +193,7 @@ public class Dining_TrackCanvas extends View
     				canvas.drawRect(j, tempHeight - temp, j + percent, tempHeight, paint);
     				canvas.drawRect(j, tempHeight - temp, j + percent, tempHeight, p);
     				canvas.drawText(cal + "", (2 * j + percent) / 2, tempHeight - temp - 15, p1);
-    				String text = Dining_MainActivity.calValues[29 - i].getDate().toString().split("\\s+")[0];
+    				String text = Dining_HallInformationActivity.calValues[29 - i].getDate().toString().split("\\s+")[0];
     				text = getStringFromDay(text);
     				canvas.drawText(text, (2 * j + percent) / 2, tempHeight + 20, p1);
     			}
@@ -211,7 +211,7 @@ public class Dining_TrackCanvas extends View
     				canvas.drawRect(j - 3, 50, j + percent + 3, 80, p2);
     				
     				canvas.drawText(cal + "", (2 * j + percent) / 2, 70, p1);
-    				String text = Dining_MainActivity.calValues[29 - i].getDate().toString().split("\\s+")[0];
+    				String text = Dining_HallInformationActivity.calValues[29 - i].getDate().toString().split("\\s+")[0];
     				text = getStringFromDay(text);
     				canvas.drawText(text, (2 * j + percent) / 2, tempHeight + 20, p1);
     			}
@@ -225,8 +225,8 @@ public class Dining_TrackCanvas extends View
     	int sum = 0;
     	for (int i = 0; i < 29; i++)
     	{
-    		if (Dining_MainActivity.calValues[29 - i].getCal() > 0)
-    			sum += Dining_MainActivity.calValues[29 - i].getCal();
+    		if (Dining_HallInformationActivity.calValues[29 - i].getCal() > 0)
+    			sum += Dining_HallInformationActivity.calValues[29 - i].getCal();
     	}
     	
     	Paint paint = new Paint();
@@ -270,7 +270,7 @@ public class Dining_TrackCanvas extends View
         	int[] array = new int[30];
         	for (int i = 0, j = 29; i < 30; i++)
         	{
-        		int cal = Dining_MainActivity.calValues[29 - i].getCal();
+        		int cal = Dining_HallInformationActivity.calValues[29 - i].getCal();
         		int temp = cal;
         		if (temp != -1)
         		{

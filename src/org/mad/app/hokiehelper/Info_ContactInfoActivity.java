@@ -2,6 +2,8 @@ package org.mad.app.hokiehelper;
 
 import java.util.ArrayList;
 
+import com.actionbarsherlock.app.SherlockListActivity;
+
 import android.app.AlertDialog;
 import android.app.ListActivity;
 import android.content.DialogInterface;
@@ -19,13 +21,19 @@ import android.widget.ListView;
  * @author karthik
  *
  */
-public class Info_ContactInfoActivity extends ListActivity {
+public class Info_ContactInfoActivity extends SherlockListActivity {
 
 	private ArrayList<Info_Contact> contacts = new ArrayList<Info_Contact>();
 
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.subrestaurant);
+		
+		// Sets up action bar title/navigation
+		getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+		getSupportActionBar().setDisplayShowHomeEnabled(false);
+		getSupportActionBar().setTitle("Important Contact Information");
+		
 		generateContacts();
 		String[] names = new String[contacts.size()];
 		for (int i = 0; i < names.length; i++)
@@ -96,7 +104,7 @@ public class Info_ContactInfoActivity extends ListActivity {
 		Info_Contact safeRide = new Info_Contact(
 				"Safe Ride",
 				"(540) 231-7233",
-				"The Virginia Tech Police Department sponsors a nighttime safety escort service called “Safe Ride.” This service is available to all students, faculty, staff, and visitors to the university. Safe Ride operates from dusk until dawn and provides transportation or a walking escort, upon request, to persons who must cross campus during the nighttime alone. Safe Ride may be contacted by calling 540-231-SAFE (7233).");
+				"The Virginia Tech Police Department sponsors a nighttime safety escort service called â€œSafe Ride.â€� This service is available to all students, faculty, staff, and visitors to the university. Safe Ride operates from dusk until dawn and provides transportation or a walking escort, upon request, to persons who must cross campus during the nighttime alone. Safe Ride may be contacted by calling 540-231-SAFE (7233).");
 		Info_Contact parking = new Info_Contact(
 				"Virginia Tech Parking Services",
 				"(540) 231-3200",

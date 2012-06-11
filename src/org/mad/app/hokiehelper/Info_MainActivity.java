@@ -1,9 +1,5 @@
 package org.mad.app.hokiehelper;
 
-import com.actionbarsherlock.app.SherlockListActivity;
-import com.actionbarsherlock.view.MenuItem;
-
-import android.app.ListActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -11,6 +7,9 @@ import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
+
+import com.actionbarsherlock.app.SherlockListActivity;
+import com.actionbarsherlock.view.MenuItem;
 
 /**
  * This is the fouth icon on the main page. It simply displays a list of
@@ -26,8 +25,8 @@ public class Info_MainActivity extends SherlockListActivity {
 		setContentView(R.layout.subrestaurant);
 
 		getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-		getSupportActionBar().setHomeButtonEnabled(true);
-
+		getSupportActionBar().setDisplayShowHomeEnabled(false);
+		getSupportActionBar().setTitle("Information");
 
 
 		String[] options = { "Important Contact Information",

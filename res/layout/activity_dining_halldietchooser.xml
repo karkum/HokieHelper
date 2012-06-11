@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:weightSum="1" >
+
+    <Button
+        android:id="@+id/button_choose_dininghallinfo"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="10dp"
+        android:layout_weight=".5"
+        android:text="@string/dining_hall_information" />
+
+    <Button
+        android:id="@+id/button_choose_diettracker"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="10dp"
+        android:layout_weight=".5"
+        android:text="@string/diet_tracker" />
+
+</LinearLayout>

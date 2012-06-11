@@ -150,7 +150,7 @@ public class HokieHelperActivity extends SherlockActivity {
         Intent i;
         switch (position) {
         case 0:
-            i = new Intent(HokieHelperActivity.this, Dining_MainActivity.class);
+            i = new Intent(HokieHelperActivity.this, Dining_HallDietChooserActivity.class);
             startActivity(i);
             break;
         case 1:

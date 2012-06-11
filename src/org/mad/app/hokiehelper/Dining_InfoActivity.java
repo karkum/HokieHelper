@@ -36,7 +36,7 @@ public class Dining_InfoActivity extends ListActivity
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.hall_info_display);
 		handler = new Dining_Handler();
-		if (Dining_MainActivity.restaurantChosen == 0 || Dining_MainActivity.restaurantChosen == 6)
+		if (Dining_HallInformationActivity.restaurantChosen == 0 || Dining_HallInformationActivity.restaurantChosen == 6)
 			//d2 and shultz
 			information = getResources().getStringArray(R.array.d2shultzInfo);
 		else
@@ -65,7 +65,7 @@ public class Dining_InfoActivity extends ListActivity
 
 	private void setTableName()
 	{
-		switch(Dining_MainActivity.restaurantChosen)
+		switch(Dining_HallInformationActivity.restaurantChosen)
 		{
 		case 0:
 			tableName = "d2"; break;
@@ -95,7 +95,7 @@ public class Dining_InfoActivity extends ListActivity
 		{
 		case 0: onSearchRequested(); break;
 		case 1: 
-			i = new Intent(Dining_InfoActivity.this, Dining_TrackActivity.class);
+			i = new Intent(Dining_InfoActivity.this, Dining_TrackDietActivity.class);
 			startActivity(i); break; 
 		case 2:
 			i = new Intent(Dining_InfoActivity.this, Dining_SubRestaurants.class);
@@ -150,7 +150,7 @@ public class Dining_InfoActivity extends ListActivity
 		Intent i = new Intent(Dining_InfoActivity.this, Maps_MainActivity.class);
 		int lat;
 		int lon;
-		switch(Dining_MainActivity.restaurantChosen)
+		switch(Dining_HallInformationActivity.restaurantChosen)
 		{
 		case 0: //d2
 			//		        loc = "Located in the Dietrick Dining Center, between " +
@@ -259,7 +259,7 @@ public class Dining_InfoActivity extends ListActivity
 	private String makeHoursString()
 	{
 		String hours = "";
-		switch(Dining_MainActivity.restaurantChosen)
+		switch(Dining_HallInformationActivity.restaurantChosen)
 		{
 		case 0: //d2
 			hours = "M-F:   7:00am - 9:30am" +
@@ -303,7 +303,7 @@ public class Dining_InfoActivity extends ListActivity
 	private String makeContactString()
 	{
 		String info = "";
-		switch(Dining_MainActivity.restaurantChosen)
+		switch(Dining_HallInformationActivity.restaurantChosen)
 		{
 		case 0: //d2
 			info = "Tel: 540-231-6130\n" +
@@ -406,7 +406,7 @@ public class Dining_InfoActivity extends ListActivity
 		ImageView ex = (ImageView) findViewById(R.id.exclamation_point);
 		ex.setVisibility(ImageView.GONE);
 
-		int hallStatus = handler.refreshOpen(Dining_Handler.allHalls[Dining_MainActivity.restaurantChosen]);
+		int hallStatus = handler.refreshOpen(Dining_Handler.allHalls[Dining_HallInformationActivity.restaurantChosen]);
 		if (hallStatus == Dining_Handler.CLOSED)
 			return "This hall is currently closed";
 		else if (hallStatus == Dining_Handler.OPEN)
@@ -414,7 +414,7 @@ public class Dining_InfoActivity extends ListActivity
 
 		String status = "";
 		ex.setVisibility(ImageView.VISIBLE);
-		switch(Dining_MainActivity.restaurantChosen)
+		switch(Dining_HallInformationActivity.restaurantChosen)
 		{
 			case 0:	// d2
 				if (hallStatus == Dining_Handler.OPEN_EX)
@@ -654,7 +654,7 @@ public class Dining_InfoActivity extends ListActivity
 		hallStatus.setText(getStatus());
 		ImageView img = (ImageView) findViewById(R.id.restaurant_icon);
 
-		switch(Dining_MainActivity.restaurantChosen)
+		switch(Dining_HallInformationActivity.restaurantChosen)
 		{
 		case 0: //d2
 			hallName.setText("D2");

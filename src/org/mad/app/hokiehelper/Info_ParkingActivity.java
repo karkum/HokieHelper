@@ -1,15 +1,21 @@
 package org.mad.app.hokiehelper;
 
-import android.app.Activity;
 import android.os.Bundle;
 import android.widget.TextView;
 
-public class Info_ParkingActivity extends Activity {
+import com.actionbarsherlock.app.SherlockActivity;
+
+public class Info_ParkingActivity extends SherlockActivity {
 
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.parking);
 
+		// Sets up action bar title/navigation
+		getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+		getSupportActionBar().setDisplayShowHomeEnabled(false);
+		getSupportActionBar().setTitle("Parking Information");
+		
 		int choice = getIntent().getExtras().getInt("chosen");
 		TextView chosen = (TextView) findViewById(R.id.chosen);
 		TextView info = (TextView) findViewById(R.id.current_selection);

@@ -4,7 +4,6 @@ import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
 
-import android.app.ListActivity;
 import android.content.Context;
 import android.content.Intent;
 import android.net.ConnectivityManager;
@@ -25,13 +24,15 @@ import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.actionbarsherlock.app.SherlockListActivity;
+
 /**
  * Main activity for the twitter feed.
  * 
  * @author karthik
  * 
  */
-public class Twitter_FeedActivity extends ListActivity {
+public class Twitter_FeedActivity extends SherlockListActivity {
 
 	private String[] finalListOfTweets;
 	private int[] prof_pics;
@@ -49,6 +50,11 @@ public class Twitter_FeedActivity extends ListActivity {
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.twitterfeed_main);
+		
+		// Sets up action bar title/navigation
+		getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+		getSupportActionBar().setDisplayShowHomeEnabled(false);
+		getSupportActionBar().setTitle("Twitter Feed");
 
 		list = HokieHelperActivity.list;
 

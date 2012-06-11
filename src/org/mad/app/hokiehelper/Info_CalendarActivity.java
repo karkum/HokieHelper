@@ -10,7 +10,6 @@ import java.util.GregorianCalendar;
 import java.util.Scanner;
 
 import android.app.AlertDialog;
-import android.app.ListActivity;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
@@ -24,6 +23,8 @@ import android.widget.Button;
 import android.widget.ListView;
 import android.widget.TextView;
 
+import com.actionbarsherlock.app.SherlockListActivity;
+
 /**
  * Calendar Activity. Shows relevant dates. Also, allows user to add date
  * to their calendar. 
@@ -31,7 +32,7 @@ import android.widget.TextView;
  *
  */
 
-public class Info_CalendarActivity extends ListActivity {
+public class Info_CalendarActivity extends SherlockListActivity {
 	final ArrayList<Info_Event> springData = new ArrayList<Info_Event>();
 	final ArrayList<Info_Event> summer1Data = new ArrayList<Info_Event>();
 	final ArrayList<Info_Event> summer2Data = new ArrayList<Info_Event>();
@@ -39,6 +40,12 @@ public class Info_CalendarActivity extends ListActivity {
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.calendar_main);
+		
+		// Sets up action bar title/navigation
+		getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+		getSupportActionBar().setDisplayShowHomeEnabled(false);
+		getSupportActionBar().setTitle("Academic Calendar");
+		
 		final ArrayList<String> springList = new ArrayList<String>();
 
 		final ArrayList<String> fallList = new ArrayList<String>();
