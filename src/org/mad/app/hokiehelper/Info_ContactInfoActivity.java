@@ -2,10 +2,7 @@ package org.mad.app.hokiehelper;
 
 import java.util.ArrayList;
 
-import com.actionbarsherlock.app.SherlockListActivity;
-
 import android.app.AlertDialog;
-import android.app.ListActivity;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.net.Uri;
@@ -15,6 +12,8 @@ import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
+
+import com.actionbarsherlock.app.SherlockListActivity;
 /**
  * This class displays contact information for both the dining halls or for VT related
  * contacts.

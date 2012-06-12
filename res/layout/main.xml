@@ -1,130 +1,200 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-	android:id="@+id/lin_layout" android:layout_width="fill_parent"
-	android:layout_height="fill_parent"
-	android:gravity="center_horizontal" android:orientation="vertical"
-	android:weightSum="12">
+    android:id="@+id/lin_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:weightSum="12" >
 
-	<ImageView android:layout_width="fill_parent" android:id="@+id/topimage"
-		android:layout_height="0dp" android:layout_weight="2" android:gravity="center"
-		android:src="@drawable/logo_hokiehelper" />
+    <ImageView
+        android:id="@+id/topimage"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:gravity="center"
+        android:src="@drawable/logo_hokiehelper" />
 
-	<TextView android:layout_width="fill_parent"
-		android:layout_height="0dp" android:layout_weight="1" />
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
 
-	<LinearLayout android:id="@+id/buttonsRow1"
-		android:layout_width="fill_parent" android:layout_height="0dp"
-		android:layout_weight="3" android:orientation="horizontal"
-		android:padding="3dp" android:weightSum="2">
+    <LinearLayout
+        android:id="@+id/buttonsRow1"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:orientation="horizontal"
+        android:padding="3dp"
+        android:weightSum="2" >
 
-		<LinearLayout android:id="@+id/buttonDining"
-			android:layout_width="0dp" android:layout_height="fill_parent"
-			android:layout_weight="1" android:orientation="vertical"
-			android:weightSum="4">
+        <LinearLayout
+            android:id="@+id/buttonDining"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:weightSum="4" >
 
-			<ImageView android:layout_width="fill_parent" 
-				android:layout_height="0dp" android:layout_weight="3"
-				android:src="@drawable/title_logo_dining" android:id="@+id/img_dining" android:clickable="true" />
+            <ImageView
+                android:id="@+id/img_dining"
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="3"
+                android:clickable="true"
+                android:src="@drawable/title_logo_dining" />
 
-			<TextView android:layout_width="fill_parent"
-				android:layout_height="0dp" android:layout_weight="1"
-				android:gravity="center" android:text="Dining" android:textColor="#F0EEE0"
-				android:textSize="18dp" android:textStyle="bold" />
-		</LinearLayout>
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Dining"
+                android:textColor="#F0EEE0"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+        </LinearLayout>
 
-		<LinearLayout android:id="@+id/buttonMaps"
-			android:layout_width="0dp" android:layout_height="fill_parent"
-			android:layout_weight="1" android:orientation="vertical"
-			android:weightSum="4">
+        <LinearLayout
+            android:id="@+id/buttonMaps"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:weightSum="4" >
 
-			<ImageView android:layout_width="fill_parent"
-				android:layout_height="0dp" android:layout_weight="3"
-				android:src="@drawable/title_logo_maps" android:id="@+id/img_maps" android:clickable="true" />
+            <ImageView
+                android:id="@+id/img_maps"
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="3"
+                android:clickable="true"
+                android:src="@drawable/title_logo_maps" />
 
-			<TextView android:layout_width="fill_parent"
-				android:layout_height="0dp" android:layout_weight="1"
-				android:gravity="center" android:text="Maps" android:textColor="#F0EEE0"
-				android:textSize="18dp" android:textStyle="bold" />
-		</LinearLayout>
-	</LinearLayout>
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Maps"
+                android:textColor="#F0EEE0"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
 
-	<LinearLayout android:id="@+id/buttonsRow2"
-		android:layout_width="fill_parent" android:layout_height="0dp"
-		android:layout_weight="3" android:orientation="horizontal"
-		android:padding="3dp" android:weightSum="2">
+    <LinearLayout
+        android:id="@+id/buttonsRow2"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:orientation="horizontal"
+        android:padding="3dp"
+        android:weightSum="2" >
 
-		<LinearLayout android:id="@+id/buttonTwitterFeed"
-			android:layout_width="0dp" android:layout_height="fill_parent"
-			android:layout_weight="1" android:orientation="vertical"
-			android:weightSum="4">
+        <LinearLayout
+            android:id="@+id/buttonTwitterFeed"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:weightSum="4" >
 
-			<ImageView android:layout_width="fill_parent"
-				android:layout_height="0dp" android:layout_weight="3"
-				android:src="@drawable/title_logo_twitter" android:id="@+id/img_twitterfeed" android:clickable="true"/>
+            <ImageView
+                android:id="@+id/img_twitterfeed"
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="3"
+                android:clickable="true"
+                android:src="@drawable/title_logo_twitter" />
 
-			<TextView android:layout_width="fill_parent"
-				android:layout_height="0dp" android:layout_weight="1"
-				android:gravity="center" android:text="@string/twitter_main_name"
-				android:textColor="#F0EEE0" android:textSize="18dp"
-				android:textStyle="bold" />
-		</LinearLayout>
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/twitter_main_name"
+                android:textColor="#F0EEE0"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+        </LinearLayout>
 
-		<LinearLayout android:id="@+id/buttonInformation"
-			android:layout_width="0dp" android:layout_height="fill_parent"
-			android:layout_weight="1" android:orientation="vertical"
-			android:weightSum="4">
+        <LinearLayout
+            android:id="@+id/buttonInformation"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:weightSum="4" >
 
-			<ImageView android:layout_width="fill_parent"
-				android:layout_height="0dp" android:layout_weight="3"
-				android:src="@drawable/title_logo_info" android:id="@+id/img_info" android:clickable="true"/>
+            <ImageView
+                android:id="@+id/img_info"
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="3"
+                android:clickable="true"
+                android:src="@drawable/title_logo_info" />
 
-			<TextView android:layout_width="fill_parent"
-				android:layout_height="0dp" android:layout_weight="1"
-				android:gravity="center" android:text="Information"
-				android:textColor="#F0EEE0" android:textSize="18dp"
-				android:textStyle="bold" />
-		</LinearLayout>
-	</LinearLayout>
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Information"
+                android:textColor="#F0EEE0"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
 
-	<TextView android:layout_width="fill_parent"
-		android:layout_height="0dp" android:layout_weight="1" />
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
 
-	<LinearLayout android:id="@+id/weatherLayout"
-		android:layout_width="fill_parent" android:layout_height="0dp"
-		android:layout_weight="2" android:orientation="horizontal"
-		android:weightSum="2">
+    <LinearLayout
+        android:id="@+id/weatherLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:orientation="horizontal"
+        android:weightSum="2" >
 
-		<ImageView android:id="@+id/weatherIcon"
-			android:layout_width="0dp" android:layout_height="fill_parent"
-			android:layout_weight="1" android:gravity="center" android:padding="3dp" />
+        <ImageView
+            android:id="@+id/weatherIcon"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="3dp" />
 
-		<LinearLayout android:id="@+id/weatherInformation"
-			android:layout_width="0dp" android:layout_height="fill_parent"
-			android:layout_weight="1" android:gravity="center_vertical"
-			android:orientation="vertical">
+        <LinearLayout
+            android:id="@+id/weatherInformation"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="vertical" >
 
-			<TextView android:id="@+id/weatherCondition"
-				android:layout_width="fill_parent" android:layout_height="wrap_content"
-				android:gravity="center_vertical" android:textColor="#F0EEE0"
-				android:textSize="20dp" android:textStyle="bold" />
+            <TextView
+                android:id="@+id/weatherCondition"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:textColor="#F0EEE0"
+                android:textSize="20dp"
+                android:textStyle="bold" />
 
-			<TextView android:id="@+id/weatherHighLow"
-				android:layout_width="fill_parent" android:layout_height="wrap_content"
-				android:gravity="center_vertical" android:textColor="#F0EEE0"
-				android:textSize="16dp" android:textStyle="bold" />
-		</LinearLayout>
-	</LinearLayout>
-	<LinearLayout android:orientation="horizontal"
-		android:layout_width="wrap_content" android:layout_height="wrap_content"
-		android:visibility="visible">
-		<ProgressBar android:layout_width="wrap_content"
-			android:layout_height="wrap_content" android:id="@+id/progress_bar_main"
-			style="@android:style/Widget.ProgressBar.Small"
-			android:layout_marginRight="5dp" android:visibility="invisible" />
-		<TextView android:layout_width="wrap_content"
-			android:layout_height="wrap_content" android:id="@+id/loading_text"
-			android:textColor="#F0EEE0" android:text="Loading Tweets..."
-			android:visibility="invisible" />
-	</LinearLayout>
+            <TextView
+                android:id="@+id/weatherHighLow"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:textColor="#F0EEE0"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
 
 </LinearLayout>
