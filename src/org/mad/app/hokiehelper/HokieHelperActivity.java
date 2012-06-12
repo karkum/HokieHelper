@@ -2,9 +2,6 @@ package org.mad.app.hokiehelper;
 
 import java.util.ArrayList;
 
-import com.actionbarsherlock.app.SherlockActivity;
-
-import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.net.ConnectivityManager;
@@ -19,8 +16,11 @@ import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.actionbarsherlock.app.SherlockActivity;
+
 /**
- * Main activity for the application
+ * Initial dashboard activity that is shown to user when the app
+ * is launched.
  * 
  * @author Karthik
  */
