@@ -145,7 +145,7 @@ public class Dining_NutritionInfoActivity extends Activity
             public void onClick(View v)
             {
                 Date d = new Date(System.currentTimeMillis());
-                Dining_CalWrapper[] array = Dining_HallInformationActivity.calValues;
+                Dining_CalWrapper[] array = Dining_HallDietChooserActivity.calValues;
                 String[] temp = array[array.length - 1].getDate().toString().split("\\s+");
                 String[] dArray = d.toString().split("\\s+");
                 int cal, fat, carbs, protein;

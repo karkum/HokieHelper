@@ -67,7 +67,7 @@ public class Twitter_FeedActivity extends SherlockListActivity implements Runnab
 		// Runs the tweet loading in a foreground thread
 		// to let the user know something is happening
 		dialogProgressBar = ProgressDialog.show(this, "Fetching tweets...",
-				"Getting latest Virginia Tech news from Twitter...");
+				"Getting the latest Virginia Tech news from Twitter...");
 
 		Thread thread = new Thread(this);
 		thread.start();

@@ -1,17 +1,11 @@
 package org.mad.app.hokiehelper;
 
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
-import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
 
-import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.Bundle;
-import android.os.Handler;
-import android.os.Message;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.ImageView;
@@ -27,12 +21,10 @@ import com.actionbarsherlock.app.SherlockActivity;
  * @author Corey Buttel
  *
  */
-public class Dining_HallInformationActivity extends SherlockActivity implements Runnable
+public class Dining_HallInformationActivity extends SherlockActivity
 {
 	public static int restaurantChosen;
 	private Dining_Handler diningHandler;
-	private ProgressDialog dialogProgressBar;
-	public static Dining_CalWrapper[] calValues = new Dining_CalWrapper[30];
 	public static boolean flag;
 
 	/** Called when the activity is first created. */
@@ -47,15 +39,6 @@ public class Dining_HallInformationActivity extends SherlockActivity implements 
 		getSupportActionBar().setDisplayShowHomeEnabled(false);
 		getSupportActionBar().setTitle("Dining Hall Information");
 
-		// Runs the database initialization in a foreground thread
-		// to let the user know something is happening
-		dialogProgressBar = ProgressDialog.show(this, "Loading...",
-				"Loading nutrition facts...  This should only take a minute.");
-		
-		Thread thread = new Thread(this);
-		thread.start();
-
-
 		diningHandler = new Dining_Handler();
 		update();
 		ImageView refresh = (ImageView) findViewById(R.id.refresh);
@@ -68,75 +51,7 @@ public class Dining_HallInformationActivity extends SherlockActivity implements 
 		});
 	}
 
-	/**
-	 * Loads the nutrition facts into the database.
-	 */
-	public void run() {
-		Dining_DBAdapter db = new Dining_DBAdapter(this, getResources().getStringArray(R.array.dbFolders), 
-				this.getResources());
-		db.open();
-		db.close();
 
-		try
-		{
-			FileInputStream fis = openFileInput("track.txt");
-			String s = "";
-			while (true)
-			{
-				byte[] b = new byte[100];
-				int i = fis.read(b, 0, 100);
-				s  += new String(b);
-				if (i != 100)
-					break;
-			}
-			fis.close();
-			String[] str = s.split("\\s+");
-			for (int i = 0; i < str.length - 1; i = i + 5)
-				calValues[i / 5] = new Dining_CalWrapper(new Date(Long.parseLong(str[i])), 
-						Integer.parseInt(str[i + 1]), Integer.parseInt(str[i + 2]), 
-						Integer.parseInt(str[i + 3]), Integer.parseInt(str[i + 4]));
-			//			deleteFile("track.txt");
-		} 
-		catch (FileNotFoundException e)
-		{
-			for (int i = 0; i < calValues.length; i++)
-			{
-				if (calValues[i] == null)
-					calValues[i] = new Dining_CalWrapper(new Date(10000000), -1, -1, -1, -1);
-			}
-		}
-		catch (IOException e)
-		{
-			e.printStackTrace();
-		}
-
-		try
-		{
-			FileInputStream fis = openFileInput("listFood.txt");
-			fis.close();
-			//			deleteFile("listFood.txt");
-		}
-		catch (FileNotFoundException e)
-		{
-			// Do Nothing
-		}
-		catch (IOException e)
-		{
-			e.printStackTrace();
-		}
-
-		handler.sendEmptyMessage(0);
-	}
-
-	/**
-	 * Closes the progress dialog when the nutrition fact loading is completed.
-	 */
-	private Handler handler = new Handler() {
-		@Override
-		public void handleMessage(Message msg) {
-			dialogProgressBar.dismiss();
-		}
-	};
 
 	@Override
 	protected void onResume()

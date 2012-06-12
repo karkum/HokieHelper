@@ -42,7 +42,7 @@ public class Dining_TrackDietActivity extends Activity
 		final int screenWidth = displaymetrics.widthPixels;
 
 		//Tidy up the array
-		Dining_CalWrapper[] calArray = Dining_HallInformationActivity.calValues;
+		Dining_CalWrapper[] calArray = Dining_HallDietChooserActivity.calValues;
 		Date d = new Date(System.currentTimeMillis());
 		String[] today = d.toString().split("\\s+");
 		for (int i = 0; i < calArray.length; i++)
@@ -183,14 +183,14 @@ public class Dining_TrackDietActivity extends Activity
 						try
 						{
 							FileOutputStream fos = openFileOutput("track.txt", MODE_PRIVATE);
-							for (int i = 0; i < Dining_HallInformationActivity.calValues.length; i++)
+							for (int i = 0; i < Dining_HallDietChooserActivity.calValues.length; i++)
 							{
-								Dining_HallInformationActivity.calValues[i].setCal(-1);
-								Dining_HallInformationActivity.calValues[i].setCarbs(-1);
-								Dining_HallInformationActivity.calValues[i].setProtein(-1);
-								Dining_HallInformationActivity.calValues[i].setFat(-1);
-								Dining_HallInformationActivity.calValues[i].setDate(new Date(10000000));
-								fos.write(Dining_HallInformationActivity.calValues[i].toString().getBytes());
+								Dining_HallDietChooserActivity.calValues[i].setCal(-1);
+								Dining_HallDietChooserActivity.calValues[i].setCarbs(-1);
+								Dining_HallDietChooserActivity.calValues[i].setProtein(-1);
+								Dining_HallDietChooserActivity.calValues[i].setFat(-1);
+								Dining_HallDietChooserActivity.calValues[i].setDate(new Date(10000000));
+								fos.write(Dining_HallDietChooserActivity.calValues[i].toString().getBytes());
 							}
 							fos.close();
 						}
