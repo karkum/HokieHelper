@@ -140,7 +140,11 @@ public class HokieHelperActivity extends SherlockActivity {
             startActivity(new Intent(HokieHelperActivity.this, Maps_MainActivity.class));
             break;
         case 2:
-        	startActivity(new Intent(HokieHelperActivity.this, Twitter_FeedActivity.class));
+            if (isNetworkAvailable()) {
+                startActivity(new Intent(HokieHelperActivity.this, Twitter_FeedActivity.class));
+            } else {
+                Toast.makeText(this, "No network connection available", Toast.LENGTH_LONG).show();
+            }
             break;
         case 3:
             startActivity(new Intent(HokieHelperActivity.this, Info_MainActivity.class));
