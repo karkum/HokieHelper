@@ -40,7 +40,7 @@
         </activity>
         <activity android:name=".Restaurants" />
         <activity android:name=".Info_AboutThisAppActivity" />
-        <activity android:name=".Maps_MainActivity" />
+        <activity android:name=".Maps_MainActivity" android:theme="@style/Theme.Sherlock.NoActionBar"/>
         <activity android:name=".Dining_InfoActivity" />
 
         <meta-data
