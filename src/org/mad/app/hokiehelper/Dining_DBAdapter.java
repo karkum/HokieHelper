@@ -227,7 +227,7 @@ public class Dining_DBAdapter
 //                            file = file.substring(0, file.length());
                             while (word != null)
                             {
-                                System.out.println(file);
+                                //System.out.println(file);
                                 initialValues.clear();
                                 details = word.split("\\|");
                                 for (int l = 0; l < details.length; l++) {
