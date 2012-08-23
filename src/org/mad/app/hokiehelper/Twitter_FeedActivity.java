@@ -53,9 +53,10 @@ public class Twitter_FeedActivity extends SherlockListActivity implements Runnab
 
 		// Sets up action bar title/navigation
 		getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-		getSupportActionBar().setDisplayShowHomeEnabled(false);
+		getSupportActionBar().setDisplayUseLogoEnabled(true);
+		getSupportActionBar().setLogo(R.drawable.ic_launcher);
+		getSupportActionBar().setDisplayShowHomeEnabled(true);
 		getSupportActionBar().setTitle("Twitter Feed");
-
 		lv = getListView();
 		loadLatestTweets();
 	}
