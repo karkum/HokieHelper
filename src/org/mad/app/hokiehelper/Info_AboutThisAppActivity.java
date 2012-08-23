@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.widget.TextView;
 
 import com.actionbarsherlock.app.SherlockActivity;
+import com.actionbarsherlock.view.MenuItem;
 /**
  * This activity represents what the user sees when they click About This App in the 
  * "Information" part of the app. It simply gives credit where it is due.
@@ -17,11 +18,21 @@ public class Info_AboutThisAppActivity extends SherlockActivity {
 		
 		// Sets up action bar title/navigation
 		getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-		getSupportActionBar().setDisplayShowHomeEnabled(false);
-		getSupportActionBar().setTitle("About HokieHelper");
+		getSupportActionBar().setDisplayUseLogoEnabled(true);
+		getSupportActionBar().setLogo(R.drawable.ic_launcher);
+		getSupportActionBar().setDisplayShowHomeEnabled(true);
+		getSupportActionBar().setTitle("About");
 
 		TextView info = (TextView) findViewById(R.id.about_text);
 		info.setText(R.string.aboutapp);
 		
+	}
+	public boolean onOptionsItemSelected(MenuItem item) {
+		switch (item.getItemId()) {
+		case android.R.id.home:
+			finish();
+			return true;
+		}
+		return false;
 	}
 }

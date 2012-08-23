@@ -14,6 +14,7 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
 import com.actionbarsherlock.app.SherlockListActivity;
+import com.actionbarsherlock.view.MenuItem;
 /**
  * This class displays contact information for both the dining halls or for VT related
  * contacts.
@@ -30,7 +31,9 @@ public class Info_ContactInfoActivity extends SherlockListActivity {
 		
 		// Sets up action bar title/navigation
 		getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-		getSupportActionBar().setDisplayShowHomeEnabled(false);
+		getSupportActionBar().setDisplayUseLogoEnabled(true);
+		getSupportActionBar().setLogo(R.drawable.ic_launcher);
+		getSupportActionBar().setDisplayShowHomeEnabled(true);
 		getSupportActionBar().setTitle("Important Contact Information");
 		
 		generateContacts();
@@ -165,4 +168,14 @@ public class Info_ContactInfoActivity extends SherlockListActivity {
 			dlgAlert.create().show();
 		}
 	}
+	@Override
+	public boolean onOptionsItemSelected(MenuItem item) {
+		switch (item.getItemId()) {
+		case android.R.id.home:
+			finish();
+			return true;
+		}
+		return false;
+	}
+
 }

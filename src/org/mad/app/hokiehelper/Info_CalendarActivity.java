@@ -24,6 +24,7 @@ import android.widget.ListView;
 import android.widget.TextView;
 
 import com.actionbarsherlock.app.SherlockListActivity;
+import com.actionbarsherlock.view.MenuItem;
 
 /**
  * Calendar Activity. Shows relevant dates. Also, allows user to add date
@@ -43,7 +44,9 @@ public class Info_CalendarActivity extends SherlockListActivity {
 		
 		// Sets up action bar title/navigation
 		getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-		getSupportActionBar().setDisplayShowHomeEnabled(false);
+		getSupportActionBar().setDisplayUseLogoEnabled(true);
+		getSupportActionBar().setLogo(R.drawable.ic_launcher);
+		getSupportActionBar().setDisplayShowHomeEnabled(true);
 		getSupportActionBar().setTitle("Academic Calendar");
 		
 		final ArrayList<String> springList = new ArrayList<String>();
@@ -278,5 +281,13 @@ public class Info_CalendarActivity extends SherlockListActivity {
 			dlgAlert.setCancelable(true);
 			dlgAlert.create().show();
 		}
+	}
+	public boolean onOptionsItemSelected(MenuItem item) {
+		switch (item.getItemId()) {
+		case android.R.id.home:
+			finish();
+			return true;
+		}
+		return false;
 	}
 }
