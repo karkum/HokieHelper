@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.widget.TextView;
 
 import com.actionbarsherlock.app.SherlockActivity;
+import com.actionbarsherlock.view.MenuItem;
 
 public class Info_ParkingActivity extends SherlockActivity {
 
@@ -13,7 +14,9 @@ public class Info_ParkingActivity extends SherlockActivity {
 
 		// Sets up action bar title/navigation
 		getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-		getSupportActionBar().setDisplayShowHomeEnabled(false);
+		getSupportActionBar().setDisplayUseLogoEnabled(true);
+		getSupportActionBar().setLogo(R.drawable.ic_launcher);
+		getSupportActionBar().setDisplayShowHomeEnabled(true);
 		getSupportActionBar().setTitle("Parking Information");
 		
 		int choice = getIntent().getExtras().getInt("chosen");
@@ -42,4 +45,14 @@ public class Info_ParkingActivity extends SherlockActivity {
 			break;
 		}
 	}
+	@Override
+	public boolean onOptionsItemSelected(MenuItem item) {
+		switch (item.getItemId()) {
+		case android.R.id.home:
+			finish();
+			return true;
+		}
+		return false;
+	}
+
 }

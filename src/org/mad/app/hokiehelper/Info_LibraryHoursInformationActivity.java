@@ -4,13 +4,15 @@ import java.text.DateFormat;
 import java.util.Calendar;
 import java.util.Date;
 
-import android.app.Activity;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 
-public class Info_LibraryHoursInformationActivity extends Activity {
+import com.actionbarsherlock.app.SherlockActivity;
+import com.actionbarsherlock.view.MenuItem;
+
+public class Info_LibraryHoursInformationActivity extends SherlockActivity {
 	TextView time;
 	TextView libStatus;
 	TextView libInfo;
@@ -22,7 +24,12 @@ public class Info_LibraryHoursInformationActivity extends Activity {
 		time = (TextView) (findViewById(R.id.current_time));
 		libStatus = (TextView) (findViewById(R.id.lib_status));
 		libInfo = (TextView) (findViewById(R.id.lib_info));
-
+		// Sets up action bar title/navigation
+		getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+		getSupportActionBar().setDisplayUseLogoEnabled(true);
+		getSupportActionBar().setLogo(R.drawable.ic_launcher);
+		getSupportActionBar().setDisplayShowHomeEnabled(true);
+		getSupportActionBar().setTitle("Library Hours");
 		getHours();
 
 	}
@@ -118,5 +125,13 @@ public class Info_LibraryHoursInformationActivity extends Activity {
 				return;
 			}
 		}
+	}
+	public boolean onOptionsItemSelected(MenuItem item) {
+		switch (item.getItemId()) {
+		case android.R.id.home:
+			finish();
+			return true;
+		}
+		return false;
 	}
 }
