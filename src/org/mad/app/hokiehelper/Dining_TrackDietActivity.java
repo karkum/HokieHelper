@@ -5,7 +5,6 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.util.Date;
 
-import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
@@ -20,7 +19,10 @@ import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-public class Dining_TrackDietActivity extends Activity
+import com.actionbarsherlock.app.SherlockActivity;
+import com.actionbarsherlock.view.MenuItem;
+
+public class Dining_TrackDietActivity extends SherlockActivity
 {
 	private Dining_TrackCanvas pcc;
 	private int fat = 0;
@@ -35,6 +37,13 @@ public class Dining_TrackDietActivity extends Activity
 	{
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.track_layout);
+
+		// Sets up action bar title/navigation
+		getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+		getSupportActionBar().setDisplayUseLogoEnabled(true);
+		getSupportActionBar().setLogo(R.drawable.ic_launcher);
+		getSupportActionBar().setDisplayShowHomeEnabled(true);
+		getSupportActionBar().setTitle("Diet Tracker");
 
 		DisplayMetrics displaymetrics = new DisplayMetrics();
 		getWindowManager().getDefaultDisplay().getMetrics(displaymetrics);
@@ -202,7 +211,7 @@ public class Dining_TrackDietActivity extends Activity
 						{
 							e.printStackTrace();
 						}
-						
+
 						fat = 0;
 						carbs = 0;
 						protein = 0;
@@ -214,11 +223,11 @@ public class Dining_TrackDietActivity extends Activity
 						LinearLayout layout = (LinearLayout) findViewById(R.id.layout);
 						layout.removeView(pcc);
 						setUpCanvas(0, fat, carbs, protein, screenWidth, screenHeight);
-						
+
 						deleteFile("listFood.txt");
 					}
 				});
-				
+
 				dlgAlert.setNegativeButton("OK", new DialogInterface.OnClickListener()
 				{
 					public void onClick(DialogInterface dialog, int which)
@@ -226,7 +235,7 @@ public class Dining_TrackDietActivity extends Activity
 						//Do Nothing
 					}
 				});
-				
+
 				dlgAlert.setNeutralButton("My Diet", new DialogInterface.OnClickListener()
 				{
 					public void onClick(DialogInterface dialog, int which)
@@ -235,7 +244,7 @@ public class Dining_TrackDietActivity extends Activity
 						startActivity(i);
 					}
 				});
-				
+
 				dlgAlert.setMessage("Total fat should be less than 30%\nTotal carbs should " +
 						"be 50% to 60%\nTotal protein should be 10% to 20%");
 				dlgAlert.setTitle("Ideal Daily Diet");
@@ -243,6 +252,20 @@ public class Dining_TrackDietActivity extends Activity
 				dlgAlert.create().show();
 			}
 		});
+	}
+
+	/**
+	 * Handles the clicking of action bar icons.
+	 */
+	@Override
+	public boolean onOptionsItemSelected(MenuItem item) {
+		switch (item.getItemId()) {
+		case android.R.id.home:
+			finish();
+			return true;
+		default:
+			return super.onOptionsItemSelected(item);
+		}
 	}
 
 	public void setUpCanvas(int mode, int fat, int carbs, int protein, int width, int height)

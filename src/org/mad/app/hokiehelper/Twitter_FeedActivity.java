@@ -40,8 +40,6 @@ public class Twitter_FeedActivity extends SherlockListActivity implements Runnab
 	private String[] user_names;
 	private String[] times;
 	private String[] screen_names;
-	@SuppressWarnings("unused")
-	private MyArrayAdapter stringAdapter;
 	private ArrayList<Twitter_Tweet> list = new ArrayList<Twitter_Tweet>();
 	private ProgressDialog dialogProgressBar;
 	private ListView lv;
@@ -60,7 +58,7 @@ public class Twitter_FeedActivity extends SherlockListActivity implements Runnab
 		lv = getListView();
 		loadLatestTweets();
 	}
-	
+
 	/**
 	 * Shows a dialog box and calls a thread to load the newest tweets.
 	 */
@@ -93,9 +91,9 @@ public class Twitter_FeedActivity extends SherlockListActivity implements Runnab
 					Twitter_FeedActivity.this,
 					R.layout.twitterfeed_list_item,
 					finalListOfTweets));
-			
+
 			lv.setTextFilterEnabled(true);
-			
+
 			View parent = (View) lv.getParent();
 			parent.setBackgroundResource(R.drawable.bg_tan);
 
@@ -105,7 +103,7 @@ public class Twitter_FeedActivity extends SherlockListActivity implements Runnab
 					goToTwitter(position);
 				}
 			});
-			
+
 			dialogProgressBar.dismiss();
 
 		}
@@ -199,13 +197,11 @@ public class Twitter_FeedActivity extends SherlockListActivity implements Runnab
 					else if (u.getScreen_name().equals("@hokiesbuzztap"))
 						prof_pics[i] = R.drawable.hokies_buzz_tap;
 					else if (u.getScreen_name().equals("@BR_VTHokies"))
-						prof_pics[i] = R.drawable.br_vt_hokies;
+						prof_pics[i] = R.drawable.hokies_buzz_tap;
 					else if (u.getScreen_name().equals("@virginia_tech"))
 						prof_pics[i] = R.drawable.virginia_tech;
 					else if (u.getScreen_name().equals("@VT_Football"))
 						prof_pics[i] = R.drawable.vt_football;
-					else if (u.getScreen_name().equals("@vt_edu"))
-						prof_pics[i] = R.drawable.vt_edu;
 					else if (u.getScreen_name().equals("@TechSideline"))
 						prof_pics[i] = R.drawable.tech_sideline;
 					else if (u.getScreen_name().equals("@vtsga"))
@@ -213,7 +209,7 @@ public class Twitter_FeedActivity extends SherlockListActivity implements Runnab
 					else if (u.getScreen_name().equals("@VTEngineering"))
 						prof_pics[i] = R.drawable.vt_engineering;
 					else if (u.getScreen_name().equals("@VTHokiesSports"))
-						prof_pics[i] = R.drawable.vt_hokies_sports;
+						prof_pics[i] = R.drawable.hokies_buzz_tap;
 					else if (u.getScreen_name().equals("@Blacksburg_Gov"))
 						prof_pics[i] = R.drawable.blacksburg_gov;
 					else if (u.getScreen_name().equals("@thevtu"))
@@ -229,10 +225,22 @@ public class Twitter_FeedActivity extends SherlockListActivity implements Runnab
 					times[i] = list.get(i).getTime();
 				}
 			} else {
-				TextView msg = (TextView) findViewById(R.id.lastUpdatedStatus);
-				msg.setText("Error. Cound not retrieve tweets");
+				Toast toast = Toast.makeText(this, "Error. Cound not retrieve tweets", Toast.LENGTH_SHORT);
+				toast.show();
 			}
 		}
+	}
+
+	/**
+	 * This method takes any URLS in the tweets and puts them on their own lines
+	 * to prevent awkward line breaks and improve asthetics.
+	 */
+	public String filterTweet(String tweet) {
+		String newTweet = tweet;
+		newTweet = newTweet.replaceAll("http://", "\n");
+		newTweet = newTweet.replaceAll("https://", "\n");
+
+		return newTweet;
 	}
 
 	/**
@@ -271,7 +279,7 @@ public class Twitter_FeedActivity extends SherlockListActivity implements Runnab
 				v = vi.inflate(R.layout.twitterfeed_list_item, null);
 			}
 			TextView tweetText = (TextView) v.findViewById(R.id.tweet_text);
-			tweetText.setText(finalListOfTweets[position]);
+			tweetText.setText(filterTweet(finalListOfTweets[position]));
 
 			TextView tweetedByScreenName = (TextView) v
 					.findViewById(R.id.screen_name);

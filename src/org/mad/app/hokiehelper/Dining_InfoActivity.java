@@ -1,9 +1,8 @@
 package org.mad.app.hokiehelper;
 
-import java.util.Date;
+import org.mad.app.hokiehelper.Dining_DiningHall.DiningHallState;
 
 import android.app.AlertDialog;
-import android.app.ListActivity;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
@@ -19,15 +18,20 @@ import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
 
+import com.actionbarsherlock.app.SherlockListActivity;
+import com.actionbarsherlock.view.Menu;
+import com.actionbarsherlock.view.MenuInflater;
+import com.actionbarsherlock.view.MenuItem;
+
 //Change: Added a case in two switch statements
 
-public class Dining_InfoActivity extends ListActivity
+public class Dining_InfoActivity extends SherlockListActivity
 {
 	private String [] information;
 	private MyStringAdapter stringAdapter;
 	public static String tableName;
 	private String tableNumber;
-	private Dining_Handler handler;
+	private int selectedHall;
 
 	/** Called when the activity is first created. */
 	@Override
@@ -35,13 +39,26 @@ public class Dining_InfoActivity extends ListActivity
 	{
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.hall_info_display);
-		handler = new Dining_Handler();
-		if (Dining_HallInformationActivity.restaurantChosen == 0 || Dining_HallInformationActivity.restaurantChosen == 6)
-			//d2 and shultz
+
+		// Sets up action bar title/navigation
+		getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+		getSupportActionBar().setDisplayUseLogoEnabled(true);
+		getSupportActionBar().setLogo(R.drawable.ic_launcher);
+		getSupportActionBar().setDisplayShowHomeEnabled(true);
+		getSupportActionBar().setTitle("Dining Halls");
+
+		Intent i = getIntent();
+		selectedHall = i.getIntExtra("selectedHall", -1);
+
+		if (selectedHall == 3)
+			//d2
 			information = getResources().getStringArray(R.array.d2shultzInfo);
-		else
+		else if (selectedHall == 4 || selectedHall == 5 || selectedHall == 6
+				|| selectedHall == 7 || selectedHall == 9)
 			//all other restaurants
 			information = getResources().getStringArray(R.array.info);
+		else
+			information = getResources().getStringArray(R.array.lackingInfo);
 
 		stringAdapter = new MyStringAdapter(this, R.layout.list_item, information);
 		setListAdapter(stringAdapter);
@@ -63,26 +80,51 @@ public class Dining_InfoActivity extends ListActivity
 		setTableName();
 	}
 
+	/**
+	 * Creates the action bar icons.
+	 */
+	@Override
+	public boolean onCreateOptionsMenu(Menu menu) {
+		MenuInflater inflater = getSupportMenuInflater();
+		inflater.inflate(R.menu.actionbar_dining, menu);
+		return true;
+	}
+
+	/**
+	 * Handles the clicking of action bar icons.
+	 */
+	@Override
+	public boolean onOptionsItemSelected(MenuItem item) {
+		switch (item.getItemId()) {
+		case R.id.actionbar_dining_search:
+			onSearchRequested();
+			return true;
+		case android.R.id.home:
+			finish();
+			return true;
+		default:
+			return super.onOptionsItemSelected(item);
+		}
+	}
+
 	private void setTableName()
 	{
-		switch(Dining_HallInformationActivity.restaurantChosen)
+		switch(selectedHall)
 		{
-		case 0:
+		case 3: // d2
 			tableName = "d2"; break;
-		case 1:
-			tableName = "deets"; break;
-		case 2:
+		case 5: // dx
 			tableName = "d2"; break;
-		case 3:
-			tableName = "hokieGrill"; break;
 		case 4:
-			tableName = "owens"; break;
-		case 5:
-			tableName = "shultz"; break;
+			tableName = "deets"; break;
 		case 6:
-			tableName = "shultz"; break;
+			tableName = "hokieGrill"; break;
 		case 7:
+			tableName = "owens"; break;
+		case 9:
 			tableName = "westend"; break;
+		default:
+			tableName = ""; break;
 		}
 	}
 
@@ -93,24 +135,21 @@ public class Dining_InfoActivity extends ListActivity
 		String title;
 		switch (position)
 		{
-		case 0: onSearchRequested(); break;
-		case 1: 
-			i = new Intent(Dining_InfoActivity.this, Dining_TrackDietActivity.class);
-			startActivity(i); break; 
-		case 2:
-			i = new Intent(Dining_InfoActivity.this, Dining_SubRestaurants.class);
-			i.putExtra("tableName", tableName);
-			startActivity(i); break;
-		case 3:
+		//		case 0: onSearchRequested(); break;
+		case 0:
 			message = makeHoursString();
 			title = "Hours Of Operation";
 			showDialog(message, title); break;
-		case 4:
+		case 1:
+			i = new Intent(Dining_InfoActivity.this, Dining_SubRestaurants.class);
+			i.putExtra("tableName", tableName);
+			startActivity(i); break;
+		case 2:
 			message = makeLocationString();
 			//						title = "Location";
 			//						showDialog(message, title); 
 			break;
-		case 5:
+		case 3:
 			String number = "Call " + tableNumber;
 			new AlertDialog.Builder(this)
 			.setTitle("Contact Options")
@@ -123,7 +162,7 @@ public class Dining_InfoActivity extends ListActivity
 				}
 			})
 			.show(); break;
-		case 6:
+		case 4:
 			message = "Flex\n" +
 					"Breakfast: $2.10\n" +
 					"Lunch/Brunch: $3.05\n" +
@@ -150,9 +189,9 @@ public class Dining_InfoActivity extends ListActivity
 		Intent i = new Intent(Dining_InfoActivity.this, Maps_MainActivity.class);
 		int lat;
 		int lon;
-		switch(Dining_HallInformationActivity.restaurantChosen)
+		switch(selectedHall)
 		{
-		case 0: //d2
+		case 3: //d2
 			//		        loc = "Located in the Dietrick Dining Center, between " +
 			//		        "Ambler Johnston and Pritchard Halls, facing " +
 			//		        "Washington Street. The entrance is through the " +
@@ -165,7 +204,7 @@ public class Dining_InfoActivity extends ListActivity
 			i.putExtras( bundle );
 			startActivity(i); 
 			break;
-		case 1: //deets
+		case 4: //deets
 			//			loc = "Located in the Dietrick Dining Center, between " +
 			//					"Ambler Johnston and Pritchard Halls, facing " +
 			//					"Washington Street. The entrance is to the left side of" +
@@ -178,7 +217,7 @@ public class Dining_InfoActivity extends ListActivity
 			i.putExtras( bundle );
 			startActivity(i); 
 			break;
-		case 2: //dx
+		case 5: //dx
 			//			loc = "Located in the Dietrick Dining Center, between " +
 			//					"Ambler Johnston and Pritchard Halls, facing " +
 			//					"Washington Street. The entrance is to the right " +
@@ -191,7 +230,7 @@ public class Dining_InfoActivity extends ListActivity
 			i.putExtras( bundle );
 			startActivity(i); 
 			break;
-		case 3: //hokiegrill
+		case 6: //hokiegrill
 			//			loc = "Located in Owens Dining Center across Kent " +
 			//					"Street from the University Bookstore. The " +
 			//					"entrance is located on the side of the building " +
@@ -204,7 +243,7 @@ public class Dining_InfoActivity extends ListActivity
 			i.putExtras( bundle );
 			startActivity(i); 
 			break;
-		case 4: //owens
+		case 7: //owens
 			//			loc = "Located in Owens Dining Center across Kent " +
 			//					"Street from the University Bookstore. The " +
 			//					"entrance is located on the side of the building " +
@@ -217,29 +256,7 @@ public class Dining_InfoActivity extends ListActivity
 			i.putExtras( bundle );
 			startActivity(i); 
 			break;
-		case 5: //shultz express
-			//			loc = "Located in the mezzanine area of " +
-			//					"Shultz Dining Center, in the Upper" +
-			//					"Quad near Shanks Hall.";
-			bundle.putString("BuildingName" , "Shultz Hall");
-			lat = (int) (37.231817 * 1E6);
-			lon = (int) (-80.4184 * 1E6);
-			bundle.putInt("Latitude", lat);
-			bundle.putInt("Longitude", lon);
-			i.putExtras( bundle );
-			startActivity(i); 
-			break;
-		case 6: //shultz
-			//			loc = "Located in the Shultz Dining Center, in the " +
-			//					"Upper Quad near Shanks Hall."; 
-			bundle.putString("BuildingName" , "Shultz Hall");
-			lat = (int) (37.231817 * 1E6);
-			lon = (int) (-80.4184 * 1E6);
-			bundle.putInt("Latitude", lat);
-			bundle.putInt("Longitude", lon);
-			i.putExtras( bundle );
-			startActivity(i); break;
-		case 7: //west end
+		case 9: //west end
 			//			String message = "Connected to Cochrane Hall. Located between Ambler-Johnston " +
 			//					"and Harper Halls."; 
 			//			String title = "Location";
@@ -259,43 +276,37 @@ public class Dining_InfoActivity extends ListActivity
 	private String makeHoursString()
 	{
 		String hours = "";
-		switch(Dining_HallInformationActivity.restaurantChosen)
+		switch(selectedHall)
 		{
-		case 0: //d2
+		case 3: //d2
 			hours = "M-F:   7:00am - 9:30am" +
 					"\n         11:00am - 2:00pm" +
 					"\n           5:00pm - 7:00pm\n" +
 					"\nSun:  11:00am - 3:00pm\n" +
 					"            3:00pm - 7:00pm"; break;
-		case 1: //deets
+		case 4: //deets
 			hours = "M-F:    7:30am - 12:00am\n" +
 					"Sat:   10:00am - 12:00am\n" +
 					"Sun:  10:00am - 12:00am"; break;
-		case 2: //dx
+		case 5: //dx
 			hours = "M-F:  7:00am - 2:00am\n" +
 					"Sat:   9:00am - 2:00am\n" +
 					"Sun:  9:00am - 2:00am"; break;
-		case 3: //hokiegrill
+		case 6: //hokiegrill
 			hours = "M-F:  10:30am - 9:00pm\n" +
 					"Sat:   12:00pm - 8:00pm"; break;
-		case 4: //owens
+		case 7: //owens
 			hours = "M-F:  10:30am - 8:00pm\n"	+
 					"\nSat:   10:30am - 3:00pm\n" +
 					"            3:00pm - 8:00pm\n" +
 					"\nSun:  10:30am - 3:00pm\n" +
 					"           3:00pm - 8:00pm"; break;
-		case 5: //shultz express
-			hours = "M-Th:  7:00am - 10:15am\n" +
-					"           10:30am - 2:00pm\n" +
-					"\nFri:      7:00am - 10:15am\n" +
-					"          10:30am - 4:00pm"; break;
-		case 6: //shultz
-			hours = "Closed"; break;
-			//		        hours = "M-Th:  5:00pm - 7:00pm"; break;
-		case 7: //west end
+		case 9: //west end
 			hours = "M-F:  10:30am - 8:00pm\n"	+
 					"Sat:   11:00am - 7:00pm\n" + 
 					"Sun: 11:00am - 8:00pn"; break;
+		default:
+			hours = "No information available yet."; break;
 		}
 		return hours;
 	}
@@ -303,9 +314,9 @@ public class Dining_InfoActivity extends ListActivity
 	private String makeContactString()
 	{
 		String info = "";
-		switch(Dining_HallInformationActivity.restaurantChosen)
+		switch(selectedHall)
 		{
-		case 0: //d2
+		case 3: //d2
 			info = "Tel: 540-231-6130\n" +
 					"Fax: 540-231-9046\n" +
 					"\nAssistant Director: Kelvin Bergsten\n" +
@@ -317,11 +328,11 @@ public class Dining_InfoActivity extends ListActivity
 					"Food Production Manager: Amanda Snediker\n"+
 					"Office Specialist: Kevin Quinn\n" +
 					"Office Specialist: Andrew Sinnes"; break;
-		case 1: //deets
+		case 4: //deets
 			info = "Tel: 540-231-7101\n" +
 					"\nManager: Don Harvey\n" +
 					"Assistant Manager: Judy Young"; break;
-		case 2: //dx
+		case 5: //dx
 			info = "Tel: 540-231-2184\n" +
 					"Fax: 540-231-9046\n"+
 					"\nAssistant Director: Kelvin Bergsten\n" +
@@ -329,13 +340,13 @@ public class Dining_InfoActivity extends ListActivity
 					"Assistant Manager: Vacant\n" +
 					"Student General Manager: Kevin Quinn\n" +
 					"Student General Manager: Andrew Sinnes"; break;
-		case 3: //hokiegrill
+		case 6: //hokiegrill
 			info = "Tel: 540-231-6187\n" +
 					"\nAssistant Director: Steve Opeka\n" +
 					"Operations Manager: Jessica Hale\n" +
 					"Operations Manager: Jason McAlinden\n" +
 					"Office Specialist: Laurie Osborne"; break;
-		case 4: //owens
+		case 7: //owens
 			info = "Tel: 540-231-6187\n" +
 					"\nAssistant Director: Steve Swannell\n" +
 					"Executive Chef: John Scherer\n" +
@@ -345,19 +356,7 @@ public class Dining_InfoActivity extends ListActivity
 					"Operations Manager: Steve Swannell\n" +
 					"Food Production Manager: Betty Shields\n" +
 					"Stockroom Supervisor: Frank Sheppard\n"; break;
-		case 5: //shultz express
-			info = "Tel: 540-231-9818\n" +
-					"\nAssistant Manager: Jason Ludy\n" +
-					"Food Production Manager: Nona Gabbert\n" +
-					"Chef de Cuisine: Charles Morse\n" +
-					"Office Specialist: Kezia Johnson"; break;
-		case 6: //shultz
-			info = "Tel: 540-231-6873\n" +
-					"\nAssistant Manager: Jason Ludy\n" +
-					"Food Production Manager: Nona Gabbert\n" +
-					"Chef de Cuisine: Charles Morse\n" +
-					"Office Specialist: Kezia Johnson"; break;
-		case 7: //west end
+		case 9: //west end
 			info = "Tel: 540-231-4779\n" +
 					"\nAssistant Director: Steve Garnett\n" +
 					"Executive Chef: Mark Bratton (CEC)\n" +
@@ -397,254 +396,88 @@ public class Dining_InfoActivity extends ListActivity
 	 */
 	private String getStatus()
 	{
-		Date date = new Date();
-		String[] array = date.toString().split("\\s+");
-		String[] time = array[3].split(":");
-		int hour = Integer.parseInt(time[0]);
-		int minute = Integer.parseInt(time[1]);
-
-		ImageView ex = (ImageView) findViewById(R.id.exclamation_point);
-		ex.setVisibility(ImageView.GONE);
-
-		int hallStatus = handler.refreshOpen(Dining_Handler.allHalls[Dining_HallInformationActivity.restaurantChosen]);
-		if (hallStatus == Dining_Handler.CLOSED)
-			return "This hall is currently closed";
-		else if (hallStatus == Dining_Handler.OPEN)
-			return "This hall is currently open";
-
 		String status = "";
-		ex.setVisibility(ImageView.VISIBLE);
-		switch(Dining_HallInformationActivity.restaurantChosen)
+		Dining_DiningHall hall = null;
+		switch(selectedHall)
 		{
-			case 0:	// d2
-				if (hallStatus == Dining_Handler.OPEN_EX)
-				{
-					if (array[0].charAt(0) != 'S') //Weekday
-					{
-						if (hour == 8 || hour == 9) //if between 8:30 and 9:30
-							status = "This hall will close at 9:30 a.m." +
-									"\n(" + getTimeDifference(hour, minute, 9, 30) +
-									" minutes from now)";
-						else if (hour == 13) //if between 13:00 and 14:00
-							status = "This hall will close at 2:00 p.m." +
-									"\n(" + getTimeDifference(hour, minute, 14, 0) +
-									" minutes from now)";
-						else if (hour == 18) //if between 18:00 and 19:00
-							status = "This hall will close at 7:00 p.m." +
-									"\n(" + getTimeDifference(hour, minute, 7, 0) +
-									" minutes from now)";
-					}
-					else if (array[0].equals("Sun")) //Sunday
-					{
-						status = "This hall will close at 7:00 p.m." +
-								"\n(" + getTimeDifference(hour, minute, 7, 0) +
-								" minutes from now)";
-					}
-				}
-				else if (hallStatus == Dining_Handler.CLOSED_EX)
-				{
-					if (array[0].charAt(0) != 'S') //Weekday
-					{
-						if (hour == 6) //if between 6:00 and 7:00
-							status = "This hall will open at 7:00 a.m." +
-									"\n(" + getTimeDifference(hour, minute, 7, 0) +
-									" minutes from now)";
-						else if (hour == 10) //if between 10:00 and 11:00
-							status = "This hall will open at 11:00 a.m." +
-									"\n(" + getTimeDifference(hour, minute, 11, 0) +
-									" minutes from now)";
-						else if (hour == 16) //if between 16:00 and 17:00
-							status = "This hall will open at 5:00 p.m." +
-									"\n(" + getTimeDifference(hour, minute, 17, 0) +
-									" minutes from now)";
-					}
-					else if (array[0].equals("Sunday")) //Sunday
-					{
-						status = "This hall will open at 11:00 a.m." +
-								"\n(" + getTimeDifference(hour, minute, 11, 0) +
-								" minutes from now)";
-					}
-				}
-				break;
-			case 1:	//deets
-				if (hallStatus == Dining_Handler.OPEN_EX)
-				{
-					status = "This hall will close at 12:00 a.m." +
-							"\n(" + getTimeDifference(hour, minute, 24, 0) +
-							" minutes from now)";
-				}
-				else if (hallStatus == Dining_Handler.CLOSED_EX)
-				{
-					if (array[0].charAt(0) != 'S') //Weekday
-					{
-						status = "This hall will open at 7:30 a.m." +
-								"\n(" + getTimeDifference(hour, minute, 7, 30) +
-								" minutes from now)";
-					}
-					else
-					{
-						status = "This hall will open at 10:00 a.m." +
-								"\n(" + getTimeDifference(hour, minute, 10, 0) +
-								" minutes from now)";
-					}
-				}
-				break;
-			case 2: //dx
-				if (hallStatus == Dining_Handler.OPEN_EX)
-				{
-					status = "This hall will close at 2:00 a.m." +
-							"\n(" + getTimeDifference(hour, minute, 2, 0) +
-							" minutes from now)";
-				}
-				else if (hallStatus == Dining_Handler.CLOSED_EX)
-				{
-					if (array[0].charAt(0) != 'S') //Weekday
-					{
-						status = "This hall will open at 7:00 a.m." +
-								"\n(" + getTimeDifference(hour, minute, 7, 0) +
-								" minutes from now)";
-					}
-					else
-					{
-						status = "This hall will open at 9:00 a.m." +
-								"\n(" + getTimeDifference(hour, minute, 9, 0) +
-								" minutes from now)";
-					}
-				}
-				break;
-			case 3: //hokie_grill
-				if (hallStatus == Dining_Handler.OPEN_EX)
-				{
-					if (array[0].charAt(0) != 'S') //Weekday
-					{
-						status = "This hall will close at 9:00 p.m." +
-								"\n(" + getTimeDifference(hour, minute, 21, 0) +
-								" minutes from now)";
-					}
-					else if (array[0].equals("Sat"))
-					{
-						status = "This hall will close at 8:00 p.m." +
-								"\n(" + getTimeDifference(hour, minute, 20, 0) +
-								" minutes from now)";
-					}
-				}
-				else if (hallStatus == Dining_Handler.CLOSED_EX)
-				{
-					if (array[0].charAt(0) != 'S')
-					{
-						status = "This hall will open at 10:30 a.m." +
-								"\n(" + getTimeDifference(hour, minute, 10, 30) +
-								" minutes from now)";
-					}
-					else if (array[0].equals("Sat"))
-					{
-						status = "This hall will open at 12:00 p.m." +
-								"\n(" + getTimeDifference(hour, minute, 12, 0) +
-								" minutes from now)";
-					}
-				}
-				break;
-			case 4: //owens
-				if (hallStatus == Dining_Handler.OPEN_EX)
-				{
-					status = "This hall will close at 8:00 p.m." +
-							"\n(" + getTimeDifference(hour, minute, 20, 0) +
-							" minutes from now)";
-				}
-				else if (hallStatus == Dining_Handler.CLOSED_EX)
-				{
-					status = "This hall will open at 10:30 a.m." +
-							"\n(" + getTimeDifference(hour, minute, 10, 30) +
-							" minutes from now)";
-				}
-				break;
-			case 5: //shultz_express
-				if (hallStatus == Dining_Handler.OPEN_EX)
-				{
-					if (array[0].charAt(0) != 'S' && array[0].charAt(0) != 'F') //M-R
-					{
-						status = "This hall will close at 2:00 p.m." +
-								"\n(" + getTimeDifference(hour, minute, 14, 0) +
-								" minutes from now)";
-					}
-					else if (array[0].charAt(0) == 'F')
-					{
-						status = "This hall will close at 4:00 p.m." +
-								"\n(" + getTimeDifference(hour, minute, 16, 0) +
-								" minutes from now)";
-					}
-				}
-				else if (hallStatus == Dining_Handler.CLOSED_EX)
-				{
-					status = "This hall will open at 7:00 a.m." +
-							"\n(" + getTimeDifference(hour, minute, 7, 0) +
-							" minutes from now)";
-				}
-				break;
-			case 6: //shultz
-//				if (hallStatus == DiningHandler.OPEN_EX)
-//				{
-//					status = "This hall will close at 7:00 p.m." +
-//							"\n(" + getTimeDifference(hour, minute, 19, 0) +
-//							" minutes from now)";
-//				}
-//				else if (hallStatus == DiningHandler.CLOSED_EX)
-//				{
-//					status = "This hall will open at 5:00 p.m." +
-//							"\n(" + getTimeDifference(hour, minute, 17, 0) +
-//							" minutes from now)";
-//				}
-				break;
-			case 7: //west_end
-				if (hallStatus == Dining_Handler.OPEN_EX)
-				{
-					if (!array[0].equals("Sat")) //Weekdays and sunday
-					{
-						status = "This hall will close at 8:00 p.m." +
-								"\n(" + getTimeDifference(hour, minute, 20, 0) +
-								" minutes from now)";
-					}
-					else //Sat
-					{
-						status = "This hall will close at 7:00 p.m." +
-								"\n(" + getTimeDifference(hour, minute, 19, 0) +
-								" minutes from now)";
-					}
-				}
-				else if (hallStatus == Dining_Handler.CLOSED_EX)
-				{
-					if (array[0].charAt(0) != 'S') //Weekday
-					{
-						status = "This hall will open at 10:30 a.m." +
-								"\n(" + getTimeDifference(hour, minute, 10, 30) +
-								" minutes from now)";
-					}
-					else //Weekend
-					{
-						status = "This hall will open at 11:00 a.m." +
-								"\n(" + getTimeDifference(hour, minute, 11, 0) +
-								" minutes from now)";
-					}
-				}
-				break;
+		case 0: //abp GLC
+			hall = new Dining_DiningHall_ABPGLC();
+			break;
+		case 1: //abp squires cafe
+			hall = new Dining_DiningHall_ABPSquiresCafe();
+			break;
+		case 2: //abp squires kiosk
+			hall = new Dining_DiningHall_ABPSquiresKiosk();
+			break;
+		case 3: //d2
+			hall = new Dining_DiningHall_D2();
+			break;
+		case 4: //deets
+			hall = new Dining_DiningHall_Deets();
+			break;
+		case 5: //dx
+			hall = new Dining_DiningHall_DX();
+			break;
+		case 6: //hokie_grill
+			hall = new Dining_DiningHall_HokieGrill();
+			break;
+		case 7: //owens
+			hall = new Dining_DiningHall_Owens();
+			break;
+		case 8: //sbarro
+			hall = new Dining_DiningHall_Sbarro();
+			break;
+		case 9: //west_end
+			hall = new Dining_DiningHall_WestEnd();
+			break;
+		case 10: // Atomic Pizzeria (Turner Place)
+			hall = new Dining_DiningHall_TurnerPlace_AtomicPizzeria();
+			break;
+		case 11: // brueggers bagels
+			hall = new Dining_DiningHall_TurnerPlace_BrueggersBagels();
+			break;
+		case 12: // dolci e cafe
+			hall = new Dining_DiningHall_TurnerPlace_DolciCaffe();
+			break;
+		case 13: // fire grill
+			hall = new Dining_DiningHall_TurnerPlace_FireGrill();
+			break;
+		case 14: // jamba juice
+			hall = new Dining_DiningHall_TurnerPlace_JambaJuice();
+			break;
+		case 15: // origami grill
+			hall = new Dining_DiningHall_TurnerPlace_OrigamiGrill();
+			break;
+		case 16: // origami sushi
+			hall = new Dining_DiningHall_TurnerPlace_OrigamiSushi();
+			break;
+		case 17: // qdoba
+			hall = new Dining_DiningHall_TurnerPlace_QdobaMexicanGrill();
+			break;
+		case 18: // soup garden
+			hall = new Dining_DiningHall_TurnerPlace_SoupGarden();
+			break;
 		}
-		return status;
-	}
 
-	private int getTimeDifference(int currentHour, int currentMinute,
-			int targetHour, int targetMinute)
-	{
-		int difference = 999;
-		if (targetMinute == 0)
-			difference = (60 - currentMinute);
-		else if (targetMinute == 30)
-		{
-			if (currentHour == targetHour)
-				difference = (30 - currentMinute);
-			else
-				difference = 30 + (60 - currentMinute);
+		//		ImageView ex = (ImageView) findViewById(R.id.exclamation_point);
+
+		if (hall != null) {
+			if (hall.getDiningHallState() == DiningHallState.OPEN) {
+				status = "This dining hall is currently open.";
+				//				ex.setVisibility(ImageView.GONE);
+			} else if (hall.getDiningHallState() == DiningHallState.OPEN_CLOSING_SOON) {
+				status = "This dining hall is currently open, but will be closing in less than an hour.";
+				//				ex.setVisibility(ImageView.VISIBLE);
+			} else if (hall.getDiningHallState() == DiningHallState.CLOSED) {
+				status = "This dining hall is currently closed.";
+				//				ex.setVisibility(ImageView.GONE);
+			} else if (hall.getDiningHallState() == DiningHallState.CLOSED_OPENING_SOON) {
+				status = "This dining hall is currently closed, but will be opening in less than an hour.";
+				//				ex.setVisibility(ImageView.VISIBLE);
+			}
 		}
-		return difference;
+
+		return status;
 	}
 
 	private void getHeaderInfo()
@@ -654,40 +487,84 @@ public class Dining_InfoActivity extends ListActivity
 		hallStatus.setText(getStatus());
 		ImageView img = (ImageView) findViewById(R.id.restaurant_icon);
 
-		switch(Dining_HallInformationActivity.restaurantChosen)
+		switch(selectedHall)
 		{
-		case 0: //d2
+		case 0: //abp GLC
+			hallName.setText("Au Bon Pain (GLC)");
+			img.setImageResource(R.drawable.logo_abp_glc);
+			break;
+		case 1: //abp squires cafe
+			hallName.setText("Au Bon Pain\n(Squires Caf\u00E9)");
+			img.setImageResource(R.drawable.logo_abp_cafe);
+			break;
+		case 2: //abp squires kiosk
+			hallName.setText("Au Bon Pain\n(Squires Kiosk)");
+			img.setImageResource(R.drawable.logo_abp_kiosk);
+			break;
+		case 3: //d2
 			hallName.setText("D2");
 			img.setImageResource(R.drawable.logo_d2);
 			tableNumber = "540-231-6130"; break;
-		case 1: //deets
+		case 4: //deets
 			hallName.setText("Deet's Place");
 			img.setImageResource(R.drawable.logo_deets);
 			tableNumber = "540-231-7101"; break;
-		case 2: //dx
+		case 5: //dx
 			hallName.setText("DXpress");
 			img.setImageResource(R.drawable.logo_dx);
 			tableNumber = "540-231-2184"; break;
-		case 3: //hokie_grill
+		case 6: //hokie_grill
 			hallName.setText("Hokie Grill & Co.");
 			img.setImageResource(R.drawable.logo_hokie_grill);
 			tableNumber = "540-231-6187"; break;
-		case 4: //owens
+		case 7: //owens
 			hallName.setText("Owens Food Court");
 			img.setImageResource(R.drawable.logo_owens);
 			tableNumber = "540-231-6187"; break;
-//		case 5: //shultz_express
-//			hallName.setText("Shultz Express");
-//			img.setImageResource(R.drawable.logo_shultz_express);
-//			tableNumber = "540-231-9818"; break;
-//		case 6: //shultz
-//			hallName.setText("Shultz");
-//			img.setImageResource(R.drawable.logo_shultz);
-//			tableNumber = "540-231-6873"; break;
-		case 7: //west_end
+		case 8: //sbarro
+			hallName.setText("Sbarro");
+			img.setImageResource(R.drawable.logo_sbarro);
+			break;
+		case 9: //west_end
 			hallName.setText("West End Market");
 			img.setImageResource(R.drawable.logo_west_end);
 			tableNumber = "540-231-4779"; break;
+		case 10: // Atomic Pizzeria (Turner Place)
+			hallName.setText("Atomic Pizzeria\n(Turner Place)");
+			img.setImageResource(R.drawable.logo_atomic_pizzeria);
+			break;
+		case 11: // brueggers bagels
+			hallName.setText("Bruegger's Bagels\n(Turner Place)");
+			img.setImageResource(R.drawable.logo_brueggers_bagels);
+			break;
+		case 12: // dolci e cafe
+			hallName.setText("Dolci e Caffe\n(Turner Place)");
+			img.setImageResource(R.drawable.logo_dolci_e_caffe);
+			break;
+		case 13: // fire grill
+			hallName.setText("1872 Fire Grill\n(Turner Place)");
+			img.setImageResource(R.drawable.logo_fire_grill);
+			break;
+		case 14: // jamba juice
+			hallName.setText("Jamba Juice\n(Turner Place)");
+			img.setImageResource(R.drawable.logo_jamba_juice);
+			break;
+		case 15: // origami grill
+			hallName.setText("Origami Grill\n(Turner Place)");
+			img.setImageResource(R.drawable.logo_origami);
+			break;
+		case 16: // origami sushi
+			hallName.setText("Origami Sushi\n(Turner Place)");
+			img.setImageResource(R.drawable.logo_origami);
+			break;
+		case 17: // qdoba
+			hallName.setText("Qdoba Mexican Grill\n(Turner Place)");
+			img.setImageResource(R.drawable.logo_qdoba);
+			break;
+		case 18: // soup garden
+			hallName.setText("Soup Garden\n(Turner Place)");
+			img.setImageResource(R.drawable.logo_soup_garden);
+			break;
 		}
 	}
 
@@ -730,13 +607,11 @@ public class Dining_InfoActivity extends ListActivity
 			ImageView iv = (ImageView) v.findViewById(R.id.option_icon);
 			switch (position)
 			{
-			case 0: iv.setImageResource(R.drawable.icon_search); break;
-			case 1: iv.setImageResource(R.drawable.icon_track); break;
-			case 2: iv.setImageResource(R.drawable.icon_food); break;
-			case 3: iv.setImageResource(R.drawable.icon_clock); break;
-			case 4: iv.setImageResource(R.drawable.icon_map); break;
-			case 5: iv.setImageResource(R.drawable.icon_phone); break;
-			case 6: iv.setImageResource(R.drawable.icon_dollar_sign);
+			case 0: iv.setImageResource(R.drawable.icon_clock); break;
+			case 1: iv.setImageResource(R.drawable.icon_food); break;
+			case 2: iv.setImageResource(R.drawable.icon_map); break;
+			case 3: iv.setImageResource(R.drawable.icon_phone); break;
+			case 4: iv.setImageResource(R.drawable.icon_dollar_sign);
 			}
 			return v;
 		}

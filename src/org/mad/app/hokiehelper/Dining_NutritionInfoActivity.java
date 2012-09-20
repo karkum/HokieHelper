@@ -7,7 +7,6 @@ import java.io.IOException;
 import java.text.DecimalFormat;
 import java.util.Date;
 
-import android.app.Activity;
 import android.os.Bundle;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -20,7 +19,10 @@ import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
-public class Dining_NutritionInfoActivity extends Activity
+import com.actionbarsherlock.app.SherlockActivity;
+import com.actionbarsherlock.view.MenuItem;
+
+public class Dining_NutritionInfoActivity extends SherlockActivity
 {
     private TextView calcium;
     private TextView calories;
@@ -57,6 +59,13 @@ public class Dining_NutritionInfoActivity extends Activity
     {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.nutri_facts_portrait);
+        
+		// Sets up action bar title/navigation
+		getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+		getSupportActionBar().setDisplayUseLogoEnabled(true);
+		getSupportActionBar().setLogo(R.drawable.ic_launcher);
+		getSupportActionBar().setDisplayShowHomeEnabled(true);
+		getSupportActionBar().setTitle("Nutritional Facts");
 
         toggleAllergensButton = (ImageView) findViewById(R.id.toggleAllergensButton);
         allergensList = (TextView) findViewById(R.id.allergensTextView);
@@ -236,6 +245,20 @@ public class Dining_NutritionInfoActivity extends Activity
             }
         });
     }
+    
+	/**
+	 * Handles the clicking of action bar icons.
+	 */
+	@Override
+	public boolean onOptionsItemSelected(MenuItem item) {
+		switch (item.getItemId()) {
+		case android.R.id.home:
+			finish();
+			return true;
+		default:
+			return super.onOptionsItemSelected(item);
+		}
+	}
 
     private void writeToFile(int mode, String name, Date d, String cal)
     {

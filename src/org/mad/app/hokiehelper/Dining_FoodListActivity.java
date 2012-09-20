@@ -6,13 +6,15 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Date;
 
-import android.app.ListActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
-public class Dining_FoodListActivity extends ListActivity
+import com.actionbarsherlock.app.SherlockListActivity;
+import com.actionbarsherlock.view.MenuItem;
+
+public class Dining_FoodListActivity extends SherlockListActivity
 {
 	ArrayList<String> foodList = new ArrayList<String>();
 	@Override
@@ -20,6 +22,13 @@ public class Dining_FoodListActivity extends ListActivity
 	{
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.subrestaurant);
+
+		// Sets up action bar title/navigation
+		getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+		getSupportActionBar().setDisplayUseLogoEnabled(true);
+		getSupportActionBar().setLogo(R.drawable.ic_launcher);
+		getSupportActionBar().setDisplayShowHomeEnabled(true);
+		getSupportActionBar().setTitle("My Diet");
 
 		//Read from the file
 		try
@@ -35,7 +44,7 @@ public class Dining_FoodListActivity extends ListActivity
 					break;
 			}
 			fis.close();
-			
+
 			//Add thing to list
 			String[] str = s.split("\\|");
 			for (int i = 0; i < str.length - 1; i = i + 3)
@@ -69,5 +78,19 @@ public class Dining_FoodListActivity extends ListActivity
 		View parent = (View) lv.getParent();
 		parent.setBackgroundResource(R.drawable.bg_tan);
 		lv.setCacheColorHint(0);
+	}
+
+	/**
+	 * Handles the clicking of action bar icons.
+	 */
+	@Override
+	public boolean onOptionsItemSelected(MenuItem item) {
+		switch (item.getItemId()) {
+		case android.R.id.home:
+			finish();
+			return true;
+		default:
+			return super.onOptionsItemSelected(item);
+		}
 	}
 }

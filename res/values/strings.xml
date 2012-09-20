@@ -1,880 +1,867 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-	<string name="forecast">7-day Forecast:</string>
-	<string name="twitter_main_name">\@twitter</string>
-	<string name="hello">Hello World, HokieHelperActivity!</string>
-	<string name="app_name">HokieHelper</string>
-	<string name="open">Open</string>
-	<string name="closed">Closed</string>
-	<string name="open_empty">All dining halls are currently closed.</string>
-	<string name="closed_empty">All dining halls are currently open!</string>
-	<string name="weather_info">Weather data ©2012 WeatherBug</string>
-	<string-array name="info">
-		<item>Search Food Items</item>
-		<item>Track Diet</item>
-		<item>Nutrition Facts</item>
-		<item>Hours of Operation</item>
-		<item>Location</item>
-		<item>Contact Information</item>
-	</string-array>
-	<string-array name="numbers">
-		<item>1</item>
-		<item>2</item>
-		<item>3</item>
-		<item>4</item>
-		<item>5</item>
-		<item>6</item>
-		<item>7</item>
-		<item>8</item>
-		<item>9</item>
-		<item>10</item>
-	</string-array>
 
-	<string-array name="d2shultzInfo">
-		<item>Search Food Items</item>
-		<item>Track Diet</item>
-		<item>Nutrition Facts</item>
-		<item>Hours of Operation</item>
-		<item>Location</item>
-		<item>Contact Information</item>
-		<item>Prices</item>
-	</string-array>
+    <string name="forecast">7-day Forecast:</string>
+    <string name="twitter_main_name">\@twitter</string>
+    <string name="hello">Hello World, HokieHelperActivity!</string>
+    <string name="app_name">HokieHelper</string>
+    <string name="open">Open</string>
+    <string name="closed">Closed</string>
+    <string name="open_empty">All dining halls are currently closed.</string>
+    <string name="closed_empty">All dining halls are currently open!</string>
+    <string name="weather_info">Weather data ©2012 WeatherBug</string>
 
-	<string name="d2hours">
+    <string-array name="info">
+        <item>Hours of Operation</item>
+        <item>Nutrition Facts</item>
+        <item>Location</item>
+        <item>Contact Information</item>
+    </string-array>
+    <string-array name="numbers">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+    </string-array>
+    <string-array name="lackingInfo">
+        <item>Hours of Operation</item>
+    </string-array>
+    <string-array name="d2shultzInfo">
+        <item>Hours of Operation</item>
+        <item>Nutrition Facts</item>
+        <item>Location</item>
+        <item>Contact Information</item>
+        <item>Prices</item>
+    </string-array>
 
-		<string name="call_string">Call </string>
-		<string name="add_contacts">Add</string>
-	</string>
-	<string name="daily_value_warning">*Percent Daily Value based on a 2,000 calorie diet
-	</string>
+    <string name="d2hours"><string name="call_string">Call </string><string name="add_contacts">Add</string></string>
+    <string name="daily_value_warning">*Percent Daily Value based on a 2,000 calorie diet</string>
 
-	<string-array name="deetCategory">
-		<item>Bread Products</item>
-		<item>Cakes</item>
-		<item>Coffee and Hot Drinks</item>
-		<item>Cookies</item>
-		<item>Croissant</item>
-		<item>Ice Cream</item>
-		<item>Ice Cream Drinks</item>
-		<item>Muffins</item>
-		<item>Pastry</item>
-		<item>Salad</item>
-		<item>Sandwiches</item>
-		<item>Snacks</item>
-		<item>Soups</item>
-	</string-array>
+    <string-array name="deetCategory">
+        <item>Bread Products</item>
+        <item>Cakes</item>
+        <item>Coffee and Hot Drinks</item>
+        <item>Cookies</item>
+        <item>Croissant</item>
+        <item>Ice Cream</item>
+        <item>Ice Cream Drinks</item>
+        <item>Muffins</item>
+        <item>Pastry</item>
+        <item>Salad</item>
+        <item>Sandwiches</item>
+        <item>Snacks</item>
+        <item>Soups</item>
+    </string-array>
+    <string-array name="hokieGrillCategory">
+        <item>Blue Ridge BBQ</item>
+        <item>Chick Fil A</item>
+        <item>Cinnabon</item>
+        <item>Grab n Go</item>
+        <item>Pizza Hut</item>
+    </string-array>
+    <string-array name="owensCategory">
+        <item>Bowl Dynasty</item>
+        <item>Carved Meat</item>
+        <item>Carvery Side Items</item>
+        <item>Farms and Fields</item>
+        <item>Flips</item>
+        <item>Frank\'s Deli</item>
+        <item>Freshens</item>
+        <item>Garden</item>
+        <item>La Cantina</item>
+        <item>Lotsa Pasta</item>
+        <item>Oasis</item>
+        <item>Philly City</item>
+        <item>Sweet Temptations</item>
+    </string-array>
+    <string-array name="westendCategory">
+        <item>Baked Goods</item>
+        <item>Bistro Firenze</item>
+        <item>Build Your Own Sandwich</item>
+        <item>Burgers and Dogs</item>
+        <item>Chicken, Wings and Quesadillas</item>
+        <item>Croissants and Pitas</item>
+        <item>Dressings</item>
+        <item>Ice Cream</item>
+        <item>JP\'s Entrees</item>
+        <item>JP\'s Sides</item>
+        <item>Leaf and Ladle</item>
+        <item>Salads</item>
+        <item>Sides, Snacks and Toppings</item>
+        <item>Smoothies</item>
+        <item>Soups and Quiche</item>
+        <item>Speciality Sandwiches</item>
+        <item>Wired</item>
+        <item>Wrap World</item>
+    </string-array>
+    <string-array name="d2Category">
+        <item>Baked Goods</item>
+        <item>Beverages</item>
+        <item>Breakfast Sandwiches</item>
+        <item>Cereal</item>
+        <item>Condiments</item>
+        <item>DXpress Breakfast Hot Items</item>
+        <item>DXpress Cold Sandwiches</item>
+        <item>DXpress Grab n Go</item>
+        <item>DXpress Hot Sandwiches</item>
+        <item>East Side Deli</item>
+        <item>Edens</item>
+        <item>Entrees</item>
+        <item>Fruits</item>
+        <item>Gauchos Breakfast</item>
+        <item>Gauchos Grill and Burgers</item>
+        <item>La Patisserie</item>
+        <item>Mangia</item>
+        <item>Olives</item>
+        <item>Pan Asia</item>
+        <item>Salsas</item>
+        <item>Sides</item>
+    </string-array>
+    <string-array name="dbFolders">
+        <item>d2</item>
+        <item>deets</item>
+        <item>hokieGrill</item>
+        <item>owens</item>
+        <item>westend</item>
+    </string-array>
+    <string-array name="allHalls">
+        <item>abp_glc</item>
+        <item>abp_squires_cafe</item>
+        <item>abp_squires_kiosk</item>
+        <item>carvel</item>
+        <item>cinnabon</item>
+        <item>d2</item>
+        <item>deets</item>
+        <item>dx</item>
+        <item>hokie_grill</item>
+        <item>owens</item>
+        <item>sbarro</item>
+        <item>shultz</item>
+        <item>shultz_express</item>
+        <item>turner_place</item>
+        <item>vet_med_cafe</item>
+        <item>west_end</item>
+    </string-array>
 
-	<string-array name="hokieGrillCategory">
-		<item>Blue Ridge BBQ</item>
-		<item>Chick Fil A</item>
-		<item>Cinnabon</item>
-		<item>Grab n Go</item>
-		<item>Pizza Hut</item>
-	</string-array>
+    <string name="search_hint">Search Food Items</string>
 
-	<string-array name="owensCategory">
-		<item>Bowl Dynasty</item>
-		<item>Carved Meat</item>
-		<item>Carvery Side Items</item>
-		<item>Farms and Fields</item>
-		<item>Flips</item>
-		<item>Frank\'s Deli</item>
-		<item>Freshens</item>
-		<item>Garden</item>
-		<item>La Cantina</item>
-		<item>Lotsa Pasta</item>
-		<item>Oasis</item>
-		<item>Philly City</item>
-		<item>Sweet Temptations</item>
-	</string-array>
+    <string-array name="d2foodlist">
+        <item>Biscuit</item>
+        <item>Cherry Twist Danish</item>
+        <item>Donuts</item>
+        <item>White Sliced Bread</item>
+        <item>Whole Wheat Bread</item>
+        <item>100% Orange Juice</item>
+        <item>Apple Juice</item>
+        <item>Apple Papaya Mango Punch</item>
+        <item>Chocolate Milk</item>
+        <item>Hot Chocolate</item>
+        <item>Iceberry Blue Juice</item>
+        <item>Orange Juice</item>
+        <item>Skim Milk</item>
+        <item>Soft Drinks - Diet</item>
+        <item>Soft Drinks - Regular</item>
+        <item>Strawberry Banana Kiwi Juice</item>
+        <item>Whole Milk</item>
+        <item>Bacon and Egg Biscuit</item>
+        <item>Bacon Biscuit</item>
+        <item>Bacon Egg and Cheese Biscuit</item>
+        <item>Country Ham and Egg Biscuit</item>
+        <item>Country Ham Biscuit</item>
+        <item>Country Ham, Egg and Cheese Biscuit</item>
+        <item>Egg and Cheese Biscuit</item>
+        <item>Egg Biscuit</item>
+        <item>Sausage and Egg Biscuit</item>
+        <item>Sausage Biscuit</item>
+        <item>Sausage Egg and Cheese Biscuit</item>
+        <item>Steak and Egg Biscuit</item>
+        <item>Steak Biscuit</item>
+        <item>Berry Colossal Crunch</item>
+        <item>Cornflakes</item>
+        <item>Crispy Rice</item>
+        <item>Honey Nut Toasty O</item>
+        <item>Low Fat Granola Cereal</item>
+        <item>Marshmallow Mateys</item>
+        <item>Raisin Bran</item>
+        <item>Jelly</item>
+        <item>Peanut Butter</item>
+        <item>French Toast Sticks</item>
+        <item>Hash Brown Square</item>
+        <item>Cheese Hoagie Sub 6 Inch</item>
+        <item>Cold Wrap</item>
+        <item>Hoagie Sub 6 Inch</item>
+        <item>Italian Wrap</item>
+        <item>Peanut Butter and Jelly Sandwich</item>
+        <item>Ranch Chicken Wrap</item>
+        <item>Veggie Hoagie Sub 6 Inch</item>
+        <item>4 Variety Veggie Rolls</item>
+        <item>Beef and Cheddar Sandwich</item>
+        <item>Berry Good Snack Mix</item>
+        <item>Bran Muffins</item>
+        <item>Caesar Salad</item>
+        <item>Calif. and Philad. Rolls</item>
+        <item>Calif. and Salmon Rolls</item>
+        <item>California Rolls</item>
+        <item>Cheese Pizza</item>
+        <item>Chef Salad</item>
+        <item>Chicken Caesar Salad</item>
+        <item>Chicken Mandarin Salad</item>
+        <item>chicken Salad Sandwich</item>
+        <item>Chicken Tenders</item>
+        <item>Chili Corndog Casserole</item>
+        <item>Chocolate Chunk Cookies</item>
+        <item>Corn Dog Nuggets</item>
+        <item>Crab and Salmon Rolls</item>
+        <item>Cucumber, Avacado and Carrot Rolls</item>
+        <item>Eel and Calif. Rolls</item>
+        <item>French Fries</item>
+        <item>Fresh Cantaloupe Cup</item>
+        <item>Fresh Grapes Cup</item>
+        <item>Fresh Pineapple Cup</item>
+        <item>Fresh Strawberry Cup</item>
+        <item>Garden Salad</item>
+        <item>Ham and Noodle Au Gratin</item>
+        <item>Ham and Swiss Sandwich</item>
+        <item>Hawaiian Pizza</item>
+        <item>Honeydew Cup</item>
+        <item>Hummus Bowl with Pitas</item>
+        <item>Macaroni and Cheese</item>
+        <item>Manicotti</item>
+        <item>Mashed Potato with Gravy</item>
+        <item>Mixed Fresh Fruit Bowl</item>
+        <item>Pecan and Craisin chicken Salad Wrap</item>
+        <item>Pecan Chicken Salad Bowl</item>
+        <item>Pepperoni Pizza</item>
+        <item>Raisin Crasin Oat Bars</item>
+        <item>Red Pepper Hummus Bowl</item>
+        <item>Red Pepper Hummus Sandwich</item>
+        <item>Red Pepper Hummus Wrap</item>
+        <item>Spicy Chicken Wrap</item>
+        <item>Spicy Crab Rolls</item>
+        <item>Spicy Grilled Chicken Salad</item>
+        <item>Turkey and Provolone Sandwich</item>
+        <item>Veggie Bowl</item>
+        <item>Veggie Pizza</item>
+        <item>Wasabi Explosion Snack Mix</item>
+        <item>Yogurt Blueberry Parfait</item>
+        <item>Yogurt Raspberry Parfait</item>
+        <item>Yogurt Strawberry Parfait</item>
+        <item>Chicken Filet Sandwich</item>
+        <item>Chicken Fillet and Cheese Sandwich</item>
+        <item>Chicken Patty and Cheese Sandwich</item>
+        <item>Chicken Patty Sandwich</item>
+        <item>Grilled Chicken Sandwich</item>
+        <item>Manwich Sandwich</item>
+        <item>Meatball Sub</item>
+        <item>Quarterpound Cheeseburger</item>
+        <item>Quarterpound Hamburger</item>
+        <item>Quarterpound Hot Dog</item>
+        <item>Deli Cheeses</item>
+        <item>French Bread sub Roll</item>
+        <item>Ham</item>
+        <item>Roast Beef</item>
+        <item>Salami</item>
+        <item>Tuna Salad</item>
+        <item>Turkey</item>
+        <item>Wheat Sandwich Roll</item>
+        <item>Whole Wheat Sub Rolls</item>
+        <item>1000 Island Dressing</item>
+        <item>Bleu Cheese Dressing</item>
+        <item>Caesar Dressing</item>
+        <item>Cobb Salad</item>
+        <item>Cottage Cheese</item>
+        <item>French Dressing</item>
+        <item>Italian Dressing</item>
+        <item>Oil and Vinegar</item>
+        <item>Ranch Dressing</item>
+        <item>Salad Tossed with Veggies</item>
+        <item>Seeded Tea Rolls</item>
+        <item>Sundried Tomato Dressing</item>
+        <item>Fresh Banana</item>
+        <item>Fresh Golden Apple</item>
+        <item>Fresh Orange</item>
+        <item>Pineapple Tidbits</item>
+        <item>Applewood Smoked Bacon</item>
+        <item>Buttermilk Pancakes</item>
+        <item>Cheese Omelette</item>
+        <item>Cheesesteak Omelette</item>
+        <item>Chocolate Chip Pancakes</item>
+        <item>Egg White and Veggie Omelet</item>
+        <item>Ham and Cheese Omelette</item>
+        <item>Ham Omelette</item>
+        <item>Pancake Syrup - Maple</item>
+        <item>Sausage Patties</item>
+        <item>Turkey Bacon</item>
+        <item>Veggie Omelette</item>
+        <item>Bacon</item>
+        <item>Cheese Sauce</item>
+        <item>Chicken Patty Sandwich</item>
+        <item>Deli Cheeses</item>
+        <item>French Fries</item>
+        <item>Ham</item>
+        <item>Hamburger</item>
+        <item>Hot Dog Chili</item>
+        <item>Hot Dog on Bun</item>
+        <item>Onion Roll</item>
+        <item>Roast Beef</item>
+        <item>Seasoned Curly Fries</item>
+        <item>Turkey</item>
+        <item>Wheat Sandwich Roll</item>
+        <item>White Sliced Bread</item>
+        <item>Whole Wheat Bread</item>
+        <item>Apple Brandy Sauce</item>
+        <item>Candied Carrots</item>
+        <item>Fruit Compote Sauce</item>
+        <item>JPs Sugar Snap Peas</item>
+        <item>Noodles</item>
+        <item>Rice Pilaf</item>
+        <item>Roasted Potatoes</item>
+        <item>Sauteed Zucchini and Mushrooms</item>
+        <item>Seasoned Green Beans</item>
+        <item>Cherry cobbler</item>
+        <item>Chocolate Chip Pudding</item>
+        <item>Chocolate Cream Pie</item>
+        <item>Double Chocolate Cookie</item>
+        <item>Ice Milk Soft Serve Chocolate</item>
+        <item>Ice Milk Soft Serve Vanilla</item>
+        <item>Marshmallow Squares</item>
+        <item>Orange Gelatin</item>
+        <item>Pancake Syrup - Maple</item>
+        <item>Strawberry Shortcake</item>
+        <item>Sugar Free Gelatin</item>
+        <item>Waffles with Strawberry Sauce</item>
+        <item>Whipped Margarine</item>
+        <item>Alfredo sauce</item>
+        <item>Cheese Breadsticks</item>
+        <item>Cheese Pizza</item>
+        <item>Italian Meat Sauce</item>
+        <item>Pepperoni Pizza</item>
+        <item>Spaghetti Sauce</item>
+        <item>Apple Raisin Muffin</item>
+        <item>Baba Ghannouj</item>
+        <item>Baked Potato</item>
+        <item>Banana Nut Muffin</item>
+        <item>Blueberry Muffin</item>
+        <item>Brown Rice</item>
+        <item>Cheesy Baked Potato Soup</item>
+        <item>Chocolate Brownies</item>
+        <item>Fatoush Salad</item>
+        <item>Felafel in Pita</item>
+        <item>Feta Cheese</item>
+        <item>Hummus</item>
+        <item>Meatless Nuggets</item>
+        <item>Oatmeal Raisin Cookies</item>
+        <item>Olive Salad</item>
+        <item>Pita Bread</item>
+        <item>Rose Preacher Cookies</item>
+        <item>Soy Milk</item>
+        <item>Sunshine Burger</item>
+        <item>Sweet Potato Fries</item>
+        <item>Sweet Potato</item>
+        <item>Tabouleh</item>
+        <item>Vegetarian Rice</item>
+        <item>Arroz Verde</item>
+        <item>Cheese Sauce</item>
+        <item>Chicken Fajita</item>
+        <item>Flour Tortilla</item>
+        <item>Gaucamole</item>
+        <item>Grilled Fresh Veggies</item>
+        <item>Pico De Gallo</item>
+        <item>Salsa de Pina</item>
+        <item>Salsa Tomatillo-Chipotle</item>
+        <item>Salsa</item>
+        <item>Sour Cream</item>
+        <item>Taco Salad Tortilla</item>
+        <item>Taco Shell</item>
+    </string-array>
+    <string-array name="deetsfoodlist">
+        <item>Bagel Chips</item>
+        <item>Bagels Assorted</item>
+        <item>Bread Bowl, White for Soup</item>
+        <item>Bread Bowl, Whole Wheat for Soup</item>
+        <item>Butter Patties</item>
+        <item>English Muffin</item>
+        <item>Apple Pie</item>
+        <item>Carrot Cupcake</item>
+        <item>Cheesecake, Apple Streusel</item>
+        <item>Chocolate Madness</item>
+        <item>Peanut Butter Blast</item>
+        <item>Tiramisu</item>
+        <item>Cappucino</item>
+        <item>Chai Tea</item>
+        <item>Frappucino</item>
+        <item>Hot Chocolate</item>
+        <item>Iced Latte</item>
+        <item>Latte</item>
+        <item>Chocolate Chip Cookie</item>
+        <item>Chocolate Oatmeal Bars</item>
+        <item>Napoleans</item>
+        <item>Royale Cookie</item>
+        <item>White Choc. Macadamia Nuts</item>
+        <item>Chocolate</item>
+        <item>Ham and Swiss</item>
+        <item>Ham-Cheddar Omelet</item>
+        <item>Spinach and Feta</item>
+        <item>Turkey and Swiss</item>
+        <item>Homestead Creamery</item>
+        <item>Hot Fudge Sauce</item>
+        <item>Ice Cream Brownie Sundae</item>
+        <item>Ice Cream Sundae Large</item>
+        <item>Ice Cream Sundae Small</item>
+        <item>Ice Cream</item>
+        <item>Rainbow Sherbet</item>
+        <item>Sorbet</item>
+        <item>Stir-In Oreo Cookie</item>
+        <item>Stir-In Reeses Pieces</item>
+        <item>Strawberry Sauce</item>
+        <item>Waffle Cone Sundae</item>
+        <item>Berzerker</item>
+        <item>Coca Cola Float</item>
+        <item>Creamsicle Delight Shake</item>
+        <item>Cyclone</item>
+        <item>Malt Average</item>
+        <item>Milkshake</item>
+        <item>Blueberry Muffin</item>
+        <item>Cranberry Orange Nut Muffin</item>
+        <item>Double Chocolate Muffin</item>
+        <item>Lemon Poppy Muffin</item>
+        <item>Low Fat Blueberry Muffin</item>
+        <item>Apple Turnover</item>
+        <item>Blueberry Scone</item>
+        <item>Blueberry Turnover</item>
+        <item>Cheese Danish</item>
+        <item>Cinnamon Roll</item>
+        <item>Cinnamon Scone</item>
+        <item>Crumb Cake</item>
+        <item>Lemon Bars</item>
+        <item>Raisin Scone</item>
+        <item>Raspberry Turnover</item>
+        <item>Grilled Chicken</item>
+        <item>Sliced Tomatoes</item>
+        <item>Tarragon Chicken</item>
+        <item>Tuna</item>
+        <item>Mozzarella Panini</item>
+        <item>Southwest Chicken Panini</item>
+        <item>Fruit Cup</item>
+        <item>Organic Veggie Bowl</item>
+        <item>Yogurt and Granola Parfait</item>
+    </string-array>
+    <string-array name="hokieGrillfoodlist">
+        <item>Pork</item>
+        <item>Roasted Turkey</item>
+        <item>Caesar Wrap</item>
+        <item>Chargrilled Salad</item>
+        <item>Chargrilled Sandwich</item>
+        <item>Chargrilled Wrap</item>
+        <item>Chick-n-Strips Salad</item>
+        <item>Chick-n-Strips</item>
+        <item>Chicken Sandwich</item>
+        <item>Cole Slaw</item>
+        <item>Lemonade</item>
+        <item>Lettuce and Tomato Added</item>
+        <item>Nuggets</item>
+        <item>Spicy Wrap</item>
+        <item>Waffle Fries</item>
+        <item>Caramel Pecanbon</item>
+        <item>Caramelatta Chill</item>
+        <item>Cinnabon Stix</item>
+        <item>Classic</item>
+        <item>Frosting Cup</item>
+        <item>Minibon</item>
+        <item>Mochalatta Chill</item>
+        <item>Reg Classic Sundae</item>
+        <item>Banana Pudding Cup</item>
+        <item>Berry Good Snack Mix</item>
+        <item>Caesar Salad</item>
+        <item>Cantaloupe Cup</item>
+        <item>Chef Salad</item>
+        <item>Chicken Salad Bagel</item>
+        <item>Chicken Salad Croissant</item>
+        <item>Dirt Pie - Chocolate</item>
+        <item>Dirt Pie - Vanilla</item>
+        <item>Fresh Fruit Bowl</item>
+        <item>Fresh Strawberry Cup</item>
+        <item>Fruit Wrap</item>
+        <item>Garden Salad</item>
+        <item>Grilled Veggie and Grain Wrap</item>
+        <item>Ham and Swiss Sandwich</item>
+        <item>Hummus Bowl with Pitas</item>
+        <item>Pineapple Cup</item>
+        <item>Red Pepper Hummus Bowl</item>
+        <item>Strawberry and Cream Cup</item>
+        <item>Three Grain Salad Bowl</item>
+        <item>Tofu Veggie Wrap</item>
+        <item>Turkey and Provolone Sandwich</item>
+        <item>Veggie Bowl</item>
+        <item>Wasabi Explosion Snack Mix</item>
+        <item>Yogurt Strawberry Parfait</item>
+        <item>Breadsticks with Sauce</item>
+        <item>Cheese Breadsticks with Sauce</item>
+        <item>Cheese Pizza</item>
+        <item>Chicken Wings</item>
+        <item>Extra Marinara Sauce</item>
+        <item>Ham and Cheese Sub</item>
+        <item>Pepperoni Pizza</item>
+        <item>Supreme Pizza</item>
+        <item>Supreme Sub</item>
+        <item>Turkey and Provolone Sub</item>
+        <item>Vegetable Sub</item>
+    </string-array>
+    <string-array name="owensfoodlist">
+        <item>Asian Blend Veggie Stirfry or Rice</item>
+        <item>Beef Teriyaki and Rice</item>
+        <item>Brown Rice</item>
+        <item>Egg Rolls</item>
+        <item>Fortune Cookies</item>
+        <item>General Tsos Chicken and Rice</item>
+        <item>White Rice</item>
+        <item>Carved Roast Beef</item>
+        <item>Rotisserie Chicken with Side Dishes</item>
+        <item>Rotisserie Chicken</item>
+        <item>Blue Ridge BBQ Cornbread Muffin</item>
+        <item>Blue Ridge BBQ Green Beans</item>
+        <item>Gravy</item>
+        <item>Green Peas</item>
+        <item>Macroni and Cheese</item>
+        <item>Ranch Roasted Red Potatoes</item>
+        <item>Whipped Fresh Potatoes and Gravy</item>
+        <item>Chocolate Milk</item>
+        <item>Homestead Creamery</item>
+        <item>Skim Milk</item>
+        <item>Whole Milk</item>
+        <item>Bacon Cheese Burger</item>
+        <item>Brazilian Chicken Sandwich</item>
+        <item>Cheese Burger with Toppings</item>
+        <item>Chicken Bacon Ranch Sandwich</item>
+        <item>Chicken Cordon Bleu Sandwich</item>
+        <item>French Fries</item>
+        <item>Grilled Burger with Toppings</item>
+        <item>Grilled Cheese Sandwich</item>
+        <item>Grilled Chicken Breast</item>
+        <item>Grilled Ham and Cheese Sandwich</item>
+        <item>Grilled Turkey and Cheese Sandwich</item>
+        <item>Homestyle Potato Chips</item>
+        <item>Hot Dog</item>
+        <item>Italian Chicken Sandwich</item>
+        <item>Meatball Sub</item>
+        <item>Mozzarella Cheese Sticks</item>
+        <item>Mushroom and Swiss Burger</item>
+        <item>Onion Rings</item>
+        <item>Pineapple Chicken Sandwich</item>
+        <item>Spicy Chicken Sandwich</item>
+        <item>Veggie and Cheese Burger</item>
+        <item>Veggie Burger</item>
+        <item>Chicken Salad</item>
+        <item>Franks Blocked Kick Sandwich</item>
+        <item>Franks Defensive Back Sandwich</item>
+        <item>Franks Deli Cheese Sub</item>
+        <item>Franks Deli Sub</item>
+        <item>Franks Deli Veggie Sub</item>
+        <item>Franks Fantastic Sandwich</item>
+        <item>Franks Lunch Pail Sandwich</item>
+        <item>Franks Red Zone Sandwich</item>
+        <item>Franks Special Teams Sandwich</item>
+        <item>Homestyle Potato Chip</item>
+        <item>Tuna Salad</item>
+        <item>Average Smoothie</item>
+        <item>Smoothie Supplements</item>
+        <item>Sprinkles</item>
+        <item>Stir-In Oreo Cookie</item>
+        <item>Stir-In Reeses Pieces</item>
+        <item>Yogurt</item>
+        <item>1000 Island Dressing</item>
+        <item>Antipasto Salad</item>
+        <item>Bagels</item>
+        <item>Barley Waldorf Salad</item>
+        <item>Blue Cheese Dressing</item>
+        <item>Bread Bowl, While Wheat for soup</item>
+        <item>Bread Bowl, White for Soup</item>
+        <item>Broccoli Raisin Salad</item>
+        <item>Caesar Dressing</item>
+        <item>Chicken Salad</item>
+        <item>Chocolate Pudding</item>
+        <item>Chow Mein Noodles</item>
+        <item>Cottage Cheese</item>
+        <item>Crabmeat Salad</item>
+        <item>Fat Free Honey Dressing</item>
+        <item>Fat Free Italian Dressing</item>
+        <item>Fat Free Ranch Dressing</item>
+        <item>French Dressing</item>
+        <item>Fresh Banana</item>
+        <item>Fresh Orange</item>
+        <item>Fresh Pear</item>
+        <item>Fresh Red Apple</item>
+        <item>Fresh Red Grapes</item>
+        <item>Italian Dressing</item>
+        <item>Macaroni Salad</item>
+        <item>Pasta Salad</item>
+        <item>Peach Slices</item>
+        <item>Potato Salad</item>
+        <item>Ranch Dressing</item>
+        <item>Salad Tossed with just Veggies</item>
+        <item>Sliced Bread</item>
+        <item>Tuna Salad</item>
+        <item>Vanilla Pudding</item>
+        <item>White Sliced Bread</item>
+        <item>Whole Wheat Bread</item>
+        <item>Barbacoa Burrito Bowl</item>
+        <item>Barbacoa Burrito</item>
+        <item>Barbacoa Fajita Burrito Bowl</item>
+        <item>Barbacoa Fajita</item>
+        <item>Barbacoa Quesadilla</item>
+        <item>Barbacoa Soft Taco</item>
+        <item>Barbacoa Taco</item>
+        <item>Carnita Fajita Burritos</item>
+        <item>Carnitas Burritos Bowl</item>
+        <item>Carnitas Burritos</item>
+        <item>Carnitas Quesadilla</item>
+        <item>Carnitas Soft Taco</item>
+        <item>Carnitas Taco</item>
+        <item>Cheese Quesadilla</item>
+        <item>Chicken Burrito Bowl</item>
+        <item>Chicken Burrito</item>
+        <item>Chicken Fajita Burrito Bowl</item>
+        <item>Chicken Fajita Burrito</item>
+        <item>Chicken Quesadilla</item>
+        <item>Chicken Taco</item>
+        <item>Chips and Guacamole</item>
+        <item>Chips and Salsa</item>
+        <item>Salad</item>
+        <item>Soft Chicken Taco</item>
+        <item>Steak Burrito Bowl</item>
+        <item>Steak Burrito</item>
+        <item>Steak Fajita Burrito Bowl</item>
+        <item>Steak Fajita Burrito</item>
+        <item>Steak Quesadilla</item>
+        <item>Steak Soft Taco</item>
+        <item>Steak Taco</item>
+        <item>Vegetarian Burrito Bowl</item>
+        <item>Vegetarian Soft Taco</item>
+        <item>Vegetarian Taco</item>
+        <item>Veggie Burrito</item>
+        <item>VG Fajita Burrito Bowl</item>
+        <item>VG Fajita Burrito</item>
+        <item>Alfredo Sauce with Pasta</item>
+        <item>Alfredo Sauce</item>
+        <item>Garlic Breadsticks</item>
+        <item>Gluten Free Pasta</item>
+        <item>Marinara Sauce</item>
+        <item>Meat Sauce with Pasta</item>
+        <item>Meat Sauce</item>
+        <item>Whole Wheat Spaghetti Pasta</item>
+        <item>Ziti Pasta</item>
+        <item>Soft Drinks - Diet</item>
+        <item>Soft Drinks - Regular</item>
+        <item>French Fries</item>
+        <item>Philly Cheese Steak</item>
+        <item>Philly Chicken Cheese Steak</item>
+        <item>Assorted Cookies</item>
+        <item>Assorted Fruit Pies</item>
+        <item>Assorted Gourmet Pies</item>
+        <item>Chocolate Dipped Canoli</item>
+        <item>Chocolate Dipped Strawberries</item>
+        <item>Gluten Free Blueberry Muffin</item>
+        <item>Gluten Free Sliced Bread</item>
+        <item>Hot Fudge Brownie</item>
+        <item>Mega Muffins</item>
+        <item>Muffin Shot</item>
+        <item>Napoleans</item>
+        <item>Parfaits</item>
+        <item>Vanilla or Chocolate Cupcake</item>
+    </string-array>
+    <string-array name="westendfoodlist">
+        <item>Assorted Cookies</item>
+        <item>Baguette</item>
+        <item>Brownies</item>
+        <item>Carrot Cake</item>
+        <item>Chocolate Chunk Cookie</item>
+        <item>Chocolate Eclair</item>
+        <item>Rice Krispie Treat</item>
+        <item>Alfredo Sauce</item>
+        <item>Breadsticks with sauce</item>
+        <item>Caesar Salad with Chicken</item>
+        <item>Caesar Salad</item>
+        <item>Calzone</item>
+        <item>Cheesecake, Tiramisu</item>
+        <item>Chocolate French Silk Pie</item>
+        <item>Cream Filled Canoli</item>
+        <item>Four Cheese Pizza</item>
+        <item>Garlic Bread</item>
+        <item>Gluten Free Pasta</item>
+        <item>Marinara Sauce with Meat</item>
+        <item>Marinara Sauce</item>
+        <item>Marinated Chicken</item>
+        <item>Pepperoni Pizza</item>
+        <item>Rotini Pasta</item>
+        <item>Spaghetti Pasta</item>
+        <item>Stromboli</item>
+        <item>Cappicola Ham</item>
+        <item>Cheddar Cheese</item>
+        <item>Corned Beef</item>
+        <item>Cracked Wheat Bread</item>
+        <item>Ham</item>
+        <item>Lettuce and Tomato</item>
+        <item>Pastrami</item>
+        <item>Potato Bread</item>
+        <item>Provolone Cheese</item>
+        <item>Roast Beef</item>
+        <item>Rye Bread</item>
+        <item>Salami</item>
+        <item>Smoked Turkey</item>
+        <item>Sourdough Bread</item>
+        <item>Swiss Cheese</item>
+        <item>Turkey</item>
+        <item>Bacon and Cheese Burger</item>
+        <item>Bacon Bleu Burger</item>
+        <item>California Burger</item>
+        <item>Cheese Burger</item>
+        <item>Grilled Portabello Mushroom Burger</item>
+        <item>Hickory Burger</item>
+        <item>Hot Dog Chilli</item>
+        <item>Hot Dog with Bun</item>
+        <item>Monterey Burger</item>
+        <item>Sports Bar Burger</item>
+        <item>Veggie Burger</item>
+        <item>Cheese Quesadilla</item>
+        <item>Chicken Quesadilla</item>
+        <item>Grilled Chicken Sandwich</item>
+        <item>Hokie Planks</item>
+        <item>Steak Quesadilla</item>
+        <item>Vegetable Quesadilla</item>
+        <item>Croissant with Chicken Salad</item>
+        <item>Croissant with Seafood Salad</item>
+        <item>Croissant with Tuna Salad</item>
+        <item>Pita with Chicken Salad</item>
+        <item>Pita with Seafood Salad</item>
+        <item>Pita with Tuna Salad</item>
+        <item>Pita with Veggies</item>
+        <item>1000 Island</item>
+        <item>Agean Greek</item>
+        <item>Balsamic Vinaigrete</item>
+        <item>Bleu Cheese</item>
+        <item>French - Fat Free</item>
+        <item>Honey - Fat Free</item>
+        <item>Honey Mustard</item>
+        <item>Hot Bacon</item>
+        <item>Italian - Fat Free</item>
+        <item>Poppyseed</item>
+        <item>Ranch</item>
+        <item>Banana Split</item>
+        <item>Brownie Sundae</item>
+        <item>Double Scoop</item>
+        <item>Homestead Creamery - All Flavors</item>
+        <item>Ice Cream in Waffle Cone</item>
+        <item>Large Ice Cream Sundae</item>
+        <item>Single Scoop</item>
+        <item>Small Ice Cream Sundae</item>
+        <item>Strawberry Milkshake</item>
+        <item>Sundae in Waffle Cone</item>
+        <item>Apple Smoked Chicken Breast</item>
+        <item>Apple Smoked Chicken</item>
+        <item>Bourbon Marinade added to Steak</item>
+        <item>Catch of the Day</item>
+        <item>Crispy Grilled Chicken</item>
+        <item>London Broil</item>
+        <item>Open Faced Ribeye Sandwich</item>
+        <item>Whole Lobster</item>
+        <item>Baked Potato with Butter and Sour Cream</item>
+        <item>Broiled Italian Tomato Half</item>
+        <item>Chicken Gravy</item>
+        <item>Cornbread</item>
+        <item>Crusty Wheat Roll</item>
+        <item>Crusty White Roll</item>
+        <item>French Onion Soup</item>
+        <item>Garlic Whipped Potatoes</item>
+        <item>Grilled Asparagus</item>
+        <item>Mushroom Sauce</item>
+        <item>Roesti Potatoes</item>
+        <item>Breaded Chicken Strips</item>
+        <item>Marinated Grilled Chicken</item>
+        <item>American Tossed without Dressing</item>
+        <item>Chef Salad without Dressing</item>
+        <item>Fresh Fruit</item>
+        <item>Greek Salad with Agean Dressing</item>
+        <item>Pasta Garden Salad</item>
+        <item>Side American Tossed without Dressing</item>
+        <item>Side Chef without Dressing</item>
+        <item>Side Fresh Fruit</item>
+        <item>Side Greek without Dressing</item>
+        <item>Side Spinach without Dressing</item>
+        <item>Southwest Grill Chicken without Dressing</item>
+        <item>Spinach Salad without Dressing</item>
+        <item>Spinach</item>
+        <item>Trio Salad Base</item>
+        <item>Warm Chicken Salad without Dressing</item>
+        <item>American Cheese</item>
+        <item>Bacon</item>
+        <item>Cheese Fries</item>
+        <item>Mozzarella Cheese Sticks</item>
+        <item>Nachos Grande</item>
+        <item>Steak Fries</item>
+        <item>Blueberry Peach</item>
+        <item>Coco Nana</item>
+        <item>Peach</item>
+        <item>Pina Colada</item>
+        <item>Planet Raspberry</item>
+        <item>Strawberry Banana</item>
+        <item>Strawberry Daquiri</item>
+        <item>Bread Bowl</item>
+        <item>Chili Beans with Meat</item>
+        <item>Garden Vegetable Soup</item>
+        <item>Quiche Lorraine</item>
+        <item>Cuban Pork</item>
+        <item>French Dip</item>
+        <item>Grilled Ham and Cheese</item>
+        <item>Hokie Club</item>
+        <item>Hokie Steak</item>
+        <item>Hot Roast Beef and Cheddar</item>
+        <item>Italian Grinder</item>
+        <item>Pastrami and Swiss Cheese</item>
+        <item>Reuben</item>
+        <item>Carrot Apple Juice</item>
+        <item>Chocolate Cupcake with Chocolate Ganache</item>
+        <item>Chocolate Cupcake with Cream Cheese Icing</item>
+        <item>Chocolate Cupcake with Vanilla Icing</item>
+        <item>Creme Brulee Variety</item>
+        <item>Diet Soft Drinks</item>
+        <item>Fresh Apple Juice</item>
+        <item>Fresh Orange Juice</item>
+        <item>Fresh Orange</item>
+        <item>Fresh Red Apple</item>
+        <item>Pineapple Ginger Drink</item>
+        <item>Regular Soft Drinks</item>
+        <item>Black Bean and Corn Relish</item>
+        <item>Blackened Chicken with Rice</item>
+        <item>Buffalo Chicken with Rice</item>
+        <item>Chicken Caesar without Rice</item>
+        <item>Chicken Fajita with Rice</item>
+        <item>Grilled Veggie with Rice</item>
+        <item>Jerk Chicken with Rice</item>
+        <item>Mexican Rice</item>
+        <item>Onions and Peppers for Wraps</item>
+        <item>Smoked BBQ with Rice</item>
+        <item>Spicy Asian Chicken with Rice</item>
+    </string-array>
+    <string-array name="menu_options">
+        <item>Campus Directory</item>
+        <item>Get Directions</item>
+    </string-array>
+    <string-array name="route_mode_options">
+        <item>Pedestrian Mode</item>
+        <item>Driving Mode</item>
+    </string-array>
+    <string-array name="route_mode_values">
+        <item>1</item>
+        <item>2</item>
+    </string-array>
 
-	<string-array name="westendCategory">
-		<item>Baked Goods</item>
-		<item>Bistro Firenze</item>
-		<item>Build Your Own Sandwich</item>
-		<item>Burgers and Dogs</item>
-		<item>Chicken, Wings and Quesadillas</item>
-		<item>Croissants and Pitas</item>
-		<item>Dressings</item>
-		<item>Ice Cream</item>
-		<item>JP\'s Entrees</item>
-		<item>JP\'s Sides</item>
-		<item>Leaf and Ladle</item>
-		<item>Salads</item>
-		<item>Sides, Snacks and Toppings</item>
-		<item>Smoothies</item>
-		<item>Soups and Quiche</item>
-		<item>Speciality Sandwiches</item>
-		<item>Wired</item>
-		<item>Wrap World</item>
-	</string-array>
-
-	<string-array name="d2Category">
-		<item>Baked Goods</item>
-		<item>Beverages</item>
-		<item>Breakfast Sandwiches</item>
-		<item>Cereal</item>
-		<item>Condiments</item>
-		<item>DXpress Breakfast Hot Items</item>
-		<item>DXpress Cold Sandwiches</item>
-		<item>DXpress Grab n Go</item>
-		<item>DXpress Hot Sandwiches</item>
-		<item>East Side Deli</item>
-		<item>Edens</item>
-		<item>Entrees</item>
-		<item>Fruits</item>
-		<item>Gauchos Breakfast</item>
-		<item>Gauchos Grill and Burgers</item>
-		<item>La Patisserie</item>
-		<item>Mangia</item>
-		<item>Olives</item>
-		<item>Pan Asia</item>
-		<item>Salsas</item>
-		<item>Sides</item>
-	</string-array>
-
-	<string-array name="dbFolders">
-		<item>d2</item>
-		<item>deets</item>
-		<item>hokieGrill</item>
-		<item>owens</item>
-		<item>westend</item>
-	</string-array>
-
-	<string-array name="allHalls">
-		<item>abp_glc</item>
-		<item>abp_squires_cafe</item>
-		<item>abp_squires_kiosk</item>
-		<item>carvel</item>
-		<item>cinnabon</item>
-		<item>d2</item>
-		<item>deets</item>
-		<item>dx</item>
-		<item>hokie_grill</item>
-		<item>owens</item>
-		<item>sbarro</item>
-		<item>shultz</item>
-		<item>shultz_express</item>
-		<item>turner_place</item>
-		<item>vet_med_cafe</item>
-		<item>west_end</item>
-	</string-array>
-	<string name="search_hint">Search Food Items</string>
-
-	<string-array name="d2foodlist">
-		<item>Biscuit</item>
-		<item>Cherry Twist Danish</item>
-		<item>Donuts</item>
-		<item>White Sliced Bread</item>
-		<item>Whole Wheat Bread</item>
-		<item>100% Orange Juice</item>
-		<item>Apple Juice</item>
-		<item>Apple Papaya Mango Punch</item>
-		<item>Chocolate Milk</item>
-		<item>Hot Chocolate</item>
-		<item>Iceberry Blue Juice</item>
-		<item>Orange Juice</item>
-		<item>Skim Milk</item>
-		<item>Soft Drinks - Diet</item>
-		<item>Soft Drinks - Regular</item>
-		<item>Strawberry Banana Kiwi Juice</item>
-		<item>Whole Milk</item>
-		<item>Bacon and Egg Biscuit</item>
-		<item>Bacon Biscuit</item>
-		<item>Bacon Egg and Cheese Biscuit</item>
-		<item>Country Ham and Egg Biscuit</item>
-		<item>Country Ham Biscuit</item>
-		<item>Country Ham, Egg and Cheese Biscuit</item>
-		<item>Egg and Cheese Biscuit</item>
-		<item>Egg Biscuit</item>
-		<item>Sausage and Egg Biscuit</item>
-		<item>Sausage Biscuit</item>
-		<item>Sausage Egg and Cheese Biscuit</item>
-		<item>Steak and Egg Biscuit</item>
-		<item>Steak Biscuit</item>
-		<item>Berry Colossal Crunch</item>
-		<item>Cornflakes</item>
-		<item>Crispy Rice</item>
-		<item>Honey Nut Toasty O</item>
-		<item>Low Fat Granola Cereal</item>
-		<item>Marshmallow Mateys</item>
-		<item>Raisin Bran</item>
-		<item>Jelly</item>
-		<item>Peanut Butter</item>
-		<item>French Toast Sticks</item>
-		<item>Hash Brown Square</item>
-		<item>Cheese Hoagie Sub 6 Inch</item>
-		<item>Cold Wrap</item>
-		<item>Hoagie Sub 6 Inch</item>
-		<item>Italian Wrap</item>
-		<item>Peanut Butter and Jelly Sandwich</item>
-		<item>Ranch Chicken Wrap</item>
-		<item>Veggie Hoagie Sub 6 Inch</item>
-		<item>4 Variety Veggie Rolls</item>
-		<item>Beef and Cheddar Sandwich</item>
-		<item>Berry Good Snack Mix</item>
-		<item>Bran Muffins</item>
-		<item>Caesar Salad</item>
-		<item>Calif. and Philad. Rolls</item>
-		<item>Calif. and Salmon Rolls</item>
-		<item>California Rolls</item>
-		<item>Cheese Pizza</item>
-		<item>Chef Salad</item>
-		<item>Chicken Caesar Salad</item>
-		<item>Chicken Mandarin Salad</item>
-		<item>chicken Salad Sandwich</item>
-		<item>Chicken Tenders</item>
-		<item>Chili Corndog Casserole</item>
-		<item>Chocolate Chunk Cookies</item>
-		<item>Corn Dog Nuggets</item>
-		<item>Crab and Salmon Rolls</item>
-		<item>Cucumber, Avacado and Carrot Rolls</item>
-		<item>Eel and Calif. Rolls</item>
-		<item>French Fries</item>
-		<item>Fresh Cantaloupe Cup</item>
-		<item>Fresh Grapes Cup</item>
-		<item>Fresh Pineapple Cup</item>
-		<item>Fresh Strawberry Cup</item>
-		<item>Garden Salad</item>
-		<item>Ham and Noodle Au Gratin</item>
-		<item>Ham and Swiss Sandwich</item>
-		<item>Hawaiian Pizza</item>
-		<item>Honeydew Cup</item>
-		<item>Hummus Bowl with Pitas</item>
-		<item>Macaroni and Cheese</item>
-		<item>Manicotti</item>
-		<item>Mashed Potato with Gravy</item>
-		<item>Mixed Fresh Fruit Bowl</item>
-		<item>Pecan and Craisin chicken Salad Wrap</item>
-		<item>Pecan Chicken Salad Bowl</item>
-		<item>Pepperoni Pizza</item>
-		<item>Raisin Crasin Oat Bars</item>
-		<item>Red Pepper Hummus Bowl</item>
-		<item>Red Pepper Hummus Sandwich</item>
-		<item>Red Pepper Hummus Wrap</item>
-		<item>Spicy Chicken Wrap</item>
-		<item>Spicy Crab Rolls</item>
-		<item>Spicy Grilled Chicken Salad</item>
-		<item>Turkey and Provolone Sandwich</item>
-		<item>Veggie Bowl</item>
-		<item>Veggie Pizza</item>
-		<item>Wasabi Explosion Snack Mix</item>
-		<item>Yogurt Blueberry Parfait</item>
-		<item>Yogurt Raspberry Parfait</item>
-		<item>Yogurt Strawberry Parfait</item>
-		<item>Chicken Filet Sandwich</item>
-		<item>Chicken Fillet and Cheese Sandwich</item>
-		<item>Chicken Patty and Cheese Sandwich</item>
-		<item>Chicken Patty Sandwich</item>
-		<item>Grilled Chicken Sandwich</item>
-		<item>Manwich Sandwich</item>
-		<item>Meatball Sub</item>
-		<item>Quarterpound Cheeseburger</item>
-		<item>Quarterpound Hamburger</item>
-		<item>Quarterpound Hot Dog</item>
-		<item>Deli Cheeses</item>
-		<item>French Bread sub Roll</item>
-		<item>Ham</item>
-		<item>Roast Beef</item>
-		<item>Salami</item>
-		<item>Tuna Salad</item>
-		<item>Turkey</item>
-		<item>Wheat Sandwich Roll</item>
-		<item>Whole Wheat Sub Rolls</item>
-		<item>1000 Island Dressing</item>
-		<item>Bleu Cheese Dressing</item>
-		<item>Caesar Dressing</item>
-		<item>Cobb Salad</item>
-		<item>Cottage Cheese</item>
-		<item>French Dressing</item>
-		<item>Italian Dressing</item>
-		<item>Oil and Vinegar</item>
-		<item>Ranch Dressing</item>
-		<item>Salad Tossed with Veggies</item>
-		<item>Seeded Tea Rolls</item>
-		<item>Sundried Tomato Dressing</item>
-		<item>Fresh Banana</item>
-		<item>Fresh Golden Apple</item>
-		<item>Fresh Orange</item>
-		<item>Pineapple Tidbits</item>
-		<item>Applewood Smoked Bacon</item>
-		<item>Buttermilk Pancakes</item>
-		<item>Cheese Omelette</item>
-		<item>Cheesesteak Omelette</item>
-		<item>Chocolate Chip Pancakes</item>
-		<item>Egg White and Veggie Omelet</item>
-		<item>Ham and Cheese Omelette</item>
-		<item>Ham Omelette</item>
-		<item>Pancake Syrup - Maple</item>
-		<item>Sausage Patties</item>
-		<item>Turkey Bacon</item>
-		<item>Veggie Omelette</item>
-		<item>Bacon</item>
-		<item>Cheese Sauce</item>
-		<item>Chicken Patty Sandwich</item>
-		<item>Deli Cheeses</item>
-		<item>French Fries</item>
-		<item>Ham</item>
-		<item>Hamburger</item>
-		<item>Hot Dog Chili</item>
-		<item>Hot Dog on Bun</item>
-		<item>Onion Roll</item>
-		<item>Roast Beef</item>
-		<item>Seasoned Curly Fries</item>
-		<item>Turkey</item>
-		<item>Wheat Sandwich Roll</item>
-		<item>White Sliced Bread</item>
-		<item>Whole Wheat Bread</item>
-		<item>Apple Brandy Sauce</item>
-		<item>Candied Carrots</item>
-		<item>Fruit Compote Sauce</item>
-		<item>JPs Sugar Snap Peas</item>
-		<item>Noodles</item>
-		<item>Rice Pilaf</item>
-		<item>Roasted Potatoes</item>
-		<item>Sauteed Zucchini and Mushrooms</item>
-		<item>Seasoned Green Beans</item>
-		<item>Cherry cobbler</item>
-		<item>Chocolate Chip Pudding</item>
-		<item>Chocolate Cream Pie</item>
-		<item>Double Chocolate Cookie</item>
-		<item>Ice Milk Soft Serve Chocolate</item>
-		<item>Ice Milk Soft Serve Vanilla</item>
-		<item>Marshmallow Squares</item>
-		<item>Orange Gelatin</item>
-		<item>Pancake Syrup - Maple</item>
-		<item>Strawberry Shortcake</item>
-		<item>Sugar Free Gelatin</item>
-		<item>Waffles with Strawberry Sauce</item>
-		<item>Whipped Margarine</item>
-		<item>Alfredo sauce</item>
-		<item>Cheese Breadsticks</item>
-		<item>Cheese Pizza</item>
-		<item>Italian Meat Sauce</item>
-		<item>Pepperoni Pizza</item>
-		<item>Spaghetti Sauce</item>
-		<item>Apple Raisin Muffin</item>
-		<item>Baba Ghannouj</item>
-		<item>Baked Potato</item>
-		<item>Banana Nut Muffin</item>
-		<item>Blueberry Muffin</item>
-		<item>Brown Rice</item>
-		<item>Cheesy Baked Potato Soup</item>
-		<item>Chocolate Brownies</item>
-		<item>Fatoush Salad</item>
-		<item>Felafel in Pita</item>
-		<item>Feta Cheese</item>
-		<item>Hummus</item>
-		<item>Meatless Nuggets</item>
-		<item>Oatmeal Raisin Cookies</item>
-		<item>Olive Salad</item>
-		<item>Pita Bread</item>
-		<item>Rose Preacher Cookies</item>
-		<item>Soy Milk</item>
-		<item>Sunshine Burger</item>
-		<item>Sweet Potato Fries</item>
-		<item>Sweet Potato</item>
-		<item>Tabouleh</item>
-		<item>Vegetarian Rice</item>
-		<item>Arroz Verde</item>
-		<item>Cheese Sauce</item>
-		<item>Chicken Fajita</item>
-		<item>Flour Tortilla</item>
-		<item>Gaucamole</item>
-		<item>Grilled Fresh Veggies</item>
-		<item>Pico De Gallo</item>
-		<item>Salsa de Pina</item>
-		<item>Salsa Tomatillo-Chipotle</item>
-		<item>Salsa</item>
-		<item>Sour Cream</item>
-		<item>Taco Salad Tortilla</item>
-		<item>Taco Shell</item>
-	</string-array>
-
-	<string-array name="deetsfoodlist">
-		<item>Bagel Chips</item>
-		<item>Bagels Assorted</item>
-		<item>Bread Bowl, White for Soup</item>
-		<item>Bread Bowl, Whole Wheat for Soup</item>
-		<item>Butter Patties</item>
-		<item>English Muffin</item>
-		<item>Apple Pie</item>
-		<item>Carrot Cupcake</item>
-		<item>Cheesecake, Apple Streusel</item>
-		<item>Chocolate Madness</item>
-		<item>Peanut Butter Blast</item>
-		<item>Tiramisu</item>
-		<item>Cappucino</item>
-		<item>Chai Tea</item>
-		<item>Frappucino</item>
-		<item>Hot Chocolate</item>
-		<item>Iced Latte</item>
-		<item>Latte</item>
-		<item>Chocolate Chip Cookie</item>
-		<item>Chocolate Oatmeal Bars</item>
-		<item>Napoleans</item>
-		<item>Royale Cookie</item>
-		<item>White Choc. Macadamia Nuts</item>
-		<item>Chocolate</item>
-		<item>Ham and Swiss</item>
-		<item>Ham-Cheddar Omelet</item>
-		<item>Spinach and Feta</item>
-		<item>Turkey and Swiss</item>
-		<item>Homestead Creamery</item>
-		<item>Hot Fudge Sauce</item>
-		<item>Ice Cream Brownie Sundae</item>
-		<item>Ice Cream Sundae Large</item>
-		<item>Ice Cream Sundae Small</item>
-		<item>Ice Cream</item>
-		<item>Rainbow Sherbet</item>
-		<item>Sorbet</item>
-		<item>Stir-In Oreo Cookie</item>
-		<item>Stir-In Reeses Pieces</item>
-		<item>Strawberry Sauce</item>
-		<item>Waffle Cone Sundae</item>
-		<item>Berzerker</item>
-		<item>Coca Cola Float</item>
-		<item>Creamsicle Delight Shake</item>
-		<item>Cyclone</item>
-		<item>Malt Average</item>
-		<item>Milkshake</item>
-		<item>Blueberry Muffin</item>
-		<item>Cranberry Orange Nut Muffin</item>
-		<item>Double Chocolate Muffin</item>
-		<item>Lemon Poppy Muffin</item>
-		<item>Low Fat Blueberry Muffin</item>
-		<item>Apple Turnover</item>
-		<item>Blueberry Scone</item>
-		<item>Blueberry Turnover</item>
-		<item>Cheese Danish</item>
-		<item>Cinnamon Roll</item>
-		<item>Cinnamon Scone</item>
-		<item>Crumb Cake</item>
-		<item>Lemon Bars</item>
-		<item>Raisin Scone</item>
-		<item>Raspberry Turnover</item>
-		<item>Grilled Chicken</item>
-		<item>Sliced Tomatoes</item>
-		<item>Tarragon Chicken</item>
-		<item>Tuna</item>
-		<item>Mozzarella Panini</item>
-		<item>Southwest Chicken Panini</item>
-		<item>Fruit Cup</item>
-		<item>Organic Veggie Bowl</item>
-		<item>Yogurt and Granola Parfait</item>
-	</string-array>
-
-	<string-array name="hokieGrillfoodlist">
-		<item>Pork</item>
-		<item>Roasted Turkey</item>
-		<item>Caesar Wrap</item>
-		<item>Chargrilled Salad</item>
-		<item>Chargrilled Sandwich</item>
-		<item>Chargrilled Wrap</item>
-		<item>Chick-n-Strips Salad</item>
-		<item>Chick-n-Strips</item>
-		<item>Chicken Sandwich</item>
-		<item>Cole Slaw</item>
-		<item>Lemonade</item>
-		<item>Lettuce and Tomato Added</item>
-		<item>Nuggets</item>
-		<item>Spicy Wrap</item>
-		<item>Waffle Fries</item>
-		<item>Caramel Pecanbon</item>
-		<item>Caramelatta Chill</item>
-		<item>Cinnabon Stix</item>
-		<item>Classic</item>
-		<item>Frosting Cup</item>
-		<item>Minibon</item>
-		<item>Mochalatta Chill</item>
-		<item>Reg Classic Sundae</item>
-		<item>Banana Pudding Cup</item>
-		<item>Berry Good Snack Mix</item>
-		<item>Caesar Salad</item>
-		<item>Cantaloupe Cup</item>
-		<item>Chef Salad</item>
-		<item>Chicken Salad Bagel</item>
-		<item>Chicken Salad Croissant</item>
-		<item>Dirt Pie - Chocolate</item>
-		<item>Dirt Pie - Vanilla</item>
-		<item>Fresh Fruit Bowl</item>
-		<item>Fresh Strawberry Cup</item>
-		<item>Fruit Wrap</item>
-		<item>Garden Salad</item>
-		<item>Grilled Veggie and Grain Wrap</item>
-		<item>Ham and Swiss Sandwich</item>
-		<item>Hummus Bowl with Pitas</item>
-		<item>Pineapple Cup</item>
-		<item>Red Pepper Hummus Bowl</item>
-		<item>Strawberry and Cream Cup</item>
-		<item>Three Grain Salad Bowl</item>
-		<item>Tofu Veggie Wrap</item>
-		<item>Turkey and Provolone Sandwich</item>
-		<item>Veggie Bowl</item>
-		<item>Wasabi Explosion Snack Mix</item>
-		<item>Yogurt Strawberry Parfait</item>
-		<item>Breadsticks with Sauce</item>
-		<item>Cheese Breadsticks with Sauce</item>
-		<item>Cheese Pizza</item>
-		<item>Chicken Wings</item>
-		<item>Extra Marinara Sauce</item>
-		<item>Ham and Cheese Sub</item>
-		<item>Pepperoni Pizza</item>
-		<item>Supreme Pizza</item>
-		<item>Supreme Sub</item>
-		<item>Turkey and Provolone Sub</item>
-		<item>Vegetable Sub</item>
-	</string-array>
-
-	<string-array name="owensfoodlist">
-		<item>Asian Blend Veggie Stirfry or Rice</item>
-		<item>Beef Teriyaki and Rice</item>
-		<item>Brown Rice</item>
-		<item>Egg Rolls</item>
-		<item>Fortune Cookies</item>
-		<item>General Tsos Chicken and Rice</item>
-		<item>White Rice</item>
-		<item>Carved Roast Beef</item>
-		<item>Rotisserie Chicken with Side Dishes</item>
-		<item>Rotisserie Chicken</item>
-		<item>Blue Ridge BBQ Cornbread Muffin</item>
-		<item>Blue Ridge BBQ Green Beans</item>
-		<item>Gravy</item>
-		<item>Green Peas</item>
-		<item>Macroni and Cheese</item>
-		<item>Ranch Roasted Red Potatoes</item>
-		<item>Whipped Fresh Potatoes and Gravy</item>
-		<item>Chocolate Milk</item>
-		<item>Homestead Creamery</item>
-		<item>Skim Milk</item>
-		<item>Whole Milk</item>
-		<item>Bacon Cheese Burger</item>
-		<item>Brazilian Chicken Sandwich</item>
-		<item>Cheese Burger with Toppings</item>
-		<item>Chicken Bacon Ranch Sandwich</item>
-		<item>Chicken Cordon Bleu Sandwich</item>
-		<item>French Fries</item>
-		<item>Grilled Burger with Toppings</item>
-		<item>Grilled Cheese Sandwich</item>
-		<item>Grilled Chicken Breast</item>
-		<item>Grilled Ham and Cheese Sandwich</item>
-		<item>Grilled Turkey and Cheese Sandwich</item>
-		<item>Homestyle Potato Chips</item>
-		<item>Hot Dog</item>
-		<item>Italian Chicken Sandwich</item>
-		<item>Meatball Sub</item>
-		<item>Mozzarella Cheese Sticks</item>
-		<item>Mushroom and Swiss Burger</item>
-		<item>Onion Rings</item>
-		<item>Pineapple Chicken Sandwich</item>
-		<item>Spicy Chicken Sandwich</item>
-		<item>Veggie and Cheese Burger</item>
-		<item>Veggie Burger</item>
-		<item>Chicken Salad</item>
-		<item>Franks Blocked Kick Sandwich</item>
-		<item>Franks Defensive Back Sandwich</item>
-		<item>Franks Deli Cheese Sub</item>
-		<item>Franks Deli Sub</item>
-		<item>Franks Deli Veggie Sub</item>
-		<item>Franks Fantastic Sandwich</item>
-		<item>Franks Lunch Pail Sandwich</item>
-		<item>Franks Red Zone Sandwich</item>
-		<item>Franks Special Teams Sandwich</item>
-		<item>Homestyle Potato Chip</item>
-		<item>Tuna Salad</item>
-		<item>Average Smoothie</item>
-		<item>Smoothie Supplements</item>
-		<item>Sprinkles</item>
-		<item>Stir-In Oreo Cookie</item>
-		<item>Stir-In Reeses Pieces</item>
-		<item>Yogurt</item>
-		<item>1000 Island Dressing</item>
-		<item>Antipasto Salad</item>
-		<item>Bagels</item>
-		<item>Barley Waldorf Salad</item>
-		<item>Blue Cheese Dressing</item>
-		<item>Bread Bowl, While Wheat for soup</item>
-		<item>Bread Bowl, White for Soup</item>
-		<item>Broccoli Raisin Salad</item>
-		<item>Caesar Dressing</item>
-		<item>Chicken Salad</item>
-		<item>Chocolate Pudding</item>
-		<item>Chow Mein Noodles</item>
-		<item>Cottage Cheese</item>
-		<item>Crabmeat Salad</item>
-		<item>Fat Free Honey Dressing</item>
-		<item>Fat Free Italian Dressing</item>
-		<item>Fat Free Ranch Dressing</item>
-		<item>French Dressing</item>
-		<item>Fresh Banana</item>
-		<item>Fresh Orange</item>
-		<item>Fresh Pear</item>
-		<item>Fresh Red Apple</item>
-		<item>Fresh Red Grapes</item>
-		<item>Italian Dressing</item>
-		<item>Macaroni Salad</item>
-		<item>Pasta Salad</item>
-		<item>Peach Slices</item>
-		<item>Potato Salad</item>
-		<item>Ranch Dressing</item>
-		<item>Salad Tossed with just Veggies</item>
-		<item>Sliced Bread</item>
-		<item>Tuna Salad</item>
-		<item>Vanilla Pudding</item>
-		<item>White Sliced Bread</item>
-		<item>Whole Wheat Bread</item>
-		<item>Barbacoa Burrito Bowl</item>
-		<item>Barbacoa Burrito</item>
-		<item>Barbacoa Fajita Burrito Bowl</item>
-		<item>Barbacoa Fajita</item>
-		<item>Barbacoa Quesadilla</item>
-		<item>Barbacoa Soft Taco</item>
-		<item>Barbacoa Taco</item>
-		<item>Carnita Fajita Burritos</item>
-		<item>Carnitas Burritos Bowl</item>
-		<item>Carnitas Burritos</item>
-		<item>Carnitas Quesadilla</item>
-		<item>Carnitas Soft Taco</item>
-		<item>Carnitas Taco</item>
-		<item>Cheese Quesadilla</item>
-		<item>Chicken Burrito Bowl</item>
-		<item>Chicken Burrito</item>
-		<item>Chicken Fajita Burrito Bowl</item>
-		<item>Chicken Fajita Burrito</item>
-		<item>Chicken Quesadilla</item>
-		<item>Chicken Taco</item>
-		<item>Chips and Guacamole</item>
-		<item>Chips and Salsa</item>
-		<item>Salad</item>
-		<item>Soft Chicken Taco</item>
-		<item>Steak Burrito Bowl</item>
-		<item>Steak Burrito</item>
-		<item>Steak Fajita Burrito Bowl</item>
-		<item>Steak Fajita Burrito</item>
-		<item>Steak Quesadilla</item>
-		<item>Steak Soft Taco</item>
-		<item>Steak Taco</item>
-		<item>Vegetarian Burrito Bowl</item>
-		<item>Vegetarian Soft Taco</item>
-		<item>Vegetarian Taco</item>
-		<item>Veggie Burrito</item>
-		<item>VG Fajita Burrito Bowl</item>
-		<item>VG Fajita Burrito</item>
-		<item>Alfredo Sauce with Pasta</item>
-		<item>Alfredo Sauce</item>
-		<item>Garlic Breadsticks</item>
-		<item>Gluten Free Pasta</item>
-		<item>Marinara Sauce</item>
-		<item>Meat Sauce with Pasta</item>
-		<item>Meat Sauce</item>
-		<item>Whole Wheat Spaghetti Pasta</item>
-		<item>Ziti Pasta</item>
-		<item>Soft Drinks - Diet</item>
-		<item>Soft Drinks - Regular</item>
-		<item>French Fries</item>
-		<item>Philly Cheese Steak</item>
-		<item>Philly Chicken Cheese Steak</item>
-		<item>Assorted Cookies</item>
-		<item>Assorted Fruit Pies</item>
-		<item>Assorted Gourmet Pies</item>
-		<item>Chocolate Dipped Canoli</item>
-		<item>Chocolate Dipped Strawberries</item>
-		<item>Gluten Free Blueberry Muffin</item>
-		<item>Gluten Free Sliced Bread</item>
-		<item>Hot Fudge Brownie</item>
-		<item>Mega Muffins</item>
-		<item>Muffin Shot</item>
-		<item>Napoleans</item>
-		<item>Parfaits</item>
-		<item>Vanilla or Chocolate Cupcake</item>
-	</string-array>
-
-	<string-array name="westendfoodlist">
-		<item>Assorted Cookies</item>
-		<item>Baguette</item>
-		<item>Brownies</item>
-		<item>Carrot Cake</item>
-		<item>Chocolate Chunk Cookie</item>
-		<item>Chocolate Eclair</item>
-		<item>Rice Krispie Treat</item>
-		<item>Alfredo Sauce</item>
-		<item>Breadsticks with sauce</item>
-		<item>Caesar Salad with Chicken</item>
-		<item>Caesar Salad</item>
-		<item>Calzone</item>
-		<item>Cheesecake, Tiramisu</item>
-		<item>Chocolate French Silk Pie</item>
-		<item>Cream Filled Canoli</item>
-		<item>Four Cheese Pizza</item>
-		<item>Garlic Bread</item>
-		<item>Gluten Free Pasta</item>
-		<item>Marinara Sauce with Meat</item>
-		<item>Marinara Sauce</item>
-		<item>Marinated Chicken</item>
-		<item>Pepperoni Pizza</item>
-		<item>Rotini Pasta</item>
-		<item>Spaghetti Pasta</item>
-		<item>Stromboli</item>
-		<item>Cappicola Ham</item>
-		<item>Cheddar Cheese</item>
-		<item>Corned Beef</item>
-		<item>Cracked Wheat Bread</item>
-		<item>Ham</item>
-		<item>Lettuce and Tomato</item>
-		<item>Pastrami</item>
-		<item>Potato Bread</item>
-		<item>Provolone Cheese</item>
-		<item>Roast Beef</item>
-		<item>Rye Bread</item>
-		<item>Salami</item>
-		<item>Smoked Turkey</item>
-		<item>Sourdough Bread</item>
-		<item>Swiss Cheese</item>
-		<item>Turkey</item>
-		<item>Bacon and Cheese Burger</item>
-		<item>Bacon Bleu Burger</item>
-		<item>California Burger</item>
-		<item>Cheese Burger</item>
-		<item>Grilled Portabello Mushroom Burger</item>
-		<item>Hickory Burger</item>
-		<item>Hot Dog Chilli</item>
-		<item>Hot Dog with Bun</item>
-		<item>Monterey Burger</item>
-		<item>Sports Bar Burger</item>
-		<item>Veggie Burger</item>
-		<item>Cheese Quesadilla</item>
-		<item>Chicken Quesadilla</item>
-		<item>Grilled Chicken Sandwich</item>
-		<item>Hokie Planks</item>
-		<item>Steak Quesadilla</item>
-		<item>Vegetable Quesadilla</item>
-		<item>Croissant with Chicken Salad</item>
-		<item>Croissant with Seafood Salad</item>
-		<item>Croissant with Tuna Salad</item>
-		<item>Pita with Chicken Salad</item>
-		<item>Pita with Seafood Salad</item>
-		<item>Pita with Tuna Salad</item>
-		<item>Pita with Veggies</item>
-		<item>1000 Island</item>
-		<item>Agean Greek</item>
-		<item>Balsamic Vinaigrete</item>
-		<item>Bleu Cheese</item>
-		<item>French - Fat Free</item>
-		<item>Honey - Fat Free</item>
-		<item>Honey Mustard</item>
-		<item>Hot Bacon</item>
-		<item>Italian - Fat Free</item>
-		<item>Poppyseed</item>
-		<item>Ranch</item>
-		<item>Banana Split</item>
-		<item>Brownie Sundae</item>
-		<item>Double Scoop</item>
-		<item>Homestead Creamery - All Flavors</item>
-		<item>Ice Cream in Waffle Cone</item>
-		<item>Large Ice Cream Sundae</item>
-		<item>Single Scoop</item>
-		<item>Small Ice Cream Sundae</item>
-		<item>Strawberry Milkshake</item>
-		<item>Sundae in Waffle Cone</item>
-		<item>Apple Smoked Chicken Breast</item>
-		<item>Apple Smoked Chicken</item>
-		<item>Bourbon Marinade added to Steak</item>
-		<item>Catch of the Day</item>
-		<item>Crispy Grilled Chicken</item>
-		<item>London Broil</item>
-		<item>Open Faced Ribeye Sandwich</item>
-		<item>Whole Lobster</item>
-		<item>Baked Potato with Butter and Sour Cream</item>
-		<item>Broiled Italian Tomato Half</item>
-		<item>Chicken Gravy</item>
-		<item>Cornbread</item>
-		<item>Crusty Wheat Roll</item>
-		<item>Crusty White Roll</item>
-		<item>French Onion Soup</item>
-		<item>Garlic Whipped Potatoes</item>
-		<item>Grilled Asparagus</item>
-		<item>Mushroom Sauce</item>
-		<item>Roesti Potatoes</item>
-		<item>Breaded Chicken Strips</item>
-		<item>Marinated Grilled Chicken</item>
-		<item>American Tossed without Dressing</item>
-		<item>Chef Salad without Dressing</item>
-		<item>Fresh Fruit</item>
-		<item>Greek Salad with Agean Dressing</item>
-		<item>Pasta Garden Salad</item>
-		<item>Side American Tossed without Dressing</item>
-		<item>Side Chef without Dressing</item>
-		<item>Side Fresh Fruit</item>
-		<item>Side Greek without Dressing</item>
-		<item>Side Spinach without Dressing</item>
-		<item>Southwest Grill Chicken without Dressing</item>
-		<item>Spinach Salad without Dressing</item>
-		<item>Spinach</item>
-		<item>Trio Salad Base</item>
-		<item>Warm Chicken Salad without Dressing</item>
-		<item>American Cheese</item>
-		<item>Bacon</item>
-		<item>Cheese Fries</item>
-		<item>Mozzarella Cheese Sticks</item>
-		<item>Nachos Grande</item>
-		<item>Steak Fries</item>
-		<item>Blueberry Peach</item>
-		<item>Coco Nana</item>
-		<item>Peach</item>
-		<item>Pina Colada</item>
-		<item>Planet Raspberry</item>
-		<item>Strawberry Banana</item>
-		<item>Strawberry Daquiri</item>
-		<item>Bread Bowl</item>
-		<item>Chili Beans with Meat</item>
-		<item>Garden Vegetable Soup</item>
-		<item>Quiche Lorraine</item>
-		<item>Cuban Pork</item>
-		<item>French Dip</item>
-		<item>Grilled Ham and Cheese</item>
-		<item>Hokie Club</item>
-		<item>Hokie Steak</item>
-		<item>Hot Roast Beef and Cheddar</item>
-		<item>Italian Grinder</item>
-		<item>Pastrami and Swiss Cheese</item>
-		<item>Reuben</item>
-		<item>Carrot Apple Juice</item>
-		<item>Chocolate Cupcake with Chocolate Ganache</item>
-		<item>Chocolate Cupcake with Cream Cheese Icing</item>
-		<item>Chocolate Cupcake with Vanilla Icing</item>
-		<item>Creme Brulee Variety</item>
-		<item>Diet Soft Drinks</item>
-		<item>Fresh Apple Juice</item>
-		<item>Fresh Orange Juice</item>
-		<item>Fresh Orange</item>
-		<item>Fresh Red Apple</item>
-		<item>Pineapple Ginger Drink</item>
-		<item>Regular Soft Drinks</item>
-		<item>Black Bean and Corn Relish</item>
-		<item>Blackened Chicken with Rice</item>
-		<item>Buffalo Chicken with Rice</item>
-		<item>Chicken Caesar without Rice</item>
-		<item>Chicken Fajita with Rice</item>
-		<item>Grilled Veggie with Rice</item>
-		<item>Jerk Chicken with Rice</item>
-		<item>Mexican Rice</item>
-		<item>Onions and Peppers for Wraps</item>
-		<item>Smoked BBQ with Rice</item>
-		<item>Spicy Asian Chicken with Rice</item>
-	</string-array>
-	<string-array name="menu_options">
-		<item>Campus Directory</item>
-		<item>Get Directions</item>
-	</string-array>
-	<string-array name="route_mode_options">
-		<item>Pedestrian Mode</item>
-		<item>Driving Mode</item>
-	</string-array>
-	<string-array name="route_mode_values">
-		<item>1</item>
-		<item>2</item>
-	</string-array>
-	<string name="aboutapp">HokieHelper was created by the Virginia Tech Mobile
+    <string name="aboutapp">HokieHelper was created by the Virginia Tech Mobile
 		Application Development Team\n\n
 		Individual Contributers include:\n
 		Julian Adams (Maps Lead)\n
@@ -888,13 +875,13 @@
 		Avneet Singh and many others whose names will not fit in this TextView\n\n
 		
 		For questions and concerns, please email: vtappdevelopment@gmail.com\n\n
-		Find us on Facebook at M.A.D. Virginia Tech or follow us @vt_mad_club
-	</string>
-	<string name="student">Students may park in any parking lot after 5pm and on the weekends, except for the Owens Lot and the Dietrick Lot. Also, from 5:00 pm to 8:00 pm, Monday through Friday, the Drillfield is reserved for only faculty/staff and graduate students that display a current permit. Some Service spaces are also restricted on the weekends. Before parking in any service area, look for signs that restrict parking 24 hours. Also remember that the meters at the Bookstore are enforced on Saturday and Sunday, from 7:00 a.m. to 5:00 p.m.</string>
-	<string name="resident">If you display a Resident parking permit, then you may park in the Duck Pond Road Resident Lot and the resident part of the Stadium Lot. Parking in the Stadium Lot will be restricted during home athletic events.</string>
-	<string name="gradorcomm">If you display a Commuter or Graduate permit, then you may park in the Commuter section of Perry Street Lot, Prices Fork Lot, the commuter section of Litton Reaves Lot, the commuter section of the Duck Pond Road Lot, Oak Lane lots and in commuter portions of the Coliseum Lot. Graduate students that display a current permit may also park on the Drillfield after 5 pm.</string>
-	<string name="facultystaff">If you display a Faculty/Staff parking permit, then you may park in faculty/staff, commuter, graduate, and resident parking areas. Parking is not allowed in areas restricted by signs, including but not limited to,  service vehicle areas, the right side of the Squires Lot, carpool spaces, TA spaces and admission guest areas. </string>
-	<string name="visitor">When the Visitor Information Center is closed, visitors should go to the VT Police Department to get a Visitor Parking permit. The Police Department is located off of Southgate Drive. On weekends, Visitors may not park in the the Owens, Dietrick Dining Hall and Basketball Practice Facility Lots. Visitors are recommended to use the Faculty/Staff section of Perry Street Lot, Litton Reaves Lot, Coliseum Lot, Derring Hall Lot, Washington Street, and Litton-Reaves Extension Lot.</string>
-	<string name="dining_hall_information">Dining Hall Information</string>
-	<string name="diet_tracker">Diet Tracker</string>
+		Find us on Facebook at M.A.D. Virginia Tech or follow us @vt_mad_club</string>
+    <string name="student">Students may park in any parking lot after 5pm and on the weekends, except for the Owens Lot and the Dietrick Lot. Also, from 5:00 pm to 8:00 pm, Monday through Friday, the Drillfield is reserved for only faculty/staff and graduate students that display a current permit. Some Service spaces are also restricted on the weekends. Before parking in any service area, look for signs that restrict parking 24 hours. Also remember that the meters at the Bookstore are enforced on Saturday and Sunday, from 7:00 a.m. to 5:00 p.m.</string>
+    <string name="resident">If you display a Resident parking permit, then you may park in the Duck Pond Road Resident Lot and the resident part of the Stadium Lot. Parking in the Stadium Lot will be restricted during home athletic events.</string>
+    <string name="gradorcomm">If you display a Commuter or Graduate permit, then you may park in the Commuter section of Perry Street Lot, Prices Fork Lot, the commuter section of Litton Reaves Lot, the commuter section of the Duck Pond Road Lot, Oak Lane lots and in commuter portions of the Coliseum Lot. Graduate students that display a current permit may also park on the Drillfield after 5 pm.</string>
+    <string name="facultystaff">If you display a Faculty/Staff parking permit, then you may park in faculty/staff, commuter, graduate, and resident parking areas. Parking is not allowed in areas restricted by signs, including but not limited to,  service vehicle areas, the right side of the Squires Lot, carpool spaces, TA spaces and admission guest areas. </string>
+    <string name="visitor">When the Visitor Information Center is closed, visitors should go to the VT Police Department to get a Visitor Parking permit. The Police Department is located off of Southgate Drive. On weekends, Visitors may not park in the the Owens, Dietrick Dining Hall and Basketball Practice Facility Lots. Visitors are recommended to use the Faculty/Staff section of Perry Street Lot, Litton Reaves Lot, Coliseum Lot, Derring Hall Lot, Washington Street, and Litton-Reaves Extension Lot.</string>
+    <string name="dining_hall_information">Dining Hall Information</string>
+    <string name="diet_tracker">Diet Tracker</string>
+
 </resources>

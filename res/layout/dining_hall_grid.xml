@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg_tan"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/textview_dining_halls_grid"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:padding="0dp"
+        android:text="No halls here."
+        android:textSize="16dp" />
+
+    <GridView
+        android:id="@+id/gridview_dining_halls"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:horizontalSpacing="0dp"
+        android:numColumns="auto_fit"
+        android:orientation="vertical"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="0dp" />
+
+</LinearLayout>

@@ -40,8 +40,11 @@ public class Dining_HallDietChooserActivity extends SherlockActivity implements 
         setContentView(R.layout.activity_dining_halldietchooser);
         
 		// Sets up action bar title/navigation
+		// Sets up action bar title/navigation
 		getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-		getSupportActionBar().setDisplayShowHomeEnabled(false);
+		getSupportActionBar().setDisplayUseLogoEnabled(true);
+		getSupportActionBar().setLogo(R.drawable.ic_launcher);
+		getSupportActionBar().setDisplayShowHomeEnabled(true);
 		getSupportActionBar().setTitle("Dining");
 		
 		// Runs the database initialization in a foreground thread

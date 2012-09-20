@@ -2,8 +2,9 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/bg_tan"
     android:orientation="vertical"
-    android:padding="20dp"
+    android:padding="30dp"
     android:weightSum="1" >
 
     <Button
@@ -12,7 +13,11 @@
         android:layout_height="0dp"
         android:layout_marginBottom="10dp"
         android:layout_weight=".5"
-        android:text="@string/dining_hall_information" />
+        android:background="@drawable/button"
+        android:text="@string/dining_hall_information"
+        android:textColor="#FFFFFF"
+        android:textSize="20dp"
+        android:textStyle="normal" />
 
     <Button
         android:id="@+id/button_choose_diettracker"
@@ -20,6 +25,10 @@
         android:layout_height="0dp"
         android:layout_marginTop="10dp"
         android:layout_weight=".5"
-        android:text="@string/diet_tracker" />
+        android:background="@drawable/button"
+        android:text="@string/diet_tracker"
+        android:textColor="#FFFFFF"
+        android:textSize="20dp"
+        android:textStyle="normal" />
 
 </LinearLayout>

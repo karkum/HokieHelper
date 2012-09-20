@@ -40,7 +40,9 @@
         </activity>
         <activity android:name=".Restaurants" />
         <activity android:name=".Info_AboutThisAppActivity" />
-        <activity android:name=".Maps_MainActivity" android:theme="@style/Theme.Sherlock.NoActionBar"/>
+        <activity
+            android:name=".Maps_MainActivity"
+            android:theme="@style/Theme.Sherlock.NoActionBar" />
         <activity android:name=".Dining_InfoActivity" />
 
         <meta-data
@@ -78,12 +80,14 @@
             <intent-filter>
                 <action android:name="android.intent.action.Map" />
             </intent-filter>
-        </activity>
+        </activity>
         -->
         <activity android:name=".Weather_MainActivity" />
         <activity android:name=".Info_ParkingListActivitiy" />
         <activity android:name=".Info_ParkingActivity" />
-        <activity android:name=".Twitter_FeedActivity" />
+        <activity
+            android:name=".Twitter_FeedActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden" />
         <activity android:name=".Info_LibraryHoursInformationActivity" />
         <activity android:name=".Dining_FoodListActivity" />
 

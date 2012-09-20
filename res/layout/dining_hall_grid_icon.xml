@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="150dp"
+    android:layout_height="175dp"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    android:paddingTop="20dp"
+    android:paddingBottom="20dp"
+    android:weightSum="1" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_weight=".7" >
+
+        <ImageView
+            android:id="@+id/dining_hall_grid_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="8dp"
+            android:src="@drawable/logo_sbarro_ex" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/dining_hall_grid_text"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_weight=".3"
+        android:gravity="center"
+        android:text="Dining Hall"
+        android:textSize="16dp" />
+
+</LinearLayout>
